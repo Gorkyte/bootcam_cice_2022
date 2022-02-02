@@ -80,13 +80,13 @@
                                 <rect key="frame" x="20" y="258" width="349" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Calcula la edad de tu perro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DxO-Zt-8ia">
                                 <rect key="frame" x="20" y="405" width="349" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbP-my-1g8">
                                 <rect key="frame" x="20" y="499" width="349" height="47"/>
@@ -215,7 +215,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rII-rR-jZN" kind="show" id="R2w-Vf-0bN"/>
+                                    <segue destination="rII-rR-jZN" kind="show" identifier="segueV4" id="R2w-Vf-0bN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -223,6 +223,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ventana 3" id="T23-zV-iPe"/>
+                    <connections>
+                        <outlet property="edadPerroLBL" destination="QQg-zV-TDQ" id="jjo-9j-DAq"/>
+                        <outlet property="miApellidoLBL" destination="ZGu-oL-Xek" id="44b-Ik-c7F"/>
+                        <outlet property="miCiudadTF" destination="VLV-GK-2HZ" id="5qn-u1-zS1"/>
+                        <outlet property="miCodigoPostalTF" destination="I3W-6w-Erq" id="bH8-HP-mOu"/>
+                        <outlet property="miDireccionLBL" destination="Dts-7H-GKo" id="Fl4-hG-XKR"/>
+                        <outlet property="miNombreLBL" destination="bie-ng-2lp" id="CPV-Ue-oCY"/>
+                        <outlet property="miPosicionGeoTF" destination="1RD-ef-RNh" id="ZdQ-z5-rkf"/>
+                        <outlet property="miTelefonoLBL" destination="9i5-Wu-6uL" id="wlU-p9-Abb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fx-kg-j8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,6 +281,9 @@
                                 <state key="normal" title="Enviar mail con toda esta info">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="enviarTodaLaIformacionMailACTION:" destination="rII-rR-jZN" eventType="touchUpInside" id="ag6-2m-kIC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_mi Edad de mi perro es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsK-gw-Jsg">
                                 <rect key="frame" x="20" y="381" width="334" height="29"/>
@@ -307,6 +320,16 @@
                     <navigationItem key="navigationItem" title="Ventana 4" id="PAu-oh-iJn">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="vRb-ZU-lLw"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ciudadLBL" destination="VJS-L3-Bgu" id="gcn-wi-7Zx"/>
+                        <outlet property="codigoPostalLBL" destination="TYt-c2-J3h" id="ehI-iR-jqp"/>
+                        <outlet property="edadPerroLBL" destination="rsK-gw-Jsg" id="TQX-6k-ia1"/>
+                        <outlet property="miApellidoLBL" destination="BlI-Np-qmd" id="GFQ-aQ-3dU"/>
+                        <outlet property="miDireccionLBL" destination="RUP-lj-Y69" id="zzH-GJ-14o"/>
+                        <outlet property="miNombreLBL" destination="7VG-rR-mWX" id="5Ui-kG-qEl"/>
+                        <outlet property="miTelefonoLBL" destination="Rln-GT-Nvx" id="7K7-dx-nLP"/>
+                        <outlet property="posicionGeoLBLl" destination="FvS-9r-xPE" id="aQf-Ni-1F3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOY-0U-EMH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
