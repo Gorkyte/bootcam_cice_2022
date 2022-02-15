@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="309" id="KGk-i7-Jjw" customClass="PostCell" customModule="MiAppIntroduccionTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="309"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="309"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJ1-XQ-mfI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Miranda_Lambert" translatesAutoresizingMaskIntoConstraints="NO" id="9hh-a2-jhl">
+                                <rect key="frame" x="8" y="8" width="54" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Puesto de trabajo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoX-8T-WgH">
+                                <rect key="frame" x="86" y="28" width="144" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_fecha actual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAg-Hu-eSO">
+                                <rect key="frame" x="86" y="47" width="103" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iF9-Yw-TbU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="3CE-TB-pPd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfB-cw-EFd">
+                                <rect key="frame" x="86" y="8" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="iF9-Yw-TbU" firstAttribute="leading" secondItem="KJ1-XQ-mfI" secondAttribute="leading" id="9si-oe-sRG"/>
+                            <constraint firstAttribute="trailing" secondItem="iF9-Yw-TbU" secondAttribute="trailing" id="aAT-Xh-332"/>
+                            <constraint firstAttribute="height" constant="79" id="h1G-oy-VqW"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtf-ri-Ugt">
+                        <rect key="frame" x="0.0" y="252" width="320" height="57"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Titulo del post realizado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2M-Si-ZBA">
+                                <rect key="frame" x="11" y="7" width="162" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Número de likesss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-G5-vtp">
+                                <rect key="frame" x="5" y="32" width="127" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Número de comentarios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdQ-g5-ssl">
+                                <rect key="frame" x="151" y="32" width="164" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="57" id="Du1-gq-xQE"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_post" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZX-wj-xql">
+                        <rect key="frame" x="8" y="87" width="304" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marketing" translatesAutoresizingMaskIntoConstraints="NO" id="9oh-qk-7g2">
+                        <rect key="frame" x="0.0" y="139" width="320" height="113"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="113" id="ddP-ac-FGF"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Wtf-ri-Ugt" secondAttribute="trailing" id="0iA-rW-EdQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Wtf-ri-Ugt" secondAttribute="bottom" id="3A8-1B-th3"/>
+                    <constraint firstItem="KJ1-XQ-mfI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3Pa-bn-fTM"/>
+                    <constraint firstAttribute="trailing" secondItem="KZX-wj-xql" secondAttribute="trailing" constant="8" id="Dlp-5X-Zwv"/>
+                    <constraint firstItem="KZX-wj-xql" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HzK-qx-XwK"/>
+                    <constraint firstItem="9oh-qk-7g2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wj1-gQ-Ude"/>
+                    <constraint firstItem="KJ1-XQ-mfI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WwL-I1-BZM"/>
+                    <constraint firstItem="Wtf-ri-Ugt" firstAttribute="top" secondItem="9oh-qk-7g2" secondAttribute="bottom" id="aBM-hA-1VL"/>
+                    <constraint firstAttribute="trailing" secondItem="KJ1-XQ-mfI" secondAttribute="trailing" id="keO-Yl-8O8"/>
+                    <constraint firstAttribute="trailing" secondItem="9oh-qk-7g2" secondAttribute="trailing" id="qfk-q3-wue"/>
+                    <constraint firstItem="Wtf-ri-Ugt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tZD-j8-8BB"/>
+                    <constraint firstItem="KZX-wj-xql" firstAttribute="top" secondItem="KJ1-XQ-mfI" secondAttribute="bottom" constant="8" id="ysI-wF-lZ7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="miDescripcionPost" destination="KZX-wj-xql" id="RHz-VX-5Pu"/>
+                <outlet property="miFechaActualPost" destination="mAg-Hu-eSO" id="SLJ-yk-kRK"/>
+                <outlet property="miImagenPerfilPost" destination="9hh-a2-jhl" id="N2O-U7-YGJ"/>
+                <outlet property="miNombrePerfilPost" destination="UfB-cw-EFd" id="QCZ-0w-rZh"/>
+                <outlet property="miNumeroComentariosLBL" destination="PdQ-g5-ssl" id="zIN-hi-h7A"/>
+                <outlet property="miNumeroLikesLBL" destination="JFc-G5-vtp" id="eN2-7k-U3v"/>
+                <outlet property="miPuestoTrabajoPost" destination="zoX-8T-WgH" id="Jig-QI-5oA"/>
+                <outlet property="miTituloPostLBL" destination="m2M-Si-ZBA" id="z8j-al-uXY"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="176.45089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Miranda_Lambert" width="412" height="342"/>
+        <image name="marketing" width="586" height="312"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
