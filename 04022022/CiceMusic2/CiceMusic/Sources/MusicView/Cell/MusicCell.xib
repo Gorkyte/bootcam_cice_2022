@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="165" id="KGk-i7-Jjw" customClass="MusicCell" customModule="CiceMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d1L-gM-SVB">
+                        <rect key="frame" x="8" y="17.5" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="1ga-6m-dk8"/>
+                            <constraint firstAttribute="width" constant="130" id="9MZ-A5-03X"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Artist name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSc-U2-yQL">
+                        <rect key="frame" x="148" y="17.5" width="162" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Release date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hof-8I-uHZ">
+                        <rect key="frame" x="148" y="46" width="162" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Kind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7A-zN-bVE">
+                        <rect key="frame" x="148" y="75" width="162" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hof-8I-uHZ" firstAttribute="trailing" secondItem="rSc-U2-yQL" secondAttribute="trailing" id="9FP-xi-7sY"/>
+                    <constraint firstItem="hof-8I-uHZ" firstAttribute="leading" secondItem="rSc-U2-yQL" secondAttribute="leading" id="Aq3-tB-i8H"/>
+                    <constraint firstItem="hof-8I-uHZ" firstAttribute="top" secondItem="rSc-U2-yQL" secondAttribute="bottom" constant="8" id="PFA-Ig-poP"/>
+                    <constraint firstItem="rSc-U2-yQL" firstAttribute="leading" secondItem="d1L-gM-SVB" secondAttribute="trailing" constant="10" id="Q4V-kw-4hZ"/>
+                    <constraint firstItem="d1L-gM-SVB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="USB-JB-QBc"/>
+                    <constraint firstItem="rSc-U2-yQL" firstAttribute="top" secondItem="d1L-gM-SVB" secondAttribute="top" id="gn9-ky-tZC"/>
+                    <constraint firstItem="d1L-gM-SVB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="klD-kv-LOO"/>
+                    <constraint firstItem="D7A-zN-bVE" firstAttribute="top" secondItem="hof-8I-uHZ" secondAttribute="bottom" constant="8" id="npD-Vm-WXP"/>
+                    <constraint firstItem="D7A-zN-bVE" firstAttribute="leading" secondItem="hof-8I-uHZ" secondAttribute="leading" id="rew-av-It8"/>
+                    <constraint firstAttribute="trailing" secondItem="rSc-U2-yQL" secondAttribute="trailing" constant="10" id="v7i-4E-gw2"/>
+                    <constraint firstItem="D7A-zN-bVE" firstAttribute="trailing" secondItem="hof-8I-uHZ" secondAttribute="trailing" id="vVY-bH-bfi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistWorkImageView" destination="d1L-gM-SVB" id="V73-x2-bjp"/>
+                <outlet property="artistnameLBL" destination="rSc-U2-yQL" id="I7I-nF-dCr"/>
+                <outlet property="kindLBL" destination="D7A-zN-bVE" id="zZP-rs-QYc"/>
+                <outlet property="releaseDateLBL" destination="hof-8I-uHZ" id="Ij7-Cp-0Vi"/>
+            </connections>
+            <point key="canvasLocation" x="-52.173913043478265" y="19.084821428571427"/>
+        </tableViewCell>
+    </objects>
+</document>
