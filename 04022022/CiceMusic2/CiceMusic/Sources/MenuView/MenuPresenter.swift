@@ -48,10 +48,7 @@ protocol MenuInteractorOutputProtocol {
     func setDataFromInteractor(data: [MenuResponse])
 }
 
-
-
 final class MenuPresenter: BasePresenter<MenuPresenterOutputProtocol, MenuInteractorInputProtocol, MenuRouterInputProtocol> {
-  
     var dataSourceMenu: [MenuResponse] = []
 }
 
@@ -70,6 +67,7 @@ extension MenuPresenter: MenuPresenterInputProtocol {
     }
     
     func showWeSite() {
+        self.router?.showCustomAlert(delegate: self, model: CustomAlertManager(type: .generalConfirmation))
         
     }
     
@@ -86,7 +84,7 @@ extension MenuPresenter: MenuPresenterInputProtocol {
         if canSendMail {
             self.router?.canSendMail(delegate: delegate)
         }else {
-            self.router?.cantSendMail(model: CustomAlertManager(type: .cantSendMail))            
+            self.router?.showCustomAlert(delegate: nil, model: CustomAlertManager(type: .cantSendMail))
         }
         
     }
@@ -101,5 +99,14 @@ extension MenuPresenter: MenuInteractorOutputProtocol {
         self.dataSourceMenu.removeAll()
         self.dataSourceMenu = data
         self.viewController?.reloadInformationInView()
+    }
+}
+
+extension MenuPresenter: AlertDefaultViewControllerDelegate {
+    func primaryButtonPressed() {
+        self.router?.showGenericWebView()
+    }
+    func secondButtonPressed() {
+        //
     }
 }

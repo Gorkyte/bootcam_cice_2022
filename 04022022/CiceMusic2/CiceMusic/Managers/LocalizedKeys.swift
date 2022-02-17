@@ -15,15 +15,15 @@ struct LocalizedKeys {
         static let generalCancel = "general_cancel".localized
     }
     
+    
+    // LOGIN
     struct Login {
         static let tittleAlertLoginSuccess = "tittle_my_alert_login_success".localized
         static let messageAlertLoginSuccess = "message_my_alert_login_success".localized
         static let tittleAlertLoginFailure = "tittle_my_alert_login_failure".localized
         static let messageAlertLoginFailure = "message_my_alert_login_failure".localized
-        
-    }
+            }
     
-
 
     // MAIL
     struct Mail {
@@ -33,10 +33,17 @@ struct LocalizedKeys {
         static let messageAlertMailFailure = "message_my_alert_login_failure".localized
         
     }
+    
+    // CONFIRMATION
+    struct Confirmation {
+        static let tittleAlertConfirmation = "tittle_my_alert_login_success".localized
+        static let messageAlertConfirmation = "message_my_alert_login_success".localized
+
+        
+    }
 
 
-    // BUROFAX
- 
+  
 }
 
 extension String {

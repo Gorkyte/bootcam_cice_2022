@@ -56,6 +56,10 @@
 		0983760927BD717E00BE3EAB /* CustomAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983760827BD717E00BE3EAB /* CustomAlertManager.swift */; };
 		0983760D27BD72D500BE3EAB /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983760C27BD72D500BE3EAB /* LocalizedKeys.swift */; };
 		0983761127BE1A9800BE3EAB /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 0983761027BE1A9800BE3EAB /* PKHUD */; };
+		0983761727BEA30D00BE3EAB /* GenericWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983761527BEA30D00BE3EAB /* GenericWebViewController.swift */; };
+		0983761827BEA30D00BE3EAB /* GenericWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0983761627BEA30D00BE3EAB /* GenericWebViewController.xib */; };
+		0983761C27BEA52700BE3EAB /* GenericWebCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983761B27BEA52700BE3EAB /* GenericWebCoordinator.swift */; };
+		0983761F27BEA54F00BE3EAB /* GenericViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983761E27BEA54F00BE3EAB /* GenericViewPresenter.swift */; };
 		09B56BED27B6BAD900992F8F /* AppServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56BEC27B6BAD900992F8F /* AppServerModel.swift */; };
 		09B56BF227B90BAE00992F8F /* AppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56BF027B90BAE00992F8F /* AppsCell.swift */; };
 		09B56BF327B90BAE00992F8F /* AppsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B56BF127B90BAE00992F8F /* AppsCell.xib */; };
@@ -141,6 +145,10 @@
 		0983760327BD652900BE3EAB /* AlertDefaultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertDefaultViewController.xib; sourceTree = "<group>"; };
 		0983760827BD717E00BE3EAB /* CustomAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertManager.swift; sourceTree = "<group>"; };
 		0983760C27BD72D500BE3EAB /* LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeys.swift; sourceTree = "<group>"; };
+		0983761527BEA30D00BE3EAB /* GenericWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewController.swift; sourceTree = "<group>"; };
+		0983761627BEA30D00BE3EAB /* GenericWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericWebViewController.xib; sourceTree = "<group>"; };
+		0983761B27BEA52700BE3EAB /* GenericWebCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebCoordinator.swift; sourceTree = "<group>"; };
+		0983761E27BEA54F00BE3EAB /* GenericViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewPresenter.swift; sourceTree = "<group>"; };
 		09B56BEC27B6BAD900992F8F /* AppServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServerModel.swift; sourceTree = "<group>"; };
 		09B56BF027B90BAE00992F8F /* AppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCell.swift; sourceTree = "<group>"; };
 		09B56BF127B90BAE00992F8F /* AppsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppsCell.xib; sourceTree = "<group>"; };
@@ -245,6 +253,7 @@
 		09249F3F27B017C8006BA14D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0983761427BEA2E100BE3EAB /* WebView */,
 				09B56C9927BC61BF00992F8F /* Login */,
 				09B56BFB27B921AA00992F8F /* MenuView */,
 				09249FF427B63D69006BA14D /* AppleGenericDetail */,
@@ -426,6 +435,17 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		0983761427BEA2E100BE3EAB /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				0983761527BEA30D00BE3EAB /* GenericWebViewController.swift */,
+				0983761627BEA30D00BE3EAB /* GenericWebViewController.xib */,
+				0983761E27BEA54F00BE3EAB /* GenericViewPresenter.swift */,
+				0983761B27BEA52700BE3EAB /* GenericWebCoordinator.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		09B56BEF27B90B7300992F8F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +579,7 @@
 				09B56BF327B90BAE00992F8F /* AppsCell.xib in Resources */,
 				09B56C1A27BC408600992F8F /* MenuCell.xib in Resources */,
 				09B56C8E27BC587300992F8F /* BookViewController.xib in Resources */,
+				0983761827BEA30D00BE3EAB /* GenericWebViewController.xib in Resources */,
 				09B56C9627BC5D0C00992F8F /* AppleGenericDetailViewController.xib in Resources */,
 				09B56C6D27BC554000992F8F /* SplashViewController.xib in Resources */,
 				09B56C0327B9220900992F8F /* MenuViewController.xib in Resources */,
@@ -598,13 +619,16 @@
 				09B56C0827B9220900992F8F /* MenuPresenter.swift in Sources */,
 				09B56CA627BC61E000992F8F /* LoginPresenter.swift in Sources */,
 				09B56CA527BC61E000992F8F /* LoginCoordinator.swift in Sources */,
+				0983761C27BEA52700BE3EAB /* GenericWebCoordinator.swift in Sources */,
 				09249F5627B05010006BA14D /* NetworkService.swift in Sources */,
 				09249FCB27B37FFC006BA14D /* PodcastCoordinator.swift in Sources */,
 				09B56C9327BC5D0200992F8F /* AppleGenericDetailViewController.swift in Sources */,
+				0983761727BEA30D00BE3EAB /* GenericWebViewController.swift in Sources */,
 				09249FBA27B37FE7006BA14D /* BookProvider.swift in Sources */,
 				0983760927BD717E00BE3EAB /* CustomAlertManager.swift in Sources */,
 				09249FD127B38276006BA14D /* HomeTabBarViewController.swift in Sources */,
 				09249F4827B01866006BA14D /* SplashPresenter.swift in Sources */,
+				0983761F27BEA54F00BE3EAB /* GenericViewPresenter.swift in Sources */,
 				09249FB927B37FE7006BA14D /* BookRouter.swift in Sources */,
 				0924A00027B63D99006BA14D /* AppleGenericDetailCoordinator.swift in Sources */,
 				09249F9C27B37FA6006BA14D /* MusicCoordinator.swift in Sources */,

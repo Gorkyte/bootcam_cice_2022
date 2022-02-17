@@ -46,12 +46,25 @@ class SplashViewController: BaseView<SplashPresenterInputProtocol> {
 // Output del Presenter
 extension SplashViewController: SplashPresenterOutputProtocol{
     func launchAnimation() {
+        
+        
         self.viewAnimator = UIViewPropertyAnimator(duration: 1.0, curve: .easeInOut, animations: nil)
-        self.viewAnimator?.addAnimations {
-            self.customSplashImageView.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
-            self.unblockedGR = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.automaticHandler), userInfo: nil, repeats: false)
-        }
+      
+        DispatchQueue.main.async { // - Añadido por recomendación del profe -
+        
+            self.viewAnimator?.addAnimations {
+                self.customSplashImageView.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+                self.unblockedGR = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.automaticHandler), userInfo: nil, repeats: false)
+            }
+            
         self.viewAnimator?.startAnimation()
+            
+//          - Añadido por recomendación del profe:-
+//         he metido justo lo que le mensaje me indica, que aparentemente la modificaion de la vista debe hacerse en el Hilo principal,
+//         en el main Thread, asi que lo lo hago dentro de un DispacthQueue de manera asincrona, ya me dirás si se controla el KO vale?
+            
+        } // - Añadido por recomendación del profe -
+            
     }
     
 }
