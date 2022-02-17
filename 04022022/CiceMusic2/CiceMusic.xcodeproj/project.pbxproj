@@ -49,8 +49,12 @@
 		0924A00027B63D99006BA14D /* AppleGenericDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FF927B63D99006BA14D /* AppleGenericDetailCoordinator.swift */; };
 		0924A00127B63D99006BA14D /* AppleGenericDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FFA27B63D99006BA14D /* AppleGenericDetailPresenter.swift */; };
 		0924A00227B63D99006BA14D /* AppleGenericDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FFB27B63D99006BA14D /* AppleGenericDetailInteractor.swift */; };
-		098375E827BD5BA500BE3EAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 098375E727BD5BA500BE3EAB /* Localizable.strings */; };
 		098375F227BD5E1600BE3EAB /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098375F127BD5E1600BE3EAB /* BookViewController.swift */; };
+		098375F827BD627D00BE3EAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 098375FA27BD627D00BE3EAB /* Localizable.strings */; };
+		0983760427BD652900BE3EAB /* AlertDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983760227BD652900BE3EAB /* AlertDefaultViewController.swift */; };
+		0983760527BD652900BE3EAB /* AlertDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0983760327BD652900BE3EAB /* AlertDefaultViewController.xib */; };
+		0983760927BD717E00BE3EAB /* CustomAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983760827BD717E00BE3EAB /* CustomAlertManager.swift */; };
+		0983760D27BD72D500BE3EAB /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983760C27BD72D500BE3EAB /* LocalizedKeys.swift */; };
 		09B56BED27B6BAD900992F8F /* AppServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56BEC27B6BAD900992F8F /* AppServerModel.swift */; };
 		09B56BF227B90BAE00992F8F /* AppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56BF027B90BAE00992F8F /* AppsCell.swift */; };
 		09B56BF327B90BAE00992F8F /* AppsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B56BF127B90BAE00992F8F /* AppsCell.xib */; };
@@ -127,8 +131,15 @@
 		09249FF927B63D99006BA14D /* AppleGenericDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailCoordinator.swift; sourceTree = "<group>"; };
 		09249FFA27B63D99006BA14D /* AppleGenericDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailPresenter.swift; sourceTree = "<group>"; };
 		09249FFB27B63D99006BA14D /* AppleGenericDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailInteractor.swift; sourceTree = "<group>"; };
-		098375E727BD5BA500BE3EAB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		098375F127BD5E1600BE3EAB /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		098375F927BD627D00BE3EAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		098375FB27BD628200BE3EAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		098375FC27BD628400BE3EAB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		098375FD27BD628500BE3EAB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0983760227BD652900BE3EAB /* AlertDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDefaultViewController.swift; sourceTree = "<group>"; };
+		0983760327BD652900BE3EAB /* AlertDefaultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertDefaultViewController.xib; sourceTree = "<group>"; };
+		0983760827BD717E00BE3EAB /* CustomAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertManager.swift; sourceTree = "<group>"; };
+		0983760C27BD72D500BE3EAB /* LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeys.swift; sourceTree = "<group>"; };
 		09B56BEC27B6BAD900992F8F /* AppServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServerModel.swift; sourceTree = "<group>"; };
 		09B56BF027B90BAE00992F8F /* AppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCell.swift; sourceTree = "<group>"; };
 		09B56BF127B90BAE00992F8F /* AppsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppsCell.xib; sourceTree = "<group>"; };
@@ -194,6 +205,8 @@
 		09249F1D27AFE6AE006BA14D /* CiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				0983760727BD716A00BE3EAB /* Managers */,
+				098375FF27BD64F200BE3EAB /* CustomsAlerts */,
 				098375E627BD5B6100BE3EAB /* Localizables */,
 				09B56BF527B9126300992F8F /* MenuLateral */,
 				09249FE827B4F6A4006BA14D /* ViewModels */,
@@ -380,9 +393,35 @@
 		098375E627BD5B6100BE3EAB /* Localizables */ = {
 			isa = PBXGroup;
 			children = (
-				098375E727BD5BA500BE3EAB /* Localizable.strings */,
+				098375FA27BD627D00BE3EAB /* Localizable.strings */,
 			);
 			path = Localizables;
+			sourceTree = "<group>";
+		};
+		098375FF27BD64F200BE3EAB /* CustomsAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				0983760027BD650700BE3EAB /* AlertDefault */,
+			);
+			path = CustomsAlerts;
+			sourceTree = "<group>";
+		};
+		0983760027BD650700BE3EAB /* AlertDefault */ = {
+			isa = PBXGroup;
+			children = (
+				0983760227BD652900BE3EAB /* AlertDefaultViewController.swift */,
+				0983760327BD652900BE3EAB /* AlertDefaultViewController.xib */,
+			);
+			path = AlertDefault;
+			sourceTree = "<group>";
+		};
+		0983760727BD716A00BE3EAB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0983760827BD717E00BE3EAB /* CustomAlertManager.swift */,
+				0983760C27BD72D500BE3EAB /* LocalizedKeys.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		09B56BEF27B90B7300992F8F /* Cell */ = {
@@ -487,6 +526,9 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				es,
+				de,
 			);
 			mainGroup = 09249F1227AFE6AE006BA14D;
 			packageReferences = (
@@ -509,7 +551,7 @@
 				09B56C7527BC557E00992F8F /* MusicViewController.xib in Resources */,
 				09249F2B27AFE6B0006BA14D /* LaunchScreen.storyboard in Resources */,
 				09249F2827AFE6B0006BA14D /* Assets.xcassets in Resources */,
-				098375E827BD5BA500BE3EAB /* Localizable.strings in Resources */,
+				098375F827BD627D00BE3EAB /* Localizable.strings in Resources */,
 				09B56BF327B90BAE00992F8F /* AppsCell.xib in Resources */,
 				09B56C1A27BC408600992F8F /* MenuCell.xib in Resources */,
 				09B56C8E27BC587300992F8F /* BookViewController.xib in Resources */,
@@ -520,6 +562,7 @@
 				09249FD227B38276006BA14D /* HomeTabBarViewController.xib in Resources */,
 				09249FDE27B444C5006BA14D /* MusicCell.xib in Resources */,
 				09B56C8627BC569F00992F8F /* PodcastViewController.xib in Resources */,
+				0983760527BD652900BE3EAB /* AlertDefaultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +598,7 @@
 				09249FCB27B37FFC006BA14D /* PodcastCoordinator.swift in Sources */,
 				09B56C9327BC5D0200992F8F /* AppleGenericDetailViewController.swift in Sources */,
 				09249FBA27B37FE7006BA14D /* BookProvider.swift in Sources */,
+				0983760927BD717E00BE3EAB /* CustomAlertManager.swift in Sources */,
 				09249FD127B38276006BA14D /* HomeTabBarViewController.swift in Sources */,
 				09249F4827B01866006BA14D /* SplashPresenter.swift in Sources */,
 				09249FB927B37FE7006BA14D /* BookRouter.swift in Sources */,
@@ -570,12 +614,14 @@
 				09249F9E27B37FA6006BA14D /* MusicInteractor.swift in Sources */,
 				09249FCA27B37FFC006BA14D /* PodcastProvider.swift in Sources */,
 				09249F9B27B37FA6006BA14D /* MusicProvider.swift in Sources */,
+				0983760D27BD72D500BE3EAB /* LocalizedKeys.swift in Sources */,
 				09249F3D27B01536006BA14D /* BaseVIPER.swift in Sources */,
 				09249F5D27B051AA006BA14D /* Utils.swift in Sources */,
 				09B56BF927B912B100992F8F /* SWRevealViewController .m in Sources */,
 				09249F9D27B37FA6006BA14D /* MusicPresenter.swift in Sources */,
 				09249F3827AFE810006BA14D /* AppCoreCoordinator.swift in Sources */,
 				09B56CA427BC61E000992F8F /* LoginProvider.swift in Sources */,
+				0983760427BD652900BE3EAB /* AlertDefaultViewController.swift in Sources */,
 				09249FDD27B444C5006BA14D /* MusicCell.swift in Sources */,
 				09B56C6A27BC553500992F8F /* SplashViewController.swift in Sources */,
 				09249FBC27B37FE7006BA14D /* BookPresenter.swift in Sources */,
@@ -601,6 +647,17 @@
 				09249F2A27AFE6B0006BA14D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		098375FA27BD627D00BE3EAB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				098375F927BD627D00BE3EAB /* en */,
+				098375FB27BD628200BE3EAB /* fr */,
+				098375FC27BD628400BE3EAB /* de */,
+				098375FD27BD628500BE3EAB /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

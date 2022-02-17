@@ -29,6 +29,7 @@ import UIKit
 // Input del Router
 protocol LoginRouterInputProtocol {
     func showHomeTabBar(data:[MenuResponse])
+    func showCustomAlert (delegate: AlertDefaultViewControllerDelegate, model: CustomAlertManager)
 
 }
 
@@ -51,5 +52,19 @@ extension LoginRouter: LoginRouterInputProtocol{
         }
         
     }
+    
+    func showCustomAlert (delegate: AlertDefaultViewControllerDelegate, model:CustomAlertManager){
+        DispatchQueue.main.async {
+            let vc = AlertDefaultViewController()
+            vc.delegate = delegate
+            vc.alertManager = model
+            vc.modalPresentationStyle = .overFullScreen
+            vc.modalTransitionStyle = .crossDissolve
+            self.viewController?.present(vc,animated: true, completion: nil)
+        }
+    }
+    
+
+    
     
 }

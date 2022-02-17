@@ -27,7 +27,9 @@ import Foundation
 
 // Input del Presenter
 protocol LoginPresenterInputProtocol {
-    func showHomeTabBar()
+
+    func showCustomAletFailure()
+    func showCUstomAlertSuccess()
 }
 
 //Output del Interactor
@@ -44,13 +46,34 @@ final class LoginPresenter: BasePresenter<LoginPresenterOutputProtocol, LoginInt
 
 // Input del Presenter
 extension LoginPresenter: LoginPresenterInputProtocol {
-    func showHomeTabBar(){
-        guard let menuResponseUnw = self.dataModel?.dataModel else {return}
-        self.router?.showHomeTabBar(data: menuResponseUnw)
+
+    func showCustomAletFailure() {
+        self.router?.showCustomAlert (delegate: self, model: CustomAlertManager.init(type: .failureLogin))
+        
     }
+    func showCUstomAlertSuccess() {
+        self.router?.showCustomAlert (delegate: self, model: CustomAlertManager.init(type: .successLogin))
+    }
+    
 }
+
 
 //Output del Interactor
 extension LoginPresenter: LoginInteractorOutputProtocol {
+    
+}
+
+extension LoginPresenter: AlertDefaultViewControllerDelegate {
+    func primaryButtonPressed() {
+        guard let menuResponseUnw = self.dataModel?.dataModel else {return}
+        self.router?.showHomeTabBar(data: menuResponseUnw)
+    }
+    
+    func secondButtonPressed() {
+        //
+    }
+    
+    
+  
     
 }

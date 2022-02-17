@@ -56,12 +56,8 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
             self.configuracionUI(color: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1))
             
         } else {
-//            self.present (Utils.muestraAlerta(titulo: "hey",
-//                                               mensaje: "Rellename el username y el password",
-//                                               completionHandler: nil),
-//                          animated: true,
-//                          completion: nil)
-            }
+            self.presenter?.showCustomAletFailure()
+       }
        
     }
     
@@ -69,19 +65,11 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
         if datosCompletados() {
             self.borrarDatosFormulario()
         } else {
-//            self.present (Utils.muestraAlerta(titulo: "hey",
-//                                               mensaje: "Rellename el username y el password",
-//                                               completionHandler: nil),
-//                          animated: true,
-//                          completion: nil)
+            self.presenter?.showCustomAletFailure()
         }
         
     }
-    
-    
-    
-    
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configuracionUI(color: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1))
@@ -117,7 +105,8 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
     }
     
     private func mostrarHometabBar() {
-        self.presenter?.showHomeTabBar()
+        self.presenter?.showCUstomAlertSuccess()
+        //self.presenter?.showHomeTabBar()
 
          
     }
