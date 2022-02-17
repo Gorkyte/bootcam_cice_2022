@@ -30,8 +30,12 @@ class AlertDefaultViewController: UIViewController {
     
     @IBOutlet weak var constHeightButtonClose: NSLayoutConstraint!
     @IBOutlet weak var constHeightCancelButton: NSLayoutConstraint!
+    @IBOutlet weak var constHeightAceptButton: NSLayoutConstraint!
+    
     
     @IBOutlet weak var backgroundContentView: UIView!
+    @IBOutlet weak var alertContentView: UIView!
+    
     
     
     
@@ -68,6 +72,9 @@ class AlertDefaultViewController: UIViewController {
     private func configuracionUI() {
         
         self.backgroundContentView.alpha = 0.5
+        self.primaryBTN.layer.cornerRadius = 25
+        self.secondaryBTN.layer.cornerRadius = 25
+        self.alertContentView.layer.cornerRadius = 10
         
         switch alertManager?.type{
         case .successLogin:
@@ -82,6 +89,7 @@ class AlertDefaultViewController: UIViewController {
             self.tittleAlertLBL.text = alertManager?.failureLoginTittle
             self.messageAlertLBL.text = alertManager?.failureLoginMessage
             self.primaryBTN.isHidden = true
+            self.constHeightAceptButton.constant=0
             self.secondaryBTN.setTitle(alertManager?.secondButton, for: .normal)
         default:
             self.tittleAlertLBL.text = "AQUI GORKA"

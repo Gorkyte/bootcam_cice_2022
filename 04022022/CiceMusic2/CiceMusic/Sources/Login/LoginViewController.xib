@@ -33,7 +33,7 @@
                                 <constraint firstAttribute="height" constant="34" id="S6r-il-48y"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zNJ-Xa-EzF">
                             <rect key="frame" x="19" y="17.5" width="31" height="38"/>
@@ -50,13 +50,28 @@
                                 <constraint firstAttribute="height" constant="1" id="ea2-nm-q9t"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTK-hD-4KS">
+                            <rect key="frame" x="312" y="17" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="bgD-ha-8dZ"/>
+                                <constraint firstAttribute="height" constant="40" id="oEQ-HH-oki"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button" image="eye" catalog="system"/>
+                            <connections>
+                                <action selector="showOrNotPassword:" destination="-1" eventType="touchUpInside" id="rUZ-zU-HMT"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemYellowColor"/>
                     <constraints>
                         <constraint firstItem="M7t-eu-Emh" firstAttribute="leading" secondItem="zNJ-Xa-EzF" secondAttribute="trailing" constant="15" id="0pJ-At-8MB"/>
                         <constraint firstItem="zNJ-Xa-EzF" firstAttribute="top" secondItem="WM0-rq-fyr" secondAttribute="top" constant="17" id="1HX-Nv-Mtm"/>
                         <constraint firstItem="M7t-eu-Emh" firstAttribute="top" secondItem="zNJ-Xa-EzF" secondAttribute="top" id="35n-ke-vLg"/>
+                        <constraint firstItem="KTK-hD-4KS" firstAttribute="centerY" secondItem="WM0-rq-fyr" secondAttribute="centerY" id="88c-PW-f4I"/>
+                        <constraint firstItem="KTK-hD-4KS" firstAttribute="leading" secondItem="M7t-eu-Emh" secondAttribute="trailing" constant="-40" id="9Nd-fn-MWk"/>
                         <constraint firstItem="zNJ-Xa-EzF" firstAttribute="leading" secondItem="WM0-rq-fyr" secondAttribute="leading" constant="19" id="Odl-Wx-40B"/>
+                        <constraint firstItem="KTK-hD-4KS" firstAttribute="trailing" secondItem="rx1-N0-mun" secondAttribute="trailing" id="SuG-Ld-0Yo"/>
                         <constraint firstAttribute="trailing" secondItem="M7t-eu-Emh" secondAttribute="trailing" constant="22" id="TIJ-Jh-9cm"/>
                         <constraint firstItem="rx1-N0-mun" firstAttribute="leading" secondItem="M7t-eu-Emh" secondAttribute="leading" id="Vmk-tK-XoH"/>
                         <constraint firstItem="rx1-N0-mun" firstAttribute="trailing" secondItem="M7t-eu-Emh" secondAttribute="trailing" id="cSa-YK-dKl"/>
@@ -164,6 +179,7 @@
         </view>
     </objects>
     <resources>
+        <image name="eye" catalog="system" width="128" height="81"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.23100000619888306" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

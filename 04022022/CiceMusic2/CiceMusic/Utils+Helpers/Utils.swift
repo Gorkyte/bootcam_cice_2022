@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import MessageUI
 
 
 enum HTTPMethods: String {
@@ -66,10 +67,10 @@ struct URLEnpoint {
     //static let baseUrl = "https://rss.applemarketingtools.com/api/v2/%@/"
     //static let baseUrl = "https://rss.applemarketingtools.com/api/v2/es/"
     
-    //static let music = "%@/music/most-played/%@/songs.json"
-    //static let podcast = "%@/podcasts/top/%@/podcast-episodes.json"
-    //static let books = "%@/books/top-free/%@/books.json"
-   // static let apps = "%@/apps/top-free/%@/apps.json"
+//    static let music = "%@/music/most-played/%@/songs.json"
+//    static let podcast = "%@/podcasts/top/%@/podcast-episodes.json"
+//    static let books = "%@/books/top-free/%@/books.json"
+//    static let apps = "%@/apps/top-free/%@/apps.json"
     static let music = "es/music/most-played/%@/songs.json"
     static let podcast = "es/podcasts/top/%@/podcast-episodes.json"
     static let books = "es/books/top-free/%@/books.json"
@@ -133,6 +134,19 @@ class Utils {
         alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         return alertVC
     }
+    
+    static func configuracionMailCompose(delegate: MFMailComposeViewControllerDelegate, data: [String] ) ->  MFMailComposeViewController {
+            let mailCompo = MFMailComposeViewController()
+            mailCompo.mailComposeDelegate = delegate
+            mailCompo.setToRecipients(["info@mail.com", "masinfo@mail.es"])
+            mailCompo.setSubject("ese es un mensaje para el equpo de soporte")
+            let emailBody = "Los datos del formulario de registro son \(data)"
+            mailCompo.setMessageBody(emailBody, isHTML: false)
+            return mailCompo
+    }
+    
+    
+    
      
 }
 

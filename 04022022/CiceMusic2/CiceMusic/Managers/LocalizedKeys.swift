@@ -25,8 +25,14 @@ struct LocalizedKeys {
     
 
 
-    // REGISTRO
-
+    // MAIL
+    struct Mail {
+        static let tittleAlertMailSuccess = "tittle_my_alert_login_success".localized
+        static let messageAlertMailSuccess = "message_my_alert_login_success".localized
+        static let tittleAlertMailFailure = "tittle_my_alert_login_failure".localized
+        static let messageAlertMailFailure = "message_my_alert_login_failure".localized
+        
+    }
 
 
     // BUROFAX

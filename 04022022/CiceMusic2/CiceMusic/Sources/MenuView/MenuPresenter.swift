@@ -24,6 +24,8 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import MessageUI
+
 
 // Input del Presenter
 protocol MenuPresenterInputProtocol {
@@ -31,7 +33,15 @@ protocol MenuPresenterInputProtocol {
     func nomberOfRows() -> Int
     func informationForRow(indexPath: Int) -> MenuResponse
     
+    func showWeSite()
+    func showMusicViewController()
+    func showCalendarViewController()
+    func showTipsViewController()
+    
+    func sendMail(canSendMail: Bool, delegate: MFMailComposeViewControllerDelegate)
+    
 }
+
 
 //Output del Interactor
 protocol MenuInteractorOutputProtocol {
@@ -58,6 +68,30 @@ extension MenuPresenter: MenuPresenterInputProtocol {
     func informationForRow(indexPath: Int) -> MenuResponse {
         return self.dataSourceMenu[indexPath]
     }
+    
+    func showWeSite() {
+        
+    }
+    
+    func showMusicViewController() {
+        
+    }
+    func showCalendarViewController(){
+        
+    }
+    func showTipsViewController(){
+        
+    }
+    func sendMail(canSendMail: Bool, delegate: MFMailComposeViewControllerDelegate){
+        if canSendMail {
+            self.router?.canSendMail(delegate: delegate)
+        }else {
+            self.router?.cantSendMail(model: CustomAlertManager(type: .cantSendMail))            
+        }
+        
+    }
+    
+    
     
 }
 
