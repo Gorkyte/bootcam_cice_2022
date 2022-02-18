@@ -25,28 +25,50 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-// Input Protocol
-protocol MenuProviderInputProtocol {
-    
-    
+// Input del Presenter
+protocol TipsTrainingPresenterInputProtocol {
+    func fetchDataFromWebService()
+    func numberOfRows() -> Int
+    func informationDataIndexPath(indePath: Int) -> ConsejosGenerale
 }
 
-final class MenuProvider: MenuProviderInputProtocol{
-    
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
+//Output del Interactor
+protocol TipsTrainingInteractorOutputProtocol {
+    func getTipsFormHeroku(data: [ConsejosGenerale]?)
 }
 
 
 
-struct MenuRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.menu, arguments: argument)
-        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete, urlContext: .heroku)
-        return request
+final class TipsTrainingPresenter: BasePresenter<TipsTrainingPresenterOutputProtocol, TipsTrainingInteractorInputProtocol, TipsTrainingRouterInputProtocol> {
+  
+    var datasourceTips: [ConsejosGenerale] = []
+}
+
+
+// Input del Presenter
+extension TipsTrainingPresenter: TipsTrainingPresenterInputProtocol {
+    func fetchDataFromWebService(){
+        self.interactor?.fetchDataFromWebServiceInteractor()
         
     }
+    func numberOfRows() -> Int {
+        return self.datasourceTips.count
+    }
+    func informationDataIndexPath(indePath: Int) -> ConsejosGenerale {
+        return self.datasourceTips[indePath]
+    }
+
+}
+
+//Output del Interactor
+extension TipsTrainingPresenter: TipsTrainingInteractorOutputProtocol {
+    
+    func getTipsFormHeroku(data:[ConsejosGenerale]?){
+        self.datasourceTips.removeAll()
+        guard let dataUnw = data else {return}
+        self.datasourceTips = dataUnw
+        self.viewController?.reloadInformationInView()
+    }
+    
     
 }

@@ -1,5 +1,6 @@
 /*
 
+
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -25,28 +26,28 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-// Input Protocol
-protocol MenuProviderInputProtocol {
+// Input del Interactor
+protocol TipsTrainingInteractorInputProtocol {
+    func fetchDataFromWebServiceInteractor()
+}
+
+final class TipsTrainingInteractor: BaseInteractor<TipsTrainingInteractorOutputProtocol> {
+    
+
+    let provider: TipsTrainingProviderInputProtocol = TipsTrainingProvider()
     
     
 }
-
-final class MenuProvider: MenuProviderInputProtocol{
-    
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-}
-
-
-
-struct MenuRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.menu, arguments: argument)
-        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete, urlContext: .heroku)
-        return request
-        
+// Input del Interactor
+extension TipsTrainingInteractor: TipsTrainingInteractorInputProtocol {
+    func fetchDataFromWebServiceInteractor() {
+        self.provider.fetchDataFromWebServiceProvider { [weak self] result in
+            switch result {
+            case .success(let model):
+                self?.presenter?.getTipsFormHeroku(data: model.icoResponseConsejos?.consejosGenerales)
+            case .failure(let error):
+                debugPrint(error)
+            }
+        }
     }
-    
 }

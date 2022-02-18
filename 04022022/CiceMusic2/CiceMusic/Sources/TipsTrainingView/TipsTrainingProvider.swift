@@ -26,25 +26,37 @@ POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 
 // Input Protocol
-protocol MenuProviderInputProtocol {
-    
+protocol TipsTrainingProviderInputProtocol {
+    func fetchDataFromWebServiceProvider(completioHadler: @escaping (Result< TipsServerModel, NetworkError>) -> Void)
     
 }
 
-final class MenuProvider: MenuProviderInputProtocol{
+final class TipsTrainingProvider: TipsTrainingProviderInputProtocol{
     
     let networkService: NetworkServiceProtocol = NetworkService()
     
+    func fetchDataFromWebServiceProvider(completioHadler: @escaping (Result<TipsServerModel, NetworkError>) -> Void) {
+        self.networkService.requestGeneric(requestPayload: TipsTrainingRequestDTO.requestData(),
+                                           entityClass: TipsServerModel.self) {[weak self] result in
+            guard self != nil else {return}
+            guard let resultUnw = result else {return}
+            completioHadler(.success(resultUnw))
+        } failure: { [weak self] error in
+            guard self != nil else {return}
+            completioHadler(.failure(error))
+        }
+
+    }
+    
 }
 
 
 
-struct MenuRequestDTO {
+struct TipsTrainingRequestDTO {
     
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.menu, arguments: argument)
-        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete, urlContext: .heroku)
+    static func requestData() -> RequestDTO {
+
+        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: URLEnpoint.tipsTraining, urlContext: .heroku)
         return request
         
     }

@@ -7,80 +7,176 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CB4C4DAA-C16E-4EEE-BEC5-363A41080981"
+            uuid = "F9A74A05-85F3-4CE3-9DB8-804D877FCB6E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CiceMusic/Sources/WebView/GenericWebViewController.swift"
+            filePath = "CiceMusic/Sources/MenuView/MenuRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "webView(_:decidePolicyFor:decisionHandler:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "canSendMail(delegate:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1EC47356-B781-4687-9A13-1BC1F41A1AF1"
+            uuid = "93AC07E6-ABFF-4165-BF43-01671D3FC15A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CiceMusic/Sources/WebView/GenericWebViewController.swift"
+            filePath = "CiceMusic/CoreApp/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "webView(_:decidePolicyFor:decisionHandler:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "application(_:supportedInterfaceOrientationsFor:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F89A1B8B-7660-44D3-8FA7-2DB444E84F83"
+            uuid = "299FB651-9715-4131-AC64-4B55B22C877D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CiceMusic/Sources/WebView/GenericWebViewController.swift"
+            filePath = "CiceMusic/CoreApp/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "webView(_:didFail:withError:)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "application(_:supportedInterfaceOrientationsFor:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6B32ADD6-79EC-4AE4-96BA-DD73E1ED6F87"
+            uuid = "EFECF413-7BA9-49A0-BED6-3D0D7D18D1EA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CiceMusic/Sources/WebView/GenericWebViewController.swift"
+            filePath = "CiceMusic/CoreApp/AppCoreCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "webView(_:didStartProvisionalNavigation:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "application(application:window:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6DE35A58-1313-4E75-B07B-F9D63C2C9CF4"
+            uuid = "97556EF7-6F41-4ED5-A2A1-593622928A09"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CiceMusic/Sources/WebView/GenericWebViewController.swift"
+            filePath = "CiceMusic/Sources/TipsTrainingView/TipsTrainingInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "webView(_:didFinish:)"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchDataFromWebServiceInteractor()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "97556EF7-6F41-4ED5-A2A1-593622928A09 - e976953bda444d83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CiceMusic.TipsTrainingPresenter.fetchDataFromWebService() -&gt; ()"
+                  moduleName = "CiceMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CICE/Desktop/Cice2022/04022022/CiceMusic2/CiceMusic/Sources/TipsTrainingView/TipsTrainingInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  uuid = "97556EF7-6F41-4ED5-A2A1-593622928A09 - 4e48c133bf26a3da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CiceMusic.TipsServerModel, CiceMusic.NetworkError&gt;) -&gt; () in CiceMusic.TipsTrainingInteractor.fetchDataFromWebServiceInteractor() -&gt; ()"
+                  moduleName = "CiceMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CICE/Desktop/Cice2022/04022022/CiceMusic2/CiceMusic/Sources/TipsTrainingView/TipsTrainingInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "871D8817-6ACB-46DF-84A8-58CA79BE3418"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceMusic/Sources/TipsTrainingView/TipsTrainingProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchDataFromWebServiceProvider(completioHadler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FBAB5C5-A40E-4CED-B04F-1956981B1230"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceMusic/Sources/TipsTrainingView/TipsTrainingProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "requestData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA6FFCE9-3A8A-44B6-99D7-9296061D3DD8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceMusic/Sources/TipsTrainingView/TipsTrainingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "116E9E4D-23BD-495D-97C1-236CFEFC88CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceMusic/Sources/TipsTrainingView/TipsTrainingPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "fetchDataFromWebService()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

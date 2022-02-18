@@ -5,7 +5,7 @@
 
 // LOGIN
 "tittle_my_alert_login_success" = "Congrats!";
-"message_my_alert_login_sueccess" = "Now you will have access to potal iTunes of music, podcast and books";
+"message_my_alert_login_success" = "Now you will have access to potal iTunes of music, podcast and books";
 "tittle_my_alert_login_failure" = "Something went wrong";
 "message_my_alert_login_failure" = "You must complete all fields, username and password";
 

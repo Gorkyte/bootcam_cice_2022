@@ -24,29 +24,19 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import UIKit
 
-// Input Protocol
-protocol MenuProviderInputProtocol {
-    
-    
+// Input del Router
+protocol TipsTrainingRouterInputProtocol {
+
 }
 
-final class MenuProvider: MenuProviderInputProtocol{
+final class TipsTrainingRouter: BaseRouter<TipsTrainingViewController> {
     
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
+   
 }
 
-
-
-struct MenuRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.menu, arguments: argument)
-        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete, urlContext: .heroku)
-        return request
-        
-    }
+// Input del Router
+extension TipsTrainingRouter: TipsTrainingRouterInputProtocol{
     
 }

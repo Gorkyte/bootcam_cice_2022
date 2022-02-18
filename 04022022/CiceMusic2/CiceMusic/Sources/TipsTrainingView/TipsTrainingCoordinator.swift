@@ -25,28 +25,39 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-// Input Protocol
-protocol MenuProviderInputProtocol {
-    
-    
-}
 
-final class MenuProvider: MenuProviderInputProtocol{
-    
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-}
+final class TipsTrainingCoordinator {
 
-
-
-struct MenuRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.menu, arguments: argument)
-        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete, urlContext: .heroku)
-        return request
-        
+    static func navigation(dto: TipsTrainingCoordinatorDTO? = nil) -> BaseNavigation {
+        BaseNavigation(rootViewController: view())
     }
+    
+    static func view (dto: TipsTrainingCoordinatorDTO? = nil) -> TipsTrainingViewController & TipsTrainingPresenterOutputProtocol {
+        let vc = TipsTrainingViewController()
+        vc.presenter = presenter(vc: vc)
+        return vc
+    }
+    
+    static func presenter(vc: TipsTrainingViewController) -> TipsTrainingPresenterInputProtocol & TipsTrainingInteractorOutputProtocol {
+    let presenter = TipsTrainingPresenter(vc: vc)
+    presenter.interactor = interactor(presenter: presenter)
+    presenter.router = router(vc: vc)
+    return presenter
+    }
+
+    static func interactor (presenter: TipsTrainingPresenter) -> TipsTrainingInteractorInputProtocol {
+        let interactor = TipsTrainingInteractor(presenter: presenter)
+        return interactor
+    }
+    
+    static func router (vc: TipsTrainingViewController) -> TipsTrainingRouterInputProtocol {
+        let router = TipsTrainingRouter(view: vc)
+        return router
+    }
+    
+    
+}
+
+struct TipsTrainingCoordinatorDTO {
     
 }

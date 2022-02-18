@@ -10,11 +10,18 @@ import UIKit
 protocol AppCoreCoordinatorProtocol {
     func initialViewController (window: UIWindow)
     func createSlidingMenu(window: UIWindow, vc: UIViewController, menuDto: [MenuResponse])
+    //func application(application: UIApplication, window: UIWindow?) -> UIInterfaceOrientationMask
+    
+    var canRotate: Bool? { get set}
+    var orientationEnable: UIInterfaceOrientationMask? {get}
 }
 
 
 final class AppCoreCoordinator {
     var actualVC = UIViewController()
+    
+    var canRotate: Bool?
+    var orientationEnable: UIInterfaceOrientationMask?
     
 }
 
@@ -34,5 +41,16 @@ extension AppCoreCoordinator: AppCoreCoordinatorProtocol {
         window.rootViewController = swRevealVC
         window.makeKeyAndVisible()
     }
+    
+    func application(application: UIApplication, window: UIWindow?) -> UIInterfaceOrientationMask  {
+        
+        if canRotate ?? false {
+            return .all
+        }else {
+            return orientationEnable ?? .portrait
+        }
+    }
+    
+    
     
 }

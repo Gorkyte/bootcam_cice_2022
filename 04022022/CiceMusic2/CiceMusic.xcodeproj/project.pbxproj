@@ -60,6 +60,16 @@
 		0983761827BEA30D00BE3EAB /* GenericWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0983761627BEA30D00BE3EAB /* GenericWebViewController.xib */; };
 		0983761C27BEA52700BE3EAB /* GenericWebCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983761B27BEA52700BE3EAB /* GenericWebCoordinator.swift */; };
 		0983761F27BEA54F00BE3EAB /* GenericViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983761E27BEA54F00BE3EAB /* GenericViewPresenter.swift */; };
+		0983763E27BF812500BE3EAB /* TipsTrainingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0983763727BF812500BE3EAB /* TipsTrainingViewController.xib */; };
+		0983763F27BF812500BE3EAB /* TipsTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983763827BF812500BE3EAB /* TipsTrainingViewController.swift */; };
+		0983764027BF812500BE3EAB /* TipsTrainingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983763927BF812500BE3EAB /* TipsTrainingRouter.swift */; };
+		0983764127BF812500BE3EAB /* TipsTrainingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983763A27BF812500BE3EAB /* TipsTrainingProvider.swift */; };
+		0983764227BF812500BE3EAB /* TipsTrainingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983763B27BF812500BE3EAB /* TipsTrainingCoordinator.swift */; };
+		0983764327BF812500BE3EAB /* TipsTrainingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983763C27BF812500BE3EAB /* TipsTrainingPresenter.swift */; };
+		0983764427BF812500BE3EAB /* TipsTrainingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983763D27BF812500BE3EAB /* TipsTrainingInteractor.swift */; };
+		0983764827BF876200BE3EAB /* TipsServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983764727BF876200BE3EAB /* TipsServerModel.swift */; };
+		0983765827BFE87E00BE3EAB /* TipsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983765627BFE87E00BE3EAB /* TipsCell.swift */; };
+		0983765927BFE87E00BE3EAB /* TipsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0983765727BFE87E00BE3EAB /* TipsCell.xib */; };
 		09B56BED27B6BAD900992F8F /* AppServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56BEC27B6BAD900992F8F /* AppServerModel.swift */; };
 		09B56BF227B90BAE00992F8F /* AppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56BF027B90BAE00992F8F /* AppsCell.swift */; };
 		09B56BF327B90BAE00992F8F /* AppsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B56BF127B90BAE00992F8F /* AppsCell.xib */; };
@@ -149,6 +159,16 @@
 		0983761627BEA30D00BE3EAB /* GenericWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericWebViewController.xib; sourceTree = "<group>"; };
 		0983761B27BEA52700BE3EAB /* GenericWebCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebCoordinator.swift; sourceTree = "<group>"; };
 		0983761E27BEA54F00BE3EAB /* GenericViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewPresenter.swift; sourceTree = "<group>"; };
+		0983763727BF812500BE3EAB /* TipsTrainingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsTrainingViewController.xib; sourceTree = "<group>"; };
+		0983763827BF812500BE3EAB /* TipsTrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTrainingViewController.swift; sourceTree = "<group>"; };
+		0983763927BF812500BE3EAB /* TipsTrainingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTrainingRouter.swift; sourceTree = "<group>"; };
+		0983763A27BF812500BE3EAB /* TipsTrainingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTrainingProvider.swift; sourceTree = "<group>"; };
+		0983763B27BF812500BE3EAB /* TipsTrainingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTrainingCoordinator.swift; sourceTree = "<group>"; };
+		0983763C27BF812500BE3EAB /* TipsTrainingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTrainingPresenter.swift; sourceTree = "<group>"; };
+		0983763D27BF812500BE3EAB /* TipsTrainingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTrainingInteractor.swift; sourceTree = "<group>"; };
+		0983764727BF876200BE3EAB /* TipsServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsServerModel.swift; sourceTree = "<group>"; };
+		0983765627BFE87E00BE3EAB /* TipsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCell.swift; sourceTree = "<group>"; };
+		0983765727BFE87E00BE3EAB /* TipsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsCell.xib; sourceTree = "<group>"; };
 		09B56BEC27B6BAD900992F8F /* AppServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServerModel.swift; sourceTree = "<group>"; };
 		09B56BF027B90BAE00992F8F /* AppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCell.swift; sourceTree = "<group>"; };
 		09B56BF127B90BAE00992F8F /* AppsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppsCell.xib; sourceTree = "<group>"; };
@@ -253,6 +273,7 @@
 		09249F3F27B017C8006BA14D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0983763627BF810B00BE3EAB /* TipsTrainingView */,
 				0983761427BEA2E100BE3EAB /* WebView */,
 				09B56C9927BC61BF00992F8F /* Login */,
 				09B56BFB27B921AA00992F8F /* MenuView */,
@@ -304,6 +325,7 @@
 				09249FE527B4F214006BA14D /* PodcastServerModel.swift */,
 				09B56BEC27B6BAD900992F8F /* AppServerModel.swift */,
 				09B56C1327BB782500992F8F /* MenuServerModel.swift */,
+				0983764727BF876200BE3EAB /* TipsServerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -446,6 +468,30 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
+		0983763627BF810B00BE3EAB /* TipsTrainingView */ = {
+			isa = PBXGroup;
+			children = (
+				0983764A27BFE80F00BE3EAB /* Cell */,
+				0983763727BF812500BE3EAB /* TipsTrainingViewController.xib */,
+				0983763827BF812500BE3EAB /* TipsTrainingViewController.swift */,
+				0983763927BF812500BE3EAB /* TipsTrainingRouter.swift */,
+				0983763A27BF812500BE3EAB /* TipsTrainingProvider.swift */,
+				0983763B27BF812500BE3EAB /* TipsTrainingCoordinator.swift */,
+				0983763C27BF812500BE3EAB /* TipsTrainingPresenter.swift */,
+				0983763D27BF812500BE3EAB /* TipsTrainingInteractor.swift */,
+			);
+			path = TipsTrainingView;
+			sourceTree = "<group>";
+		};
+		0983764A27BFE80F00BE3EAB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0983765627BFE87E00BE3EAB /* TipsCell.swift */,
+				0983765727BFE87E00BE3EAB /* TipsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		09B56BEF27B90B7300992F8F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,7 +631,9 @@
 				09B56C0327B9220900992F8F /* MenuViewController.xib in Resources */,
 				09B56CA127BC61E000992F8F /* LoginViewController.xib in Resources */,
 				09249FD227B38276006BA14D /* HomeTabBarViewController.xib in Resources */,
+				0983763E27BF812500BE3EAB /* TipsTrainingViewController.xib in Resources */,
 				09249FDE27B444C5006BA14D /* MusicCell.xib in Resources */,
+				0983765927BFE87E00BE3EAB /* TipsCell.xib in Resources */,
 				09B56C8627BC569F00992F8F /* PodcastViewController.xib in Resources */,
 				0983760527BD652900BE3EAB /* AlertDefaultViewController.xib in Resources */,
 			);
@@ -598,14 +646,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0983764827BF876200BE3EAB /* TipsServerModel.swift in Sources */,
 				09B56CA227BC61E000992F8F /* LoginViewController.swift in Sources */,
 				09249F6527B25D32006BA14D /* AppleServerModel.swift in Sources */,
 				09249FCD27B37FFC006BA14D /* PodcastInteractor.swift in Sources */,
 				09B56C1927BC408600992F8F /* MenuCell.swift in Sources */,
 				09249F1F27AFE6AE006BA14D /* AppDelegate.swift in Sources */,
 				09249F6127B05BA7006BA14D /* SplashProvider.swift in Sources */,
+				0983765827BFE87E00BE3EAB /* TipsCell.swift in Sources */,
 				09249FFE27B63D99006BA14D /* AppleGenericDetailRouter.swift in Sources */,
 				09249F5227B0261B006BA14D /* SplashCoordinator.swift in Sources */,
+				0983764327BF812500BE3EAB /* TipsTrainingPresenter.swift in Sources */,
 				09B56CA327BC61E000992F8F /* LoginRouter.swift in Sources */,
 				09249F4C27B01A55006BA14D /* SplashInteractor.swift in Sources */,
 				09249FBB27B37FE7006BA14D /* BookCoordinator.swift in Sources */,
@@ -615,12 +666,14 @@
 				09B56C7227BC557100992F8F /* MusicViewController.swift in Sources */,
 				09249F4F27B01A6A006BA14D /* SplashRouter.swift in Sources */,
 				0924A00227B63D99006BA14D /* AppleGenericDetailInteractor.swift in Sources */,
+				0983764227BF812500BE3EAB /* TipsTrainingCoordinator.swift in Sources */,
 				09249FC927B37FFC006BA14D /* PodcastRouter.swift in Sources */,
 				09B56C0827B9220900992F8F /* MenuPresenter.swift in Sources */,
 				09B56CA627BC61E000992F8F /* LoginPresenter.swift in Sources */,
 				09B56CA527BC61E000992F8F /* LoginCoordinator.swift in Sources */,
 				0983761C27BEA52700BE3EAB /* GenericWebCoordinator.swift in Sources */,
 				09249F5627B05010006BA14D /* NetworkService.swift in Sources */,
+				0983764427BF812500BE3EAB /* TipsTrainingInteractor.swift in Sources */,
 				09249FCB27B37FFC006BA14D /* PodcastCoordinator.swift in Sources */,
 				09B56C9327BC5D0200992F8F /* AppleGenericDetailViewController.swift in Sources */,
 				0983761727BEA30D00BE3EAB /* GenericWebViewController.swift in Sources */,
@@ -628,6 +681,7 @@
 				0983760927BD717E00BE3EAB /* CustomAlertManager.swift in Sources */,
 				09249FD127B38276006BA14D /* HomeTabBarViewController.swift in Sources */,
 				09249F4827B01866006BA14D /* SplashPresenter.swift in Sources */,
+				0983763F27BF812500BE3EAB /* TipsTrainingViewController.swift in Sources */,
 				0983761F27BEA54F00BE3EAB /* GenericViewPresenter.swift in Sources */,
 				09249FB927B37FE7006BA14D /* BookRouter.swift in Sources */,
 				0924A00027B63D99006BA14D /* AppleGenericDetailCoordinator.swift in Sources */,
@@ -637,6 +691,8 @@
 				09B56C0927B9220900992F8F /* MenuInteractor.swift in Sources */,
 				098375F227BD5E1600BE3EAB /* BookViewController.swift in Sources */,
 				09249F9A27B37FA6006BA14D /* MusicRouter.swift in Sources */,
+				0983764127BF812500BE3EAB /* TipsTrainingProvider.swift in Sources */,
+				0983764027BF812500BE3EAB /* TipsTrainingRouter.swift in Sources */,
 				09B56C1427BB782500992F8F /* MenuServerModel.swift in Sources */,
 				09B56C8227BC568900992F8F /* PodcastViewController.swift in Sources */,
 				09249F9E27B37FA6006BA14D /* MusicInteractor.swift in Sources */,

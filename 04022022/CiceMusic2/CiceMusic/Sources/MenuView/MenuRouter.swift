@@ -34,6 +34,8 @@ protocol MenuRouterInputProtocol {
     
     func showGenericWebView()
     
+    func showTipsTrainingView()
+    
 }
 
 final class MenuRouter: BaseRouter<MenuViewController> {
@@ -77,6 +79,13 @@ extension MenuRouter: MenuRouterInputProtocol{
         DispatchQueue.main.async {
             
             let vc = GenericWebCoordinator.navigation()
+            self.viewController?.present(vc,animated: true,completion: nil)
+        }
+    }
+    
+    func showTipsTrainingView(){
+        DispatchQueue.main.async {
+            let vc = TipsTrainingCoordinator.navigation()
             self.viewController?.present(vc,animated: true,completion: nil)
         }
     }

@@ -78,6 +78,7 @@ struct URLEnpoint {
     
    
     static let menu = "iCoMenuResponse"
+    static let tipsTraining = "iCoResponseConsejos"
     
 }
 
