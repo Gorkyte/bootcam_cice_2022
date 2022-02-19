@@ -32,11 +32,10 @@ protocol BookRouterInputProtocol {
 }
 
 final class BookRouter: BaseRouter<BookViewController> {
-    
-   
+        
 }
 
 // Input del Router
-extension BookRouter: BookRouterInputProtocol{
+extension BookRouter: BookRouterInputProtocol {
     
 }

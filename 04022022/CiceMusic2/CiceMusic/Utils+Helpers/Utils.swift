@@ -74,6 +74,8 @@ struct URLEnpoint {
     static let music = "es/music/most-played/%@/songs.json"
     static let podcast = "es/podcasts/top/%@/podcast-episodes.json"
     static let books = "es/books/top-free/%@/books.json"
+    
+    
     static let apps = "es/apps/top-free/%@/apps.json"
     
    

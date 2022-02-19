@@ -27,7 +27,7 @@ import Foundation
 
 // Input del Presenter
 protocol BookPresenterInputProtocol {
-    func fetchBookDataFromWebService()
+    func fetchDataFromWebService()
     func numberOfRows() -> Int?
     func informationForCell(indexPath: Int) -> GenericResult?
     
@@ -51,8 +51,8 @@ final class BookPresenter: BasePresenter<BookPresenterOutputProtocol, BookIntera
 // Input del Presenter
 extension BookPresenter: BookPresenterInputProtocol {
     
-    func fetchBookDataFromWebService(){
-        self.interactor?.fetchBookDataFromWebServiceInteractor()
+    func fetchDataFromWebService(){
+        self.interactor?.fetchDataFromWebServiceInteractor()
     }
     
     func numberOfRows() -> Int? {

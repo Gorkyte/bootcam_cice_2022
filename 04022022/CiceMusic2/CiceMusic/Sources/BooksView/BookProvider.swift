@@ -27,7 +27,7 @@ import Foundation
 
 // Input Protocol
 protocol BookProviderInputProtocol {
-    func fetchBookDataFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void)
+    func fetchData(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void)
     
 }
 
@@ -35,7 +35,7 @@ final class BookProvider: BookProviderInputProtocol{
     
     let networkService: NetworkServiceProtocol = NetworkService()
     
-    func fetchBookDataFromWebServiceProvider (completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void){
+    func fetchData (completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void){
         self.networkService.requestGeneric(requestPayload: BookRequestDTO.requestData(numeroItems: "99"),
                                            entityClass: AppleServerModel.self) { [weak self](result) in
             guard self != nil else {return}
@@ -57,7 +57,8 @@ final class BookProvider: BookProviderInputProtocol{
 struct BookRequestDTO {
     
     static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us", numeroItems]
+        //let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us", numeroItems]
+        let argument: [CVarArg] = [numeroItems]
         let urlComplete = String(format: URLEnpoint.books, arguments: argument)
         let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
         return request

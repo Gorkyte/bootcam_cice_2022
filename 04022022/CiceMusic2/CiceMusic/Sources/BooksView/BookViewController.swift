@@ -22,7 +22,6 @@ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
-
 import UIKit
 
 // Output del Presenter
@@ -38,7 +37,7 @@ class BookViewController: BaseView<BookPresenterInputProtocol> {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showLoading()
-        self.presenter?.fetchBookDataFromWebService()
+        self.presenter?.fetchDataFromWebService()
         self.configuracionTV()
         self.menuButton()
     }

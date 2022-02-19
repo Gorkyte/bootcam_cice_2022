@@ -28,14 +28,14 @@ import Foundation
 
 // Input del Interactor
 protocol BookInteractorInputProtocol {
-    func fetchBookDataFromWebServiceInteractor()
+    func fetchDataFromWebServiceInteractor()
 }
 
 final class BookInteractor: BaseInteractor<BookInteractorOutputProtocol> {
     
     let provider: BookProviderInputProtocol = BookProvider()
     
-    func transformDataFromBookServerModelToArrayGenericResult(data: AppleServerModel) -> [GenericResult] {
+    func transformDataFromAppleServerModelToArrayGenericResult(data: AppleServerModel) -> [GenericResult] {
         var arrayGenericResult: [GenericResult] = []
         if let dataUnw = data.feed?.results {
             for item in dataUnw {
@@ -59,12 +59,12 @@ final class BookInteractor: BaseInteractor<BookInteractorOutputProtocol> {
 // Input del Interactor
 extension BookInteractor: BookInteractorInputProtocol {
     
-    func fetchBookDataFromWebServiceInteractor(){
-        self.provider.fetchBookDataFromWebServiceProvider() { [weak self] (result) in
+    func fetchDataFromWebServiceInteractor(){
+        self.provider.fetchData() { [weak self] (result) in
             guard self != nil else { return }
             switch result {
             case let .success(model):
-                self?.presenter?.setDataFromWebInteractor(data: self?.transformDataFromBookServerModelToArrayGenericResult(data: model))
+                self?.presenter?.setDataFromWebInteractor(data: self?.transformDataFromAppleServerModelToArrayGenericResult(data: model))
             case let .failure(error):
                 debugPrint(error)
                 //self.presenter?.setAlertMessage(error: error)
