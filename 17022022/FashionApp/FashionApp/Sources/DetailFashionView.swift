@@ -13,16 +13,33 @@ struct DetailFashionView: View {
     @State private var mySize = ""
     @SwiftUI.Environment(\.presentationMode) var presenterMode
     
+    @State private var showCustomAlertView = false
+    @State private var showActionSheet = false
+    @State private var showAlert = false
+    
     var body: some View {
-        ScrollView{
-            VStack{
-                headerInformation
-                bodyInformation
-                
+        ZStack{
+            ScrollView{
+                VStack{
+                    headerInformation
+                    bodyInformation
+                    
+                }
             }
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            
+            
+            if showCustomAlertView{
+                CustomAlertView(title: "Enhorabuena!",
+                                message: "Tu selección se ha añadido al carrito de compras",
+                                hideCustomAlertView: self.$showCustomAlertView)
+                    .animation(.easeInOut, value: self.showCustomAlertView)
+            }
+            
         }
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+        
+        
     }
     
     var headerInformation: some View {
@@ -37,7 +54,7 @@ struct DetailFashionView: View {
                 GeometryReader{ proxy in
                     //=======================================Botón 1 "<"
                     Button {
-                        self.presenterMode.wrappedValue.dismiss()
+                        self.presenterMode.wrappedValue.dismiss() // Aquí va la acción
                     } label: {
                         Image(systemName: "chevron.left")
                     }
@@ -46,20 +63,48 @@ struct DetailFashionView: View {
                     .clipShape(Circle())
                     .padding([.leading, .top],10)
                     
+                    
                     //=======================================Botón 2 "lupa"
                     Button {
-                        // Aquí va la acción
+                        self.showAlert.toggle()// Aquí va la acción
                     } label: {
                         Image(systemName: "magnifyingglass")
                     }
                     .offset(x: proxy.size.width - 80, y: 25)
+                    
+                    .alert(isPresented: self.$showAlert){
+                        Alert(title: Text("Hola soy una Alerta en SwiftUi"),
+                              message: Text ("Aqui estamos aprendiendo como se hace una Alerta en SwiftUI"),
+                              primaryButton: .default(Text("OK"),
+                                                      action: {
+                            //Aqui se hacen las acciones
+                        }),
+                              secondaryButton: .cancel(Text("Cancel"), action: {
+                            //Aqui se hacen las acciones
+                        }))
+                    }
                     //=======================================Botón 3 "carrito"
                     Button {
-                        // Aquí va la acción
+                        self.showActionSheet.toggle() // Aquí va la acción
                     } label: {
                         Image(systemName: "cart")
                     }
                     .offset(x: proxy.size.width - 40, y: 25)
+                    
+                    .actionSheet(isPresented: self.$showActionSheet) {
+                        ActionSheet(title: Text("A question"), message: Text("Are you sure about that?"), buttons: [
+                            .default(Text("Yes")) { /* Pressed button Yes. Do Something */ },
+                            .default(Text("No")) { /* Pressed button No. Do Something */ },
+                            .default(Text("Maybe")) { /* Pressed button Maybe. Do Something */ },
+                            .destructive(Text("Delete")) { /* Pressed button Delete. Do Something */ },
+                            .cancel() { /* Pressed button Cancel. Do Something */ }
+                        ])
+                            
+                        
+                    }
+                  
+                    
+                    
                 }
             }
             .foregroundColor(.black)
@@ -101,6 +146,7 @@ struct DetailFashionView: View {
             }
             
             HStack{
+                //=======================================Botón 1 "Add to Cart"
                 Button {
                     // Aquí va la acción
                 } label: {
@@ -112,8 +158,9 @@ struct DetailFashionView: View {
                 
                 Spacer()
                 
+                //=======================================Botón 2 "Buy now"
                 Button {
-                    // Aquí va la acción
+                    self.showCustomAlertView.toggle()  // Aquí va la acción
                 } label: {
                     Text("Buy now")
                         .padding()

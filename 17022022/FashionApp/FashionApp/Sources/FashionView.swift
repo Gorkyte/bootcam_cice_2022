@@ -28,7 +28,7 @@ struct FashionView: View {
                     CustomAlertView(title: "Esta es una Custom Alert View",
                                     message: "Esta es una alerta personalizada y se colocará encima de la vista principal y se añadirá un efecto de blur y el fondo medio opaco",
                                     hideCustomAlertView: self.$showCustomAlertView)
-                    animation(.easeInOut, value: self.showCustomAlertView)
+                        .animation(.easeInOut, value: self.showCustomAlertView)
                 }
             }
             .navigationBarHidden(true)  // Para navegar dentro de la foto,
