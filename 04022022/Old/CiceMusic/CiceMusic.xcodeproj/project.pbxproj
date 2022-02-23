@@ -12,6 +12,8 @@
 		09249F2B27AFE6B0006BA14D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09249F2927AFE6B0006BA14D /* LaunchScreen.storyboard */; };
 		09249F3827AFE810006BA14D /* AppCoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F3727AFE810006BA14D /* AppCoreCoordinator.swift */; };
 		09249F3D27B01536006BA14D /* BaseVIPER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F3C27B01536006BA14D /* BaseVIPER.swift */; };
+		09249F4327B01809006BA14D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F4127B01809006BA14D /* SplashViewController.swift */; };
+		09249F4427B01809006BA14D /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09249F4227B01809006BA14D /* SplashViewController.xib */; };
 		09249F4827B01866006BA14D /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F4727B01866006BA14D /* SplashPresenter.swift */; };
 		09249F4C27B01A55006BA14D /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F4B27B01A55006BA14D /* SplashInteractor.swift */; };
 		09249F4F27B01A6A006BA14D /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F4E27B01A6A006BA14D /* SplashRouter.swift */; };
@@ -21,6 +23,8 @@
 		09249F5D27B051AA006BA14D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F5C27B051AA006BA14D /* Utils.swift */; };
 		09249F6127B05BA7006BA14D /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F6027B05BA7006BA14D /* SplashProvider.swift */; };
 		09249F6527B25D32006BA14D /* AppleServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F6427B25D32006BA14D /* AppleServerModel.swift */; };
+		09249F9827B37FA6006BA14D /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09249F9127B37FA6006BA14D /* MusicViewController.xib */; };
+		09249F9927B37FA6006BA14D /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F9227B37FA6006BA14D /* MusicViewController.swift */; };
 		09249F9A27B37FA6006BA14D /* MusicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F9327B37FA6006BA14D /* MusicRouter.swift */; };
 		09249F9B27B37FA6006BA14D /* MusicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F9427B37FA6006BA14D /* MusicProvider.swift */; };
 		09249F9C27B37FA6006BA14D /* MusicCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F9527B37FA6006BA14D /* MusicCoordinator.swift */; };
@@ -33,6 +37,8 @@
 		09249FBB27B37FE7006BA14D /* BookCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FB427B37FE7006BA14D /* BookCoordinator.swift */; };
 		09249FBC27B37FE7006BA14D /* BookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FB527B37FE7006BA14D /* BookPresenter.swift */; };
 		09249FBD27B37FE7006BA14D /* BookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FB627B37FE7006BA14D /* BookInteractor.swift */; };
+		09249FC727B37FFC006BA14D /* PodcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09249FC027B37FFC006BA14D /* PodcastViewController.xib */; };
+		09249FC827B37FFC006BA14D /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FC127B37FFC006BA14D /* PodcastViewController.swift */; };
 		09249FC927B37FFC006BA14D /* PodcastRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FC227B37FFC006BA14D /* PodcastRouter.swift */; };
 		09249FCA27B37FFC006BA14D /* PodcastProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FC327B37FFC006BA14D /* PodcastProvider.swift */; };
 		09249FCB27B37FFC006BA14D /* PodcastCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249FC427B37FFC006BA14D /* PodcastCoordinator.swift */; };
@@ -65,14 +71,6 @@
 		09B56C0827B9220900992F8F /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56C0127B9220900992F8F /* MenuPresenter.swift */; };
 		09B56C0927B9220900992F8F /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56C0227B9220900992F8F /* MenuInteractor.swift */; };
 		09B56C1427BB782500992F8F /* MenuServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56C1327BB782500992F8F /* MenuServerModel.swift */; };
-		09B56C1927BC408600992F8F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56C1727BC408600992F8F /* MenuCell.swift */; };
-		09B56C1A27BC408600992F8F /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B56C1827BC408600992F8F /* MenuCell.xib */; };
-		09B56C3E27BC508B00992F8F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56C3D27BC508B00992F8F /* SplashViewController.swift */; };
-		09B56C4127BC509C00992F8F /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B56C4027BC509C00992F8F /* SplashViewController.xib */; };
-		09B56C5627BC530F00992F8F /* PodcatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56C5527BC530F00992F8F /* PodcatsViewController.swift */; };
-		09B56C5927BC531A00992F8F /* PodcatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B56C5827BC531A00992F8F /* PodcatsViewController.xib */; };
-		09B56C6127BC539800992F8F /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B56C6027BC539800992F8F /* MusicViewController.swift */; };
-		09B56C6427BC53B300992F8F /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B56C6327BC53B300992F8F /* MusicViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +81,8 @@
 		09249F2C27AFE6B0006BA14D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09249F3727AFE810006BA14D /* AppCoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreCoordinator.swift; sourceTree = "<group>"; };
 		09249F3C27B01536006BA14D /* BaseVIPER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVIPER.swift; sourceTree = "<group>"; };
+		09249F4127B01809006BA14D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		09249F4227B01809006BA14D /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		09249F4727B01866006BA14D /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		09249F4B27B01A55006BA14D /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		09249F4E27B01A6A006BA14D /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
@@ -92,6 +92,8 @@
 		09249F5C27B051AA006BA14D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		09249F6027B05BA7006BA14D /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 		09249F6427B25D32006BA14D /* AppleServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleServerModel.swift; sourceTree = "<group>"; };
+		09249F9127B37FA6006BA14D /* MusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
+		09249F9227B37FA6006BA14D /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		09249F9327B37FA6006BA14D /* MusicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRouter.swift; sourceTree = "<group>"; };
 		09249F9427B37FA6006BA14D /* MusicProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicProvider.swift; sourceTree = "<group>"; };
 		09249F9527B37FA6006BA14D /* MusicCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCoordinator.swift; sourceTree = "<group>"; };
@@ -104,6 +106,8 @@
 		09249FB427B37FE7006BA14D /* BookCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoordinator.swift; sourceTree = "<group>"; };
 		09249FB527B37FE7006BA14D /* BookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPresenter.swift; sourceTree = "<group>"; };
 		09249FB627B37FE7006BA14D /* BookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInteractor.swift; sourceTree = "<group>"; };
+		09249FC027B37FFC006BA14D /* PodcastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastViewController.xib; sourceTree = "<group>"; };
+		09249FC127B37FFC006BA14D /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
 		09249FC227B37FFC006BA14D /* PodcastRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastRouter.swift; sourceTree = "<group>"; };
 		09249FC327B37FFC006BA14D /* PodcastProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastProvider.swift; sourceTree = "<group>"; };
 		09249FC427B37FFC006BA14D /* PodcastCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCoordinator.swift; sourceTree = "<group>"; };
@@ -137,14 +141,6 @@
 		09B56C0127B9220900992F8F /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		09B56C0227B9220900992F8F /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
 		09B56C1327BB782500992F8F /* MenuServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuServerModel.swift; sourceTree = "<group>"; };
-		09B56C1727BC408600992F8F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		09B56C1827BC408600992F8F /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
-		09B56C3D27BC508B00992F8F /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		09B56C4027BC509C00992F8F /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
-		09B56C5527BC530F00992F8F /* PodcatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcatsViewController.swift; sourceTree = "<group>"; };
-		09B56C5827BC531A00992F8F /* PodcatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodcatsViewController.xib; sourceTree = "<group>"; };
-		09B56C6027BC539800992F8F /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
-		09B56C6327BC53B300992F8F /* MusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,8 +223,8 @@
 		09249F4027B017CE006BA14D /* SplashView */ = {
 			isa = PBXGroup;
 			children = (
-				09B56C3D27BC508B00992F8F /* SplashViewController.swift */,
-				09B56C4027BC509C00992F8F /* SplashViewController.xib */,
+				09249F4127B01809006BA14D /* SplashViewController.swift */,
+				09249F4227B01809006BA14D /* SplashViewController.xib */,
 				09249F4727B01866006BA14D /* SplashPresenter.swift */,
 				09249F4B27B01A55006BA14D /* SplashInteractor.swift */,
 				09249F4E27B01A6A006BA14D /* SplashRouter.swift */,
@@ -280,8 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				09249FDA27B44475006BA14D /* Cell */,
-				09B56C6027BC539800992F8F /* MusicViewController.swift */,
-				09B56C6327BC53B300992F8F /* MusicViewController.xib */,
+				09249F9127B37FA6006BA14D /* MusicViewController.xib */,
+				09249F9227B37FA6006BA14D /* MusicViewController.swift */,
 				09249F9327B37FA6006BA14D /* MusicRouter.swift */,
 				09249F9427B37FA6006BA14D /* MusicProvider.swift */,
 				09249F9527B37FA6006BA14D /* MusicCoordinator.swift */,
@@ -295,8 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				09249FED27B576C9006BA14D /* Cell */,
-				09B56C5827BC531A00992F8F /* PodcatsViewController.xib */,
-				09B56C5527BC530F00992F8F /* PodcatsViewController.swift */,
+				09249FC027B37FFC006BA14D /* PodcastViewController.xib */,
+				09249FC127B37FFC006BA14D /* PodcastViewController.swift */,
 				09249FC227B37FFC006BA14D /* PodcastRouter.swift */,
 				09249FC327B37FFC006BA14D /* PodcastProvider.swift */,
 				09249FC427B37FFC006BA14D /* PodcastCoordinator.swift */,
@@ -381,7 +377,6 @@
 		09B56BFB27B921AA00992F8F /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
-				09B56C1627BC406700992F8F /* Cell */,
 				09B56BFC27B9220900992F8F /* MenuViewController.xib */,
 				09B56BFD27B9220900992F8F /* MenuViewController.swift */,
 				09B56BFE27B9220900992F8F /* MenuRouter.swift */,
@@ -391,15 +386,6 @@
 				09B56C0227B9220900992F8F /* MenuInteractor.swift */,
 			);
 			path = MenuView;
-			sourceTree = "<group>";
-		};
-		09B56C1627BC406700992F8F /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				09B56C1727BC408600992F8F /* MenuCell.swift */,
-				09B56C1827BC408600992F8F /* MenuCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,15 +452,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09B56C6427BC53B300992F8F /* MusicViewController.xib in Resources */,
-				09B56C4127BC509C00992F8F /* SplashViewController.xib in Resources */,
+				09249F9827B37FA6006BA14D /* MusicViewController.xib in Resources */,
 				09249F2B27AFE6B0006BA14D /* LaunchScreen.storyboard in Resources */,
+				09249F4427B01809006BA14D /* SplashViewController.xib in Resources */,
 				09249F2827AFE6B0006BA14D /* Assets.xcassets in Resources */,
 				09249FB727B37FE7006BA14D /* BookViewController.xib in Resources */,
 				09B56BF327B90BAE00992F8F /* AppsCell.xib in Resources */,
-				09B56C1A27BC408600992F8F /* MenuCell.xib in Resources */,
+				09249FC727B37FFC006BA14D /* PodcastViewController.xib in Resources */,
 				09B56C0327B9220900992F8F /* MenuViewController.xib in Resources */,
-				09B56C5927BC531A00992F8F /* PodcatsViewController.xib in Resources */,
 				09249FFC27B63D99006BA14D /* AppleGenericDetailViewController.xib in Resources */,
 				09249FD227B38276006BA14D /* HomeTabBarViewController.xib in Resources */,
 				09249FDE27B444C5006BA14D /* MusicCell.xib in Resources */,
@@ -490,8 +475,6 @@
 			files = (
 				09249F6527B25D32006BA14D /* AppleServerModel.swift in Sources */,
 				09249FCD27B37FFC006BA14D /* PodcastInteractor.swift in Sources */,
-				09B56C1927BC408600992F8F /* MenuCell.swift in Sources */,
-				09B56C3E27BC508B00992F8F /* SplashViewController.swift in Sources */,
 				09249F1F27AFE6AE006BA14D /* AppDelegate.swift in Sources */,
 				09249F6127B05BA7006BA14D /* SplashProvider.swift in Sources */,
 				09249FFE27B63D99006BA14D /* AppleGenericDetailRouter.swift in Sources */,
@@ -499,7 +482,6 @@
 				09249F4C27B01A55006BA14D /* SplashInteractor.swift in Sources */,
 				09249FBB27B37FE7006BA14D /* BookCoordinator.swift in Sources */,
 				09B56BED27B6BAD900992F8F /* AppServerModel.swift in Sources */,
-				09B56C6127BC539800992F8F /* MusicViewController.swift in Sources */,
 				09249FFF27B63D99006BA14D /* AppleGenericDetailProvider.swift in Sources */,
 				09249F4F27B01A6A006BA14D /* SplashRouter.swift in Sources */,
 				0924A00227B63D99006BA14D /* AppleGenericDetailInteractor.swift in Sources */,
@@ -512,6 +494,7 @@
 				09249FBA27B37FE7006BA14D /* BookProvider.swift in Sources */,
 				09249FD127B38276006BA14D /* HomeTabBarViewController.swift in Sources */,
 				09249F4827B01866006BA14D /* SplashPresenter.swift in Sources */,
+				09249F9927B37FA6006BA14D /* MusicViewController.swift in Sources */,
 				09249FB927B37FE7006BA14D /* BookRouter.swift in Sources */,
 				0924A00027B63D99006BA14D /* AppleGenericDetailCoordinator.swift in Sources */,
 				09249F9C27B37FA6006BA14D /* MusicCoordinator.swift in Sources */,
@@ -535,8 +518,9 @@
 				09249FE627B4F214006BA14D /* PodcastServerModel.swift in Sources */,
 				09B56C0727B9220900992F8F /* MenuCoordinator.swift in Sources */,
 				09249FBD27B37FE7006BA14D /* BookInteractor.swift in Sources */,
+				09249FC827B37FFC006BA14D /* PodcastViewController.swift in Sources */,
+				09249F4327B01809006BA14D /* SplashViewController.swift in Sources */,
 				09B56BF227B90BAE00992F8F /* AppsCell.swift in Sources */,
-				09B56C5627BC530F00992F8F /* PodcatsViewController.swift in Sources */,
 				0924A00127B63D99006BA14D /* AppleGenericDetailPresenter.swift in Sources */,
 				09B56C0627B9220900992F8F /* MenuProvider.swift in Sources */,
 				09249F5927B05169006BA14D /* NetworkError.swift in Sources */,

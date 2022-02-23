@@ -2,24 +2,33 @@
 //  SplashViewController.swift
 //  CiceMusic
 //
-//  Created by Andres Felipe Ocampo Eljaiek on 4/2/22.
+//  Created by CICE on 06/02/2022.
 //
 
 import UIKit
+
 
 // Output del Presenter
 protocol SplashPresenterOutputProtocol {
     func launchAnimation()
 }
 
+
+
 class SplashViewController: BaseView<SplashPresenterInputProtocol> {
+
     
-    // MARK: - Varibales globales
+    // MARK: - Variables globales
     var viewAnimator: UIViewPropertyAnimator?
     var unblockedGR = Timer()
     
-    // MARK: - IBoutlets
+    // MARK: - IBOutlets
     @IBOutlet weak var customSplashImageView: UIImageView!
+    
+
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +36,7 @@ class SplashViewController: BaseView<SplashPresenterInputProtocol> {
         // Do any additional setup after loading the view.
     }
 
+  
     @objc
     func automaticHandler() {
         self.viewAnimator = UIViewPropertyAnimator(duration: 0.5, curve: .easeInOut, animations: nil)
@@ -48,7 +58,7 @@ extension SplashViewController: SplashPresenterOutputProtocol{
     func launchAnimation() {
         self.viewAnimator = UIViewPropertyAnimator(duration: 1.0, curve: .easeInOut, animations: nil)
         self.viewAnimator?.addAnimations {
-           // self.customSplashImageView.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+            self.customSplashImageView.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
             self.unblockedGR = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.automaticHandler), userInfo: nil, repeats: false)
         }
         self.viewAnimator?.startAnimation()

@@ -34,20 +34,19 @@ final class MenuCoordinator {
     
     static func view (dto: MenuCoordinatorDTO? = nil) -> MenuViewController & MenuPresenterOutputProtocol {
         let vc = MenuViewController()
-        vc.presenter = presenter(vc: vc, dto:dto)
+        vc.presenter = presenter(vc: vc)
         return vc
     }
     
-    static func presenter(vc: MenuViewController, dto: MenuCoordinatorDTO? = nil ) -> MenuPresenterInputProtocol & MenuInteractorOutputProtocol {
+    static func presenter(vc: MenuViewController) -> MenuPresenterInputProtocol & MenuInteractorOutputProtocol {
     let presenter = MenuPresenter(vc: vc)
-        presenter.interactor = interactor(presenter: presenter, dto: dto)
+    presenter.interactor = interactor(presenter: presenter)
     presenter.router = router(vc: vc)
     return presenter
     }
 
-    static func interactor (presenter: MenuPresenter, dto: MenuCoordinatorDTO? = nil) -> MenuInteractorInputProtocol {
+    static func interactor (presenter: MenuPresenter) -> MenuInteractorInputProtocol {
         let interactor = MenuInteractor(presenter: presenter)
-        interactor.dataModel = dto
         return interactor
     }
     

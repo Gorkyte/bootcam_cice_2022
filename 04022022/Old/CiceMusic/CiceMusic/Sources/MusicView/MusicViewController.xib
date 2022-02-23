@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicViewController">
             <connections>
-                <outlet property="musicTableView" destination="0gP-gH-woj" id="JSV-hw-sZd"/>
+                <outlet property="musicTableView" destination="jrv-lm-i3W" id="7sS-eA-N1M"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0KK-4V-vEI"/>
             </connections>
         </placeholder>
@@ -19,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0gP-gH-woj">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-lm-i3W">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
@@ -27,10 +27,10 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="0gP-gH-woj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="U3E-o9-5R9"/>
-                <constraint firstItem="0gP-gH-woj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dXl-Jn-Vp4"/>
-                <constraint firstItem="0gP-gH-woj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="fL3-Wt-9Yq"/>
-                <constraint firstAttribute="bottom" secondItem="0gP-gH-woj" secondAttribute="bottom" id="wav-Pd-2HL"/>
+                <constraint firstItem="jrv-lm-i3W" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dC5-J3-kBj"/>
+                <constraint firstAttribute="bottom" secondItem="jrv-lm-i3W" secondAttribute="bottom" id="gJX-Nz-WOD"/>
+                <constraint firstItem="jrv-lm-i3W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="khc-Sw-7Hz"/>
+                <constraint firstItem="jrv-lm-i3W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tyc-5c-prF"/>
             </constraints>
             <point key="canvasLocation" x="31.884057971014496" y="132.58928571428572"/>
         </view>

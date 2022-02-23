@@ -16,6 +16,7 @@
                 <outlet property="catalogImageView" destination="vUb-OR-QHx" id="6gr-dY-nhZ"/>
                 <outlet property="goToAppleStoreBTN" destination="CNf-RA-GoG" id="6cC-nG-ipu"/>
                 <outlet property="releaseDateLBL" destination="Pfh-te-RxG" id="QIH-xr-kaS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0KK-4V-vEI"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
