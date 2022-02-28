@@ -62,7 +62,7 @@ struct ResultNowPlaying: Codable, Identifiable {
 
 extension MoviesServerModel {
     static var stubbedMoviesNowPlaying: [ResultNowPlaying]{
-        let response: MoviesServerModel? = try? Bundle.main.loadAndDecodeJSON(filename: "peliculas")
+        let response: MoviesServerModel? = try? Bundle.main.loadAndDecodeJson(filename: "peliculas")
         return response?.results ?? []
     }
     
@@ -71,3 +71,11 @@ extension MoviesServerModel {
     }
 }
 
+extension Bundle {
+    func loadAndDecodeJson<D: Decodable>(filename: String) throws -> D? {
+        guard let url = self.url(forResource: filename, withExtension: ".json") else {return nil}
+        let data = try Data(contentsOf: url)
+        let decodeModel = try JSONDecoder().decode(D.self, from: data)
+        return decodeModel
+    }
+}

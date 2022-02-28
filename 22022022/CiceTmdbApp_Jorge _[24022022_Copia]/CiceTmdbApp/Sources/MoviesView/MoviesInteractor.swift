@@ -7,7 +7,7 @@
 
 import Foundation
 
-// Input del Interactor
+// Input del interactor
 protocol MoviesInteractorInputProtocol: BaseInteractorInputProtocol {
     func fetchDataNowPlayingInteractor()
     func fetchDataPopularInteractor()
@@ -15,7 +15,7 @@ protocol MoviesInteractorInputProtocol: BaseInteractorInputProtocol {
     func fetchDataUpcomingInteractor()
 }
 
-// Output del Provider
+// Output del provider
 protocol MoviesProviderOutputProtocol: BaseProviderOutputProtocol{
     func setInformationNowPlaying(completion: Result<[ResultNowPlaying]?, NetworkError>)
     func setInformationPopular(completion: Result<[ResultNowPlaying]?, NetworkError>)

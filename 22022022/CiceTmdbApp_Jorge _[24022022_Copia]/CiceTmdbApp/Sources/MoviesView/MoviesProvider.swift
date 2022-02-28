@@ -33,8 +33,7 @@ extension MoviesProvider: MoviesProviderInputProtocol{
                                  method: .get,
                                  endpoint: URLEndpoint.endpointMoviesNowPlaying,
                                  urlContext: .webService)
-        self.networkService.requestGeneric(payloadRequest: request,
-                                           entityClass: MoviesServerModel.self)
+        self.networkService.requestGeneric(payloadRequest: request, entityClass: MoviesServerModel.self)
             .sink { [weak self] completion in
                 guard self != nil else {return}
                 switch completion{

@@ -1,0 +1,407 @@
+
+{
+   "page":1,
+   "results":[
+      {
+         "backdrop_path":"/oKt4J3TFjWirVwBqoHyIvv5IImd.jpg",
+         "first_air_date":"2019-06-16",
+         "genre_ids":[
+            18
+         ],
+         "id":85552,
+         "name":"Euphoria",
+         "origin_country":[
+            "US"
+         ],
+         "original_language":"en",
+         "original_name":"Euphoria",
+         "overview":"Una reflexión sobre la adolescencia a través de un grupo de estudiantes de instituto que tienen que hacer frente a temas recurrentes de su edad, como la droga, el sexo y la violencia.",
+         "popularity":5339.495,
+         "poster_path":"/288q0JefZUuTfqUG2qzPTCZYuAL.jpg",
+         "vote_average":8.4,
+         "vote_count":7012
+      },
+      {
+         "backdrop_path":"/r7zUXadc1saFFSWz8lbUx7q9bkG.jpg",
+         "first_air_date":"2010-10-31",
+         "genre_ids":[
+            10759,
+            18,
+            10765
+         ],
+         "id":1402,
+         "name":"The Walking Dead",
+         "origin_country":[
+            "US"
+         ],
+         "original_language":"en",
+         "original_name":"The Walking Dead",
+         "overview":"\"The Walking Dead\" está ambientada en un futuro apocalíptico con la Tierra devastada por el efecto de un cataclismo, que ha provocado la mutación en zombies de la mayor parte de los habitantes del planeta. La serie, explora las dificultades de los protagonistas para sobrevivir en un mundo poblado por el horror, así como las relaciones personales que se establecen entre ellos, en ocasiones también una amenaza para su supervivencia.",
+         "popularity":1714.101,
+         "poster_path":"/wsq1xCuC9kDhFeoE7xuQFDC5iRC.jpg",
+         "vote_average":8.1,
+         "vote_count":12599
+      },
+      {
+         "backdrop_path":"/wiE9doxiLwq3WCGamDIOb2PqBqc.jpg",
+         "first_air_date":"2013-09-12",
+         "genre_ids":[
+            18,
+            80
+         ],
+         "id":60574,
+         "name":"Peaky Blinders",
+         "origin_country":[
+            "GB"
+         ],
+         "original_language":"en",
+         "original_name":"Peaky Blinders",
+         "overview":"En Gran Bretaña, Reino Unido se recuperan de la desesperación de la Gran Guerra, las personas sobreviven a como pueden, y las bandas criminales proliferan en una nación sacudida económicamente.\n\nEs justamente aquí donde una familia de gánsteres irlandeses de origen nómada (a veces llamados gitanos o chatarreros) asentada en Birmingham (los Peaky Blinders) justo después de la Primera Guerra Mundial, dirigen un local de apuestas hípicas en la ciudad.  Las acciones del ambicioso, respetado, temerario y peligroso jefe de la banda, Thomas Shelby, llaman la atención del Inspector jefe Chester Campbell, un detective de la Real Policía Irlandesa que es enviado por el mismo Winston Churchill desde Belfast donde había sido enviado a limpiar la ciudad del Ejército Republicano Irlandés (IRA), comunistas, pandillas y delincuentes comunes.",
+         "popularity":1364.961,
+         "poster_path":"/dYAeYkRqDfQrMGHdY7hrtllSPTu.jpg",
+         "vote_average":8.6,
+         "vote_count":5412
+      },
+      {
+         "backdrop_path":"/q9o7VEHX0O9oixdIa6uT0v5lu3S.jpg",
+         "first_air_date":"2022-01-28",
+         "genre_ids":[
+            18
+         ],
+         "id":156568,
+         "name":"人世间",
+         "origin_country":[
+            "CN"
+         ],
+         "original_language":"zh",
+         "original_name":"人世间",
+         "overview":"",
+         "popularity":1322.765,
+         "poster_path":"/u5LOe5BMtNPticKT9fAzTkxSlst.jpg",
+         "vote_average":7.5,
+         "vote_count":4
+      },
+      {
+         "backdrop_path":"/vhEtBjbxLMlPTPCS6TGk0WLo9C8.jpg",
+         "first_air_date":"2021-09-09",
+         "genre_ids":[
+            10764
+         ],
+         "id":132712,
+         "name":"Secret Story: La casa de los secretos",
+         "origin_country":[
+            "ES"
+         ],
+         "original_language":"es",
+         "original_name":"Secret Story: La casa de los secretos",
+         "overview":"Los famosos participantes tendrán que mantener su secreto a salvo, mientras intentan descubrir el de sus compañeros. Los espectadores se convertirán en auténticos investigadores y serán testigos de las estrategias de los concursantes. Además, la audiencia será testigo de su convivencia 24 horas y decidirá el devenir del concurso.",
+         "popularity":1186.312,
+         "poster_path":"/rucYOgpymV2gAvyJUVK1awLTOcH.jpg",
+         "vote_average":3,
+         "vote_count":2
+      },
+      {
+         "backdrop_path":"/hpU2cHC9tk90hswCFEpf5AtbqoL.jpg",
+         "first_air_date":"1989-12-17",
+         "genre_ids":[
+            10751,
+            16,
+            35
+         ],
+         "id":456,
+         "name":"Los Simpson",
+         "origin_country":[
+            "US"
+         ],
+         "original_language":"en",
+         "original_name":"The Simpsons",
+         "overview":"Comedia americana de animación creada por Matt Groening para la compañía Fox. La serie es una parodia satírica del estilo de la clase media americana encarnada por una familia con ese mismo nombre, compuesta por Homer, Marge, Bart, Lisa, y Maggie Simpson. La trama se desarrolla en la ciudad ficticia de Springfield y parodia la cultura, la sociedad, la televisión estadounidense y muchos otros aspectos de la condición humana.",
+         "popularity":1083.856,
+         "poster_path":"/u8BMLmwoc7YPHKSWawOOqC1c8lJ.jpg",
+         "vote_average":7.9,
+         "vote_count":7625
+      },
+      {
+         "backdrop_path":"/7jHD9rcLUpDv3mvsSoKtYxItMwK.jpg",
+         "first_air_date":"2019-09-01",
+         "genre_ids":[
+            18
+         ],
+         "id":93411,
+         "name":"عروس بيروت",
+         "origin_country":[
+            "LB"
+         ],
+         "original_language":"ar",
+         "original_name":"عروس بيروت",
+         "overview":"",
+         "popularity":858.759,
+         "poster_path":"/mfzYCFkatHsAalRBshakdfr5rM.jpg",
+         "vote_average":3.4,
+         "vote_count":5
+      },
+      {
+         "backdrop_path":"/2748H9LoK2oQd9L7ofze8VjCGhS.jpg",
+         "first_air_date":"2020-07-13",
+         "genre_ids":[
+            18,
+            10766
+         ],
+         "id":116479,
+         "name":"Anupama",
+         "origin_country":[
+            "IN"
+         ],
+         "original_language":"hi",
+         "original_name":"अनुपमा",
+         "overview":"Anupama tuvo que sacrificar mucho para convertirse en una esposa, nuera y madre ideales. Después de una amarga comprensión, se propone vivir en sus propios términos.",
+         "popularity":679.641,
+         "poster_path":"/9R4Qtm01pNh0CzdoIyvHKefe5RL.jpg",
+         "vote_average":4.4,
+         "vote_count":23
+      },
+      {
+         "backdrop_path":"/1BGdbvrHYXqZirMIGQlS4LQMh77.jpg",
+         "first_air_date":"2015-10-19",
+         "genre_ids":[
+            10759,
+            16,
+            10762
+         ],
+         "id":65334,
+         "name":"Miraculous: Las aventuras de Ladybug",
+         "origin_country":[
+            "FR"
+         ],
+         "original_language":"fr",
+         "original_name":"Miraculous, les aventures de Ladybug et Chat Noir",
+         "overview":"Cuando París corre peligro, Marinette se convierte en Ladybug. Lo que no sabe, es que su apuesto amigo Adrien es Cat Noir, otro superhéroe al servicio de la ciudad.",
+         "popularity":589.499,
+         "poster_path":"/9TAXEZH1OBwLfTWX3tWiHzIvdGW.jpg",
+         "vote_average":8,
+         "vote_count":3533
+      },
+      {
+         "backdrop_path":"/ykbaElzavtSbsYG5KbG3pEpREtK.jpg",
+         "first_air_date":"2021-01-11",
+         "genre_ids":[
+            10764
+         ],
+         "id":116416,
+         "name":"Big Brother 7/7",
+         "origin_country":[
+            "CA"
+         ],
+         "original_language":"fr",
+         "original_name":"Big Brother 7/7",
+         "overview":"",
+         "popularity":537.183,
+         "poster_path":"/iUYrQyv0p4UncFolsROm81VNbcB.jpg",
+         "vote_average":3.9,
+         "vote_count":6
+      },
+      {
+         "backdrop_path":"/z18KvDvFftrNyAMPOVFHkt8Bj8E.jpg",
+         "first_air_date":"2002-09-08",
+         "genre_ids":[
+            10764,
+            10767
+         ],
+         "id":153748,
+         "name":"Big Brother Famosos",
+         "origin_country":[
+            "PT"
+         ],
+         "original_language":"pt",
+         "original_name":"Big Brother Famosos",
+         "overview":"",
+         "popularity":486.856,
+         "poster_path":"/ynFd1Xmr2r05qPqalNZnh2uxuJ0.jpg",
+         "vote_average":3.5,
+         "vote_count":11
+      },
+      {
+         "backdrop_path":"/jbTqU6BJMufoMnPSlO4ThrcXs3Y.jpg",
+         "first_air_date":"1999-01-31",
+         "genre_ids":[
+            16,
+            35
+         ],
+         "id":1434,
+         "name":"Padre de familia",
+         "origin_country":[
+            "US"
+         ],
+         "original_language":"en",
+         "original_name":"Family Guy",
+         "overview":"Padre de familia es una comedia de animación para adultos creada por Seth MacFarlane para la Fox Broadcasting Company. La serie se centra en los Griffin, una mediocre familia compuesta por los padres Peter y Lois; sus hijos Meg, Chris, y Stewie; y su antropomórfica mascota canina Brian. La serie está ambientada en la ciudad ficticia de Quahog, Rhode Island, y gran parte de su humor se exhibe en forma de pequeños cortes que frecuentemente se mofan de la cultura americana.",
+         "popularity":481.183,
+         "poster_path":"/tCBuvLgTP9bgjynNvQWa7LSUnHj.jpg",
+         "vote_average":7.1,
+         "vote_count":3120
+      },
+      {
+         "backdrop_path":"/zjtcZVj62ZEYVSXUOeF3McuWqxy.jpg",
+         "first_air_date":"2018-10-16",
+         "genre_ids":[
+            80,
+            18
+         ],
+         "id":79744,
+         "name":"The Rookie",
+         "origin_country":[
+            "US"
+         ],
+         "original_language":"en",
+         "original_name":"The Rookie",
+         "overview":"Comenzar de nuevo no es fácil, especialmente para el chico de una ciudad pequeña John Nolan que, después de un incidente que cambia su vida, está persiguiendo su sueño de ser un oficial de policía de Los Ángeles. Como el novato más viejo de la fuerza, se ha encontrado con el escepticismo de algunos de los superiores que lo ven como una crisis ambulante.",
+         "popularity":469.651,
+         "poster_path":"/ts1Xda9uefLPZtREJ7EboHZga0u.jpg",
+         "vote_average":8.2,
+         "vote_count":862
+      },
+      {
+         "backdrop_path":"/7j4ug9B6JXVeh5HhQjjPScrdj4Z.jpg",
+         "first_air_date":"2017-11-02",
+         "genre_ids":[
+            10759,
+            80,
+            18
+         ],
+         "id":71790,
+         "name":"S.W.A.T.",
+         "origin_country":[
+            "US"
+         ],
+         "original_language":"en",
+         "original_name":"S.W.A.T.",
+         "overview":"La serie sigue a Daniel \"Hondo\" Harrelson, un teniente S.W.A.T. que se ve dividido entre la lealtad a las calles y el deber con sus compañeros oficiales, cuando el agresivo y confiado líder del equipo 10-David SWAT, Jeff Mumford, lo asigna para dirigir una unidad altamente capacitada de la policía, que estará encargada de detener los crímenes en Los Ángeles.",
+         "popularity":418.744,
+         "poster_path":"/ttzrYMdsKWR8PTRLw7uo4noqaOJ.jpg",
+         "vote_average":8.1,
+         "vote_count":771
+      },
+      {
+         "backdrop_path":"/gWPK2RIVJ6i3myf7Xdw8DqlznT8.jpg",
+         "first_air_date":"2022-01-09",
+         "genre_ids":[
+            16,
+            35,
+            18
+         ],
+         "id":123249,
+         "name":"Sono Bisque Doll wa Koi wo suru",
+         "origin_country":[
+            "JP"
+         ],
+         "original_language":"ja",
+         "original_name":"その着せ替え人形は恋をする",
+         "overview":"¡Dos mundos opuestos chocan cuando un chico tímido y una chica muy popular encuentran un punto de encuentro gracias al cosplay!",
+         "popularity":410.29,
+         "poster_path":"/i9TswU0pOi9MTi75qeFxKqIBwz2.jpg",
+         "vote_average":8.4,
+         "vote_count":22
+      },
+      {
+         "backdrop_path":null,
+         "first_air_date":"2020-05-24",
+         "genre_ids":[
+            10763
+         ],
+         "id":153466,
+         "name":"משחקי הכיס",
+         "origin_country":[
+            "IL"
+         ],
+         "original_language":"he",
+         "original_name":"משחקי הכיס",
+         "overview":"",
+         "popularity":318.674,
+         "poster_path":"/jfm0SM8BEQUF57EWFOi9rF4cYB3.jpg",
+         "vote_average":0,
+         "vote_count":0
+      },
+      {
+         "backdrop_path":null,
+         "first_air_date":"2019-02-17",
+         "genre_ids":[
+            10763,
+            10768
+         ],
+         "id":154490,
+         "name":"מהצד השני עם גיא זוהר",
+         "origin_country":[
+            "IL"
+         ],
+         "original_language":"he",
+         "original_name":"מהצד השני עם גיא זוהר",
+         "overview":"",
+         "popularity":303.071,
+         "poster_path":"/5qx3EXkkSYHuOAyLDyeITv9xnyy.jpg",
+         "vote_average":0,
+         "vote_count":0
+      },
+      {
+         "backdrop_path":"/7a5PDRkJ3IUXwQH4g4QGqlxnasM.jpg",
+         "first_air_date":"2021-01-17",
+         "genre_ids":[
+            10764
+         ],
+         "id":115107,
+         "name":"Star Académie",
+         "origin_country":[
+            "CA"
+         ],
+         "original_language":"fr",
+         "original_name":"Star Académie",
+         "overview":"",
+         "popularity":281.83,
+         "poster_path":"/c2JCWguNye2y5vky007S4Sc5hCb.jpg",
+         "vote_average":5.7,
+         "vote_count":3
+      },
+      {
+         "backdrop_path":"/qqWn3Mov1hxtEcMK7gPvok1TO0E.jpg",
+         "first_air_date":"2021-01-10",
+         "genre_ids":[
+            10764
+         ],
+         "id":113207,
+         "name":"Big Brother Célébrités",
+         "origin_country":[
+            "CA"
+         ],
+         "original_language":"fr",
+         "original_name":"Big Brother Célébrités",
+         "overview":"",
+         "popularity":270.609,
+         "poster_path":"/rXJoUCx5wDxkeKhvw7hlH5KAliF.jpg",
+         "vote_average":2,
+         "vote_count":1
+      },
+      {
+         "backdrop_path":"/asuyokCKKdU5tshPt6PONx5t5VC.jpg",
+         "first_air_date":"2009-09-22",
+         "genre_ids":[
+            10759,
+            18,
+            80,
+            9648
+         ],
+         "id":17610,
+         "name":"NCIS: Los Ángeles",
+         "origin_country":[
+            "US"
+         ],
+         "original_language":"en",
+         "original_name":"NCIS: Los Angeles",
+         "overview":"La ficción relata la extraordinaria labor que lleva a cabo el Servicio de Investigación Criminal Naval (NCIS), que investiga y combate las actividades de asociaciones criminales, grupos terroristas y a las agencias de inteligencia extranjeras que constituyen una grave amenaza para la Marina norteamericana. Dentro de este servicio se enmarca la Oficina de Proyectos Especiales, una división especializada en la captura y localización de los criminales más peligrosos que ponen en jaque la seguridad nacional. La utilización de identidades falsas y de la más avanzada tecnología permite a este grupo de agentes encubiertos cumplir los objetivos asignados. Desplegados en distintos puntos del mundo cuando la ocasión lo requiere a través de los portaviones o de las fuerzas anfibias de la Marina, los agentes del NCIS están entrenados para identificar y frenar los peligros externos mientras trabajan en estrecha colaboración con las fuerzas de seguridad estatales, federales o locales.\n\nUn camaleónico agente capaz de infiltrase en cualquier organización criminal y un experto en sistemas de vigilancia que combatió en Afganistán son los principales protagonistas de 'NCIS: Los Ángeles'.",
+         "popularity":256.075,
+         "poster_path":"/TIIgcznwNfNr3KOZvxn26eKV99.jpg",
+         "vote_average":7.5,
+         "vote_count":873
+      }
+   ],
+   "total_pages":12,
+   "total_results":222
+}

@@ -28,13 +28,19 @@ import Foundation
 
 // Input del Interactor
 protocol ShowsInteractorInputProtocol: BaseInteractorInputProtocol{
-    
+    func fetchDataTVAiringTodayInteractor()
+    func fetchDataTVOnTheAirInteractor()
+    func fetchDataTVPopularInteractor()
+    func fetchDataTVTopRateInteractor()
 }
 
 
-// Output del provider
+// Output del Provider
 protocol ShowsProviderOutputProtocol: BaseProviderOutputProtocol{
-   
+    func setInformationTVAiringToday(completion: Result<[ResultShows]?, NetworkError>)
+    func setInformationTVOnTheAir(completion: Result<[ResultShows]?, NetworkError>)
+    func setInformationTVPopular(completion: Result<[ResultShows]?, NetworkError>)
+    func setInformationTVTopRate(completion: Result<[ResultShows]?, NetworkError>)
 }
 
 final class ShowsInteractor: BaseInteractor {
@@ -49,14 +55,78 @@ final class ShowsInteractor: BaseInteractor {
         super.baseProvider as? ShowsProviderInputProtocol
     }
     
+    
+    // Metodos
+    func transformDataFromShowsToMoviesTVModelView(data: [ResultShows]?) -> [MoviesTVModelView]? {
+        var datasourceMoviesTVModelView: [MoviesTVModelView] = []
+        if let dataUnw = data {
+            for index in 0..<dataUnw.count{
+                let object = MoviesTVModelView(id: dataUnw[index].id,
+                                               backdropPath: dataUnw[index].backdropPath,
+                                               posterPath: dataUnw[index].posterPath,
+                                               name: dataUnw[index].name)
+                datasourceMoviesTVModelView.append(object)
+            }
+        }
+        return datasourceMoviesTVModelView
+    }
+    
+    
 }
 
 // Input del Interactor
 extension ShowsInteractor: ShowsInteractorInputProtocol {
     
+    func fetchDataTVAiringTodayInteractor() {
+        self.provider?.fetchDataTVAiringTodayProvider()
+    }
+    func fetchDataTVOnTheAirInteractor(){
+        self.provider?.fetchDataTVOnTheAirProvider()
+    }
+    func fetchDataTVPopularInteractor(){
+        self.provider?.fetchDataTVPopularProvider()
+    }
+    func fetchDataTVTopRateInteractor(){
+        self.provider?.fetchDataTVTopRateProvider()
+    }
+    
+    
+    
 }
 
-// Output del provider
+// Output del Provider
 extension ShowsInteractor: ShowsProviderOutputProtocol{
+    func setInformationTVAiringToday(completion: Result<[ResultShows]?, NetworkError>){
+        switch completion{
+        case .success(let data):
+            self.viewModel?.setInfoTVAiringTodayViewModel(data: self.transformDataFromShowsToMoviesTVModelView(data: data))
+        case .failure(let error):
+            debugPrint(error)
+        }
+    }
+    func setInformationTVOnTheAir(completion: Result<[ResultShows]?, NetworkError>){
+        switch completion{
+        case .success(let data):
+            self.viewModel?.setInfoTVOnTheAirViewModel(data: self.transformDataFromShowsToMoviesTVModelView(data: data))
+        case .failure(let error):
+            debugPrint(error)
+        }
+    }
+    func setInformationTVPopular(completion: Result<[ResultShows]?, NetworkError>){
+        switch completion{
+        case .success(let data):
+            self.viewModel?.setInfoTVPopularViewModel(data: self.transformDataFromShowsToMoviesTVModelView(data: data))
+        case .failure(let error):
+            debugPrint(error)
+        }
+    }
+    func setInformationTVTopRate(completion: Result<[ResultShows]?, NetworkError>){
+        switch completion{
+        case .success(let data):
+            self.viewModel?.setInfoTVTopRateViewModel(data: self.transformDataFromShowsToMoviesTVModelView(data: data))
+        case .failure(let error):
+            debugPrint(error)
+        }
+    }
 
 }

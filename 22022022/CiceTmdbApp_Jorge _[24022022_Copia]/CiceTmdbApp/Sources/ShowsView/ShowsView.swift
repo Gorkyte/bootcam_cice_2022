@@ -32,42 +32,9 @@ struct ShowsView: View {
     @StateObject var viewModel = ShowsViewModel()
        
     var body: some View {
-        List{
-            Group{
-                if !self.viewModel.dataSourceTVAiringToday.isEmpty{
-                    MoviesPosterCarrousel(title: "Airing Today",
-                                          moviesModel: self.viewModel.dataSourceTVAiringToday,
-                                            isPoster: false)
-                }
-            }
-            
-            Group{
-                if !self.viewModel.dataSourceTVOnTheAir.isEmpty{
-                    MoviesPosterCarrousel(title: "On Air",
-                                          moviesModel: self.viewModel.dataSourceTVOnTheAir,
-                                            isPoster: true)
-                }
-            }
-            
-            Group{
-                if !self.viewModel.dataSourceTVPopular.isEmpty{
-                    MoviesPosterCarrousel(title: "Popular",
-                                          moviesModel: self.viewModel.dataSourceTVPopular,
-                                            isPoster: false)
-                }
-            }
-            
-            Group{
-                if !self.viewModel.dataSourceTVTopRate.isEmpty{
-                    MoviesPosterCarrousel(title: "Top Rate",
-                                          moviesModel: self.viewModel.dataSourceTVTopRate,
-                                            isPoster: true)
-                }
-            }
-            
+        VStack {
+            Text ("Hello ShowsView")
         }
-        .listStyle(PlainListStyle())
-        .navigationTitle(Text("Shows"))
         .onAppear {
             self.viewModel.fetchData()
         }

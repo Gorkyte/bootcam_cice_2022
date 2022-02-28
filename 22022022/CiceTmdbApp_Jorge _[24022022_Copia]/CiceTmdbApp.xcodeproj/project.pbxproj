@@ -16,8 +16,6 @@
 		0BAF48A527CB9D2D00480BBD /* ShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48A027CB9D2D00480BBD /* ShowsView.swift */; };
 		0BAF48A627CB9D2D00480BBD /* ShowsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48A127CB9D2D00480BBD /* ShowsCoordinator.swift */; };
 		0BAF48A727CB9D2D00480BBD /* ShowsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48A227CB9D2D00480BBD /* ShowsInteractor.swift */; };
-		0BAF48A927CC17DA00480BBD /* ShowsModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BAF48A827CC17DA00480BBD /* ShowsModel.json */; };
-		0BAF48AB27CC186B00480BBD /* ShowsServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48AA27CC186B00480BBD /* ShowsServerModel.swift */; };
 		B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */; };
 		B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4327C56FC700644EF4 /* ContentView.swift */; };
 		B2382B4627C56FCA00644EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2382B4527C56FCA00644EF4 /* Assets.xcassets */; };
@@ -68,8 +66,6 @@
 		0BAF48A027CB9D2D00480BBD /* ShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsView.swift; sourceTree = "<group>"; };
 		0BAF48A127CB9D2D00480BBD /* ShowsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsCoordinator.swift; sourceTree = "<group>"; };
 		0BAF48A227CB9D2D00480BBD /* ShowsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsInteractor.swift; sourceTree = "<group>"; };
-		0BAF48A827CC17DA00480BBD /* ShowsModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ShowsModel.json; sourceTree = "<group>"; };
-		0BAF48AA27CC186B00480BBD /* ShowsServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsServerModel.swift; sourceTree = "<group>"; };
 		B2382B3E27C56FC700644EF4 /* CiceTmdbApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceTmdbApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiceTmdbAppApp.swift; sourceTree = "<group>"; };
 		B2382B4327C56FC700644EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,11 +137,11 @@
 		0BAF489327CB9C4400480BBD /* ShowsView */ = {
 			isa = PBXGroup;
 			children = (
-				0BAF48A027CB9D2D00480BBD /* ShowsView.swift */,
 				0BAF489E27CB9D2D00480BBD /* ShowsViewModel.swift */,
-				0BAF48A227CB9D2D00480BBD /* ShowsInteractor.swift */,
 				0BAF489F27CB9D2D00480BBD /* ShowsProvider.swift */,
+				0BAF48A027CB9D2D00480BBD /* ShowsView.swift */,
 				0BAF48A127CB9D2D00480BBD /* ShowsCoordinator.swift */,
+				0BAF48A227CB9D2D00480BBD /* ShowsInteractor.swift */,
 			);
 			path = ShowsView;
 			sourceTree = "<group>";
@@ -245,7 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				B29DE88427C659770017ACBE /* peliculas.json */,
-				0BAF48A827CC17DA00480BBD /* ShowsModel.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -254,7 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				B29DE8AD27C69E110017ACBE /* MoviesServerModel.swift */,
-				0BAF48AA27CC186B00480BBD /* ShowsServerModel.swift */,
 			);
 			path = ServerModel;
 			sourceTree = "<group>";
@@ -402,7 +396,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BAF48A927CC17DA00480BBD /* ShowsModel.json in Resources */,
 				B29DE88527C659770017ACBE /* peliculas.json in Resources */,
 				B2382B4927C56FCA00644EF4 /* Preview Assets.xcassets in Resources */,
 				B2382B4627C56FCA00644EF4 /* Assets.xcassets in Resources */,
@@ -447,7 +440,6 @@
 				B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */,
 				B29DE8B427C6A3E30017ACBE /* MoviesViewModel.swift in Sources */,
 				B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */,
-				0BAF48AB27CC186B00480BBD /* ShowsServerModel.swift in Sources */,
 				B2382B7127C5781C00644EF4 /* Utils.swift in Sources */,
 				B29DE8BA27C6B49B0017ACBE /* MoviesCoordinator.swift in Sources */,
 				B29DE88727C68FE50017ACBE /* Obfuscator.swift in Sources */,
