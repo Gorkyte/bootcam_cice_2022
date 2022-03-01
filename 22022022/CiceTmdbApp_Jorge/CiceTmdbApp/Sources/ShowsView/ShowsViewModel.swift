@@ -28,10 +28,10 @@ import Foundation
 
 //Output del Interactor
 protocol ShowsInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInfoTVAiringTodayViewModel(data: [MoviesTVModelView]?)
-    func setInfoTVOnTheAirViewModel(data: [MoviesTVModelView]?)
-    func setInfoTVPopularViewModel(data: [MoviesTVModelView]?)
-    func setInfoTVTopRateViewModel(data: [MoviesTVModelView]?)
+    func setInfoTVAiringTodayViewModel(data: [ShowsTVModelView]?)
+    func setInfoTVOnTheAirViewModel(data: [ShowsTVModelView]?)
+    func setInfoTVPopularViewModel(data: [ShowsTVModelView]?)
+    func setInfoTVTopRateViewModel(data: [ShowsTVModelView]?)
 }
 
 final class ShowsViewModel: BaseViewModel, ObservableObject {
@@ -42,10 +42,10 @@ final class ShowsViewModel: BaseViewModel, ObservableObject {
     }
     
     //MARK: - Variables @Published
-    @Published var dataSourceTVAiringToday: [MoviesTVModelView] = []
-    @Published var dataSourceTVOnTheAir: [MoviesTVModelView] = []
-    @Published var dataSourceTVPopular: [MoviesTVModelView] = []
-    @Published var dataSourceTVTopRate: [MoviesTVModelView] = []
+    @Published var dataSourceTVAiringToday: [ShowsTVModelView] = []
+    @Published var dataSourceTVOnTheAir: [ShowsTVModelView] = []
+    @Published var dataSourceTVPopular: [ShowsTVModelView] = []
+    @Published var dataSourceTVTopRate: [ShowsTVModelView] = []
     
     //MARK: - Metodos publicos para la View
     func fetchData(){
@@ -62,20 +62,20 @@ final class ShowsViewModel: BaseViewModel, ObservableObject {
 
 //Output del Interactor
 extension ShowsViewModel: ShowsInteractorOutputProtocol {
-    func setInfoTVAiringTodayViewModel(data: [MoviesTVModelView]?){
+    func setInfoTVAiringTodayViewModel(data: [ShowsTVModelView]?){
         self.dataSourceTVAiringToday.removeAll()
         self.dataSourceTVAiringToday = data ?? []
         
     }
-    func setInfoTVOnTheAirViewModel(data: [MoviesTVModelView]?){
+    func setInfoTVOnTheAirViewModel(data: [ShowsTVModelView]?){
         self.dataSourceTVOnTheAir.removeAll()
         self.dataSourceTVOnTheAir = data ?? []
     }
-    func setInfoTVPopularViewModel(data: [MoviesTVModelView]?){
+    func setInfoTVPopularViewModel(data: [ShowsTVModelView]?){
         self.dataSourceTVPopular.removeAll()
         self.dataSourceTVPopular = data ?? []
     }
-    func setInfoTVTopRateViewModel(data: [MoviesTVModelView]?){
+    func setInfoTVTopRateViewModel(data: [ShowsTVModelView]?){
         self.dataSourceTVTopRate.removeAll()
         self.dataSourceTVTopRate = data ?? []
     }

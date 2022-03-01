@@ -1,16 +1,16 @@
 //
-//  MoviesPosterCarrousel.swift
+//  ShowsPosterCorrousel.swift
 //  CiceTmdbApp
 //
-//  Created by Jorge Millan on 23/2/22.
+//  Created by Gorka Ormazabal on 28/2/22.
 //
 
 import SwiftUI
 
-struct MoviesPosterCarrousel: View {
+struct ShowsPosterCarrousel: View {
     
     var title: String
-    var moviesModel: [MoviesTVModelView]
+    var moviesModel: [ShowsTVModelView]
     var isPoster: Bool
     
     var body: some View {
@@ -29,16 +29,7 @@ struct MoviesPosterCarrousel: View {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 20) {
                     ForEach(self.moviesModel){ movie in
-                        NavigationLink {
-                            //DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: movie.id ?? 0))
-                            DetailMovieView(viewModel: DetailMovieServerModel.stubbedDetailMovie!)
-                        } label: {
-                            MoviePosterCell(model: movie, isPoster: self.isPoster)
-                        }
-                        .buttonStyle(PlainButtonStyle())
-
-                        
-                        
+                        ShowPosterCell(model: movie, isPoster: self.isPoster)
                     }
                 }
             }
@@ -46,13 +37,13 @@ struct MoviesPosterCarrousel: View {
     }
 }
 
-struct MoviePosterCell: View {
+struct ShowPosterCell: View {
     
     @ObservedObject var imageLoaderViewModel = ImageLoader()
-    private var modelData: MoviesTVModelView
+    private var modelData: ShowsTVModelView
     var isPoster: Bool
     
-    init(model: MoviesTVModelView, isPoster: Bool? = true){
+    init(model: ShowsTVModelView, isPoster: Bool? = true){
         self.modelData = model
         self.isPoster = isPoster ?? false
         if isPoster ?? false {

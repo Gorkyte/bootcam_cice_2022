@@ -57,11 +57,11 @@ final class ShowsInteractor: BaseInteractor {
     
     
     // Metodos
-    func transformDataFromShowsToMoviesTVModelView(data: [ResultShows]?) -> [MoviesTVModelView]? {
-        var datasourceMoviesTVModelView: [MoviesTVModelView] = []
+    func transformDataFromShowsToMoviesTVModelView(data: [ResultShows]?) -> [ShowsTVModelView]? {
+        var datasourceMoviesTVModelView: [ShowsTVModelView] = []
         if let dataUnw = data {
             for index in 0..<dataUnw.count{
-                let object = MoviesTVModelView(id: dataUnw[index].id,
+                let object = ShowsTVModelView(id: dataUnw[index].id,
                                                backdropPath: dataUnw[index].backdropPath,
                                                posterPath: dataUnw[index].posterPath,
                                                name: dataUnw[index].name)
