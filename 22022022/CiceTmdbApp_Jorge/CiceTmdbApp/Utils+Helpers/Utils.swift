@@ -60,10 +60,10 @@ struct URLEndpoint {
     }
     
     //Endpoints of Movies
-    static let endpointMoviesNowPlaying = "movie/now_playing?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
-    static let endpointMoviesPopular = "movie/popular?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
-    static let endpointMoviesTopRate = "movie/top_rated?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
-    static let endpointMoviesUpcoming = "movie/upcoming?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointMoviesNowPlaying = "movie/now_playing?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")"
+    static let endpointMoviesPopular = "movie/popular?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")"
+    static let endpointMoviesTopRate = "movie/top_rated?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")"
+    static let endpointMoviesUpcoming = "movie/upcoming?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")"
    
     //Endpoints of TV
     static let endpointTVAiringToday = "tv/airing_today?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")"
@@ -72,10 +72,10 @@ struct URLEndpoint {
     static let endpointTVTopRate = "tv/top_rated?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")"
    
     // Endpoint's detail Movie with parameters
-    static let endpointDetailMovie = "movie/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=videos%@"
+    static let endpointDetailMovie = "movie/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=%@"
     //https://api.themoviedb.org/3/movie/634649?api_key=a4b45e12e4b87a652657786085463ab7&language=es&append_to_response=videos%2Ccredits
    
-    static let endpointDetailShow = "tv/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=videos%@"
+    static let endpointDetailShow = "tv/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=%@"
 }
 
 extension URLEndpoint{
@@ -106,7 +106,7 @@ extension URLEndpoint{
             case .PRE:
                 return ""
             case .PRO:
-                return "https://icospartan-app.herokuapp.com/"
+                return ""
             }
         }
     }

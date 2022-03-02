@@ -62,7 +62,7 @@ struct ResultNowPlaying: Codable, Identifiable {
 
 extension MoviesServerModel {
     static var stubbedMoviesNowPlaying: [ResultNowPlaying]{
-        let response: MoviesServerModel? = try? Bundle.main.loadAndDecodeJSON(filename: "peliculas")
+        let response: MoviesServerModel? = try? Bundle.main.loadAndDecodeJSON(filename: "MoviesModel")
         return response?.results ?? []
     }
     

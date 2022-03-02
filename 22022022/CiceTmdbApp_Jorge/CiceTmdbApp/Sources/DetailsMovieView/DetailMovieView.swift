@@ -29,10 +29,11 @@ import SwiftUI
 
 struct DetailMovieView: View {
 
-    //@StateObject var viewModel = DetailMovieViewModel()
-    var viewModel: DetailMovieServerModel
-    @SwiftUI.Environment(\.presentationMode) var preseterMode
+    @StateObject var viewModel = DetailMovieViewModel()
+    //var viewModel: DetailMovieServerModel
+    @SwiftUI.Environment(\.presentationMode) var presenterMode
     //private var imageLoader = ImageLoader()
+    @State private var selectedTrailer: ResultVideo?
        
     var body: some View {
         ScrollView{
@@ -46,14 +47,14 @@ struct DetailMovieView: View {
     }
     var headerView: some View {
         ZStack(alignment: .topLeading) {
-            if self.viewModel.posterUrl != nil {
-                MovieDetailImage(imageUrl: self.viewModel.posterUrl)
+            if self.viewModel.data?.posterUrl != nil {
+                MovieDetailImage(imageUrl: self.viewModel.data!.posterUrl)
                     
             }
             
             HStack{
                 Button {//=======================================1er Boton "<"
-                    self.preseterMode.wrappedValue.dismiss()
+                    self.presenterMode.wrappedValue.dismiss()
                 } label: {
                     Image(systemName: "chevron.left")
                 }
@@ -82,14 +83,108 @@ struct DetailMovieView: View {
     var bodyView: some View {
         VStack(alignment: .leading, spacing: 30) {
             HStack{
-                Text(self.viewModel.genreText)
+                Text(self.viewModel.data?.genreText ?? "")
                 Text("·").fontWeight(.heavy)
-                Text(self.viewModel.yearText)
-                Text(self.viewModel.durationText)
+                Text(self.viewModel.data?.yearText ?? "")
+                Text(self.viewModel.data?.durationText ?? "")
                 
+            }
+            
+            Text(self.viewModel.data?.overview ?? "")
+                .font(.title2)
+            
+            HStack {
+                if !(self.viewModel.data?.ratingText.isEmpty ?? false) {
+                    Text (self.viewModel.data?.ratingText ?? "")
+                    .foregroundColor(.red)
+                }
+                Text(self.viewModel.data?.scoreText ?? "")
+                Spacer()
+            }
+            
+            Text ("Starrings")
+                .font(.title)
+                .fontWeight(.bold)
+            ScrollView(.horizontal,showsIndicators: false){
+                if self.viewModel.data?.cast != nil && !(self.viewModel.data?.cast?.isEmpty ?? false) {
+                    // Componente de Carrusel de Casting
+                    MovieCastCorrouselView(model: self.viewModel.data?.cast ?? [])
+                }
+            }
+            
+            HStack (alignment: .top, spacing: 4) {
+                if self.viewModel.data?.crew != nil && !(self.viewModel.data?.crew?.isEmpty ?? false){
+                    VStack(alignment: .leading, spacing: 4) {
+                        if self.viewModel.data?.directors != nil && !(self.viewModel.data?.directors?.isEmpty ?? false){
+                            Text("Directors")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .padding(.top)
+                            ForEach((self.viewModel.data?.directors?.prefix(2))!) { item in
+                                Text (item.name ?? "")
+                                
+                            }
+                        }
+                        
+                        if self.viewModel.data?.producers != nil && !(self.viewModel.data?.producers?.isEmpty ?? false){
+                            Text("Producer[s]")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .padding(.top)
+                            ForEach((self.viewModel.data?.producers?.prefix(2))!) { item in
+                                Text (item.name ?? "")
+                                
+                            }
+                        }
+                        
+                        if self.viewModel.data?.screenWriters != nil && !(self.viewModel.data?.screenWriters?.isEmpty ?? false){
+                            Text("Writer[s]")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .padding(.top)
+                            ForEach((self.viewModel.data?.screenWriters?.prefix(2))!) { item in
+                                Text (item.name ?? "")
+                                
+                            }
+                        }
+                        
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+            }
+            if self.viewModel.data?.youtubeTrailers != nil && !(self.viewModel.data?.youtubeTrailers?.isEmpty ?? false) {
+                VStack(alignment: .leading, spacing: 20) {
+                    Text("Trailers")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    ForEach((self.viewModel.data?.youtubeTrailers)!) { item in
+                        Button{
+                            self.selectedTrailer = item
+                        } label: {
+                            HStack {
+                                Text(item.name ?? "")
+                                Spacer()
+                                Image(systemName: "play.circle.fill")
+                                    .foregroundColor(.red)
+                            }
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        
+                    }
+                }
             }
         }
         
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .edgesIgnoringSafeArea(.all)
+        .sheet(item: self.$selectedTrailer) { myTrailer in
+            SafariView(url: myTrailer.youtubeURL!)
+        }
+        
+        .onAppear {
+            self.viewModel.fetchData()
+        }
     }
     
 }
@@ -97,7 +192,10 @@ struct DetailMovieView: View {
 struct MovieDetailImage: View {
     
     let imageUrl: URL
-    @StateObject private var imageLoaderVM = ImageLoader()
+    // @StateObject, es la manera como la vista va a ser capaz de interpretar
+    // de este objeto, la conexión del protocolo
+    // Observar lo que está pasando con el @Published
+    @StateObject private var imageLoaderVM = ImageLoader() 
     
     var body: some View {
         ZStack {
@@ -121,9 +219,8 @@ struct MovieDetailImage: View {
 
 struct DetailMoviePreviews: PreviewProvider {
     static var previews: some View {
-        if let dataUnw = DetailMovieServerModel.stubbedDetailMovie{
-            DetailMovieView(viewModel: dataUnw)
-        }
+             DetailMovieView()
+        
         
     }
 }

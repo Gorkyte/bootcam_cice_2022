@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8A9AF94F-F654-4CD3-BD16-50DA9EA57BC8"
+            uuid = "47927915-72F4-45C9-8E18-3284FC3AC54C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CiceTmdbApp/Sources/DetailsMovieView/DetailMovieCoordinator.swift"
+            filePath = "CiceTmdbApp/Sources/DetailsMovieView/DetailMovieProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "view(dto:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "fetchdataDetailMovieProvider()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8D20F2E-C44F-49B1-8D65-06152B027B42"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceTmdbApp/Sources/DetailsMovieView/DetailMovieProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "requestDataDetail(idMovie:moreParams:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

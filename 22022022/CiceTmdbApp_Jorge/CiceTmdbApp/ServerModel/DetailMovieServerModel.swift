@@ -78,7 +78,7 @@ struct DetailMovieServerModel: Codable {
     
     
     var yearText: String {
-        guard let releaseDateUnw = self.releaseDate, let dateUnw = Utils.dateFormatter.date(from: releaseDateUnw) else {
+        guard let releaseDateUnw = releaseDate, let dateUnw = Utils.dateFormatter.date(from: releaseDateUnw) else {
             return "n/a"
         }
         return Utils.yearFormatter.string(from: dateUnw)
@@ -89,9 +89,45 @@ struct DetailMovieServerModel: Codable {
             return "n/a"
         }
         return Utils.durationFormatter.string(from: TimeInterval(runtimeUnw) * 60) ?? "n/a"
-
     }
     
+    var ratingText: String {
+        let rating = Int (voteAverage ?? 0)
+        let ratingText = (0..<rating).reduce("") { (partialResult, _) -> String in
+            return partialResult + "★"
+        }
+        return ratingText
+    }
+    
+    var scoreText: String {
+        guard ratingText.count > 0 else {
+            return "n/a"
+        }
+        return "\(ratingText.count) / 10"
+    }
+    
+    var cast: [Cast]? {
+        credits?.cast
+    }
+    
+    var crew: [Crew]? {
+        credits?.crew
+    }
+    
+    var directors: [Crew]? {
+        crew?.filter { $0.job?.lowercased() == "director" }
+    }
+    var producers:  [Crew]? {
+        crew?.filter { $0.job?.lowercased() == "producer"}
+    }
+    
+    var screenWriters: [Crew]? {
+        crew?.filter { $0.job?.lowercased() == "writer"}
+    }
+    
+    var youtubeTrailers: [ResultVideo]? {
+        videos?.results?.filter { $0.youtubeURL != nil }
+    }
     
 }
 
@@ -122,7 +158,7 @@ struct Credits: Codable {
 }
 
 // MARK: - Cast
-struct Cast: Codable {
+struct Cast: Codable, Identifiable {
     let adult: Bool?
     let gender: Int?
     let id: Int?
@@ -150,10 +186,16 @@ struct Cast: Codable {
         case creditID = "credit_id"
         case order = "order"
     }
+    
+    var profilePathUrl: URL {
+        return URL(string: "https://image.tmdb.org/t/p/w500/\(profilePath ?? "")")!
+        
+    }
+    
 }
 
 // MARK: - Crew
-struct Crew: Codable {
+struct Crew: Codable, Identifiable {
     let adult: Bool?
     let gender: Int?
     let id: Int?
@@ -241,7 +283,7 @@ struct Videos: Codable {
 }
 
 // MARK: - Result
-struct ResultVideo: Codable {
+struct ResultVideo: Codable, Identifiable {
     let iso639_1: String?
     let iso3166_1: String?
     let name: String?
@@ -264,6 +306,13 @@ struct ResultVideo: Codable {
         case official = "official"
         case publishedAt = "published_at"
         case id = "id"
+    }
+    
+    var youtubeURL: URL? {
+        guard site == "YouTube" else {
+            return nil
+        }
+        return URL(string:  "https://www.youtube.com/watch?v=\(key ?? "")")
     }
 }
 
