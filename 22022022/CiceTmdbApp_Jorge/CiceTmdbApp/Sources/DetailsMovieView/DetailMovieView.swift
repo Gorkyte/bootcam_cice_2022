@@ -33,7 +33,7 @@ struct DetailMovieView: View {
     //var viewModel: DetailMovieServerModel
     @SwiftUI.Environment(\.presentationMode) var presenterMode
     //private var imageLoader = ImageLoader()
-    @State private var selectedTrailer: ResultVideo?
+    @State private var selectedTrailer: VideosYouTubeViewModel?
        
     var body: some View {
         ScrollView{
@@ -41,6 +41,16 @@ struct DetailMovieView: View {
                 headerView
                 bodyView
             }
+        }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .edgesIgnoringSafeArea(.all)
+        .sheet(item: self.$selectedTrailer) { myTrailer in
+            SafariView(url: myTrailer.youtubeURL!)
+        }
+        
+        .onAppear {
+            self.viewModel.fetchData()
         }
         
         
@@ -108,7 +118,7 @@ struct DetailMovieView: View {
             ScrollView(.horizontal,showsIndicators: false){
                 if self.viewModel.data?.cast != nil && !(self.viewModel.data?.cast?.isEmpty ?? false) {
                     // Componente de Carrusel de Casting
-                    MovieCastCorrouselView(model: self.viewModel.data?.cast ?? [])
+                    MovieCastCarrouselView(model: self.viewModel.data?.cast ?? [])
                 }
             }
             
@@ -175,16 +185,7 @@ struct DetailMovieView: View {
             }
         }
         
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
-        .edgesIgnoringSafeArea(.all)
-        .sheet(item: self.$selectedTrailer) { myTrailer in
-            SafariView(url: myTrailer.youtubeURL!)
-        }
-        
-        .onAppear {
-            self.viewModel.fetchData()
-        }
+
     }
     
 }
@@ -207,6 +208,7 @@ struct MovieDetailImage: View {
                 Image(uiImage: self.imageLoaderVM.image!)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
+                    .cornerRadius(8)
                     .shadow(radius: 10)
             }
         }

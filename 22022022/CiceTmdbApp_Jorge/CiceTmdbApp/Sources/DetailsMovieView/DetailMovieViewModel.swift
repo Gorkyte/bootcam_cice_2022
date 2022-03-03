@@ -28,7 +28,7 @@ import Foundation
 
 //Output del Interactor
 protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieServerModel?)
+    func setInformationDetail(data: DetailMovieTVModelView?)
 }
 
 
@@ -41,7 +41,7 @@ final class DetailMovieViewModel: BaseViewModel, ObservableObject {
     }
     
     //MARK: - Variables @Published
-    @Published var data: DetailMovieServerModel?
+    @Published var data: DetailMovieTVModelView?
     
     //MARK: - Metodos publicos para la View
     func fetchData(){
@@ -54,7 +54,7 @@ final class DetailMovieViewModel: BaseViewModel, ObservableObject {
 
 //Output del Interactor
 extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieServerModel?){
+    func setInformationDetail(data: DetailMovieTVModelView?){
         guard let dataUnw = data else {
            return
         }

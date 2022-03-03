@@ -37,7 +37,7 @@ struct ShowsView: View {
                 if !self.viewModel.dataSourceTVAiringToday.isEmpty{
                     ShowsPosterCarrousel(title: "Airing Today",
                                           moviesModel: self.viewModel.dataSourceTVAiringToday,
-                                            isPoster: false)
+                                         isPoster: false)
                 }
             }
             

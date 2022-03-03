@@ -44,6 +44,36 @@ struct DetailShowView: View {
 }
 
 
+
+struct ShowDetailImage: View {
+    
+    let imageUrl: URL
+    // @StateObject, es la manera como la vista va a ser capaz de interpretar
+    // de este objeto, la conexión del protocolo
+    // Observar lo que está pasando con el @Published
+    @StateObject private var imageLoaderVM = ImageLoader()
+    
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .fill(Color.gray.opacity(0.3))
+                .cornerRadius(8)
+                .shadow(radius: 10)
+            if self.imageLoaderVM.image != nil {
+                Image(uiImage: self.imageLoaderVM.image!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .cornerRadius(8)
+                    .shadow(radius: 10)
+            }
+        }
+        .onAppear {
+            self.imageLoaderVM.loadImage(whit: imageUrl)
+        }
+    }
+}
+
+
 struct DetailShowPreviews: PreviewProvider {
     static var previews: some View {
         DetailShowView()

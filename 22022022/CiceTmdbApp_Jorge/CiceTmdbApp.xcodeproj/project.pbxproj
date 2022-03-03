@@ -34,6 +34,9 @@
 		0BAF48C927CD32F600480BBD /* DetailMovieServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48C827CD32F600480BBD /* DetailMovieServerModel.swift */; };
 		0BAF48CB27CDF7ED00480BBD /* MovieCastCorrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48CA27CDF7ED00480BBD /* MovieCastCorrouselView.swift */; };
 		0BAF48CE27CE813600480BBD /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48CD27CE813600480BBD /* SafariView.swift */; };
+		0BAF48D227CF622300480BBD /* DetailShow.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BAF48D127CF622300480BBD /* DetailShow.json */; };
+		0BAF48D427CF64A500480BBD /* DetailShowServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48D327CF64A500480BBD /* DetailShowServerModel.swift */; };
+		0BAF48D627CFBBE000480BBD /* DetailMovieTVModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48D527CFBBE000480BBD /* DetailMovieTVModelView.swift */; };
 		B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */; };
 		B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4327C56FC700644EF4 /* ContentView.swift */; };
 		B2382B4627C56FCA00644EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2382B4527C56FCA00644EF4 /* Assets.xcassets */; };
@@ -102,6 +105,9 @@
 		0BAF48C827CD32F600480BBD /* DetailMovieServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieServerModel.swift; sourceTree = "<group>"; };
 		0BAF48CA27CDF7ED00480BBD /* MovieCastCorrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCastCorrouselView.swift; sourceTree = "<group>"; };
 		0BAF48CD27CE813600480BBD /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		0BAF48D127CF622300480BBD /* DetailShow.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DetailShow.json; sourceTree = "<group>"; };
+		0BAF48D327CF64A500480BBD /* DetailShowServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailShowServerModel.swift; sourceTree = "<group>"; };
+		0BAF48D527CFBBE000480BBD /* DetailMovieTVModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieTVModelView.swift; sourceTree = "<group>"; };
 		B2382B3E27C56FC700644EF4 /* CiceTmdbApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceTmdbApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiceTmdbAppApp.swift; sourceTree = "<group>"; };
 		B2382B4327C56FC700644EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 			children = (
 				0BAF488C27C9292000480BBD /* MoviesTVModelView.swift */,
 				0BAF48AF27CCB9AD00480BBD /* ShowsTVModelView.swift */,
+				0BAF48D527CFBBE000480BBD /* DetailMovieTVModelView.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -313,6 +320,7 @@
 				B29DE88427C659770017ACBE /* MoviesModel.json */,
 				0BAF48A827CC17DA00480BBD /* ShowsModel.json */,
 				0BAF48C627CD32C300480BBD /* DetailMovie.json */,
+				0BAF48D127CF622300480BBD /* DetailShow.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -323,6 +331,7 @@
 				B29DE8AD27C69E110017ACBE /* MoviesServerModel.swift */,
 				0BAF48AA27CC186B00480BBD /* ShowsServerModel.swift */,
 				0BAF48C827CD32F600480BBD /* DetailMovieServerModel.swift */,
+				0BAF48D327CF64A500480BBD /* DetailShowServerModel.swift */,
 			);
 			path = ServerModel;
 			sourceTree = "<group>";
@@ -475,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BAF48A927CC17DA00480BBD /* ShowsModel.json in Resources */,
+				0BAF48D227CF622300480BBD /* DetailShow.json in Resources */,
 				B29DE88527C659770017ACBE /* MoviesModel.json in Resources */,
 				B2382B4927C56FCA00644EF4 /* Preview Assets.xcassets in Resources */,
 				0BAF48C727CD32C300480BBD /* DetailMovie.json in Resources */,
@@ -531,9 +541,11 @@
 				0BAF48A427CB9D2D00480BBD /* ShowsProvider.swift in Sources */,
 				B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */,
 				B29DE8B427C6A3E30017ACBE /* MoviesViewModel.swift in Sources */,
+				0BAF48D427CF64A500480BBD /* DetailShowServerModel.swift in Sources */,
 				0BAF48C327CCBCB500480BBD /* DetailShowView.swift in Sources */,
 				B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */,
 				0BAF48C927CD32F600480BBD /* DetailMovieServerModel.swift in Sources */,
+				0BAF48D627CFBBE000480BBD /* DetailMovieTVModelView.swift in Sources */,
 				0BAF48AB27CC186B00480BBD /* ShowsServerModel.swift in Sources */,
 				B2382B7127C5781C00644EF4 /* Utils.swift in Sources */,
 				B29DE8BA27C6B49B0017ACBE /* MoviesCoordinator.swift in Sources */,
