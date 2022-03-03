@@ -76,6 +76,11 @@ struct URLEndpoint {
     //https://api.themoviedb.org/3/movie/634649?api_key=a4b45e12e4b87a652657786085463ab7&language=es&append_to_response=videos%2Ccredits
    
     static let endpointDetailShow = "tv/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=%@"
+
+    // Endpoint of Ppopular People
+    static let endpointPopularPeople = "person/popular?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")"
+
+ 
 }
 
 extension URLEndpoint{
