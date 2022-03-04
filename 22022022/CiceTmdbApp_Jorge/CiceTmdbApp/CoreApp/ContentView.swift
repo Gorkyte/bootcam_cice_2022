@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("currentPage") var currentPage = 1
+    
     var body: some View {
         VStack{
-            HomeView()
+            
+            
+            //===============Aquí metemos el OnBoardingView
+            
+            if currentPage > Constants.totalPages {
+                HomeView()
+            } else {
+                OnBoardingView()
+            }
+           
+            //===============Aquí metemos el OnBoardingView
+            //HomeView()
         }
     }
 }

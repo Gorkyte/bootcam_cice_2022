@@ -47,6 +47,7 @@
 		0BAF48E727D1235E00480BBD /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48E627D1235E00480BBD /* PeopleViewModel.swift */; };
 		0BAF48E927D12E2300480BBD /* PeopleCarrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48E827D12E2300480BBD /* PeopleCarrousel.swift */; };
 		0BAF48EC27D1563200480BBD /* DetailPersonPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48EB27D1563200480BBD /* DetailPersonPopular.swift */; };
+		0BAF48EF27D1C8C700480BBD /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF48EE27D1C8C700480BBD /* OnBoardingView.swift */; };
 		B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */; };
 		B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4327C56FC700644EF4 /* ContentView.swift */; };
 		B2382B4627C56FCA00644EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2382B4527C56FCA00644EF4 /* Assets.xcassets */; };
@@ -128,6 +129,7 @@
 		0BAF48E627D1235E00480BBD /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		0BAF48E827D12E2300480BBD /* PeopleCarrousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCarrousel.swift; sourceTree = "<group>"; };
 		0BAF48EB27D1563200480BBD /* DetailPersonPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPersonPopular.swift; sourceTree = "<group>"; };
+		0BAF48EE27D1C8C700480BBD /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		B2382B3E27C56FC700644EF4 /* CiceTmdbApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceTmdbApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiceTmdbAppApp.swift; sourceTree = "<group>"; };
 		B2382B4327C56FC700644EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -263,6 +265,14 @@
 			path = DetailPopularPersonView;
 			sourceTree = "<group>";
 		};
+		0BAF48ED27D1C8AF00480BBD /* OnBoardingView */ = {
+			isa = PBXGroup;
+			children = (
+				0BAF48EE27D1C8C700480BBD /* OnBoardingView.swift */,
+			);
+			path = OnBoardingView;
+			sourceTree = "<group>";
+		};
 		B2382B3527C56FC700644EF4 = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +392,7 @@
 		B29DE8AF27C6A29C0017ACBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0BAF48ED27D1C8AF00480BBD /* OnBoardingView */,
 				0BAF48EA27D155EA00480BBD /* DetailPopularPersonView */,
 				0BAF48D727D08E3600480BBD /* PeoplePopularView */,
 				0BAF48B127CCBC6E00480BBD /* DetailsMovieView */,
@@ -585,6 +596,7 @@
 				0BAF488D27C9292000480BBD /* MoviesTVModelView.swift in Sources */,
 				0BAF48BA27CCBCA000480BBD /* DetailMovieCoordinator.swift in Sources */,
 				0BAF48B827CCBCA000480BBD /* DetailMovieProvider.swift in Sources */,
+				0BAF48EF27D1C8C700480BBD /* OnBoardingView.swift in Sources */,
 				0BAF48DF27D08E5700480BBD /* PeoplePopularView.swift in Sources */,
 				B29DE8B627C6AF8D0017ACBE /* MoviesInteractor.swift in Sources */,
 				0BAF48E027D08E5700480BBD /* PeoplePopularCoordinator.swift in Sources */,
