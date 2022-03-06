@@ -11,6 +11,9 @@ struct ContentView: View {
     
     @AppStorage("currentPage") var currentPage = 1
     
+    @EnvironmentObject var viewModelSession: LoginViewModel
+    
+    
     var body: some View {
         VStack{
             
@@ -18,8 +21,13 @@ struct ContentView: View {
             //===============Aquí metemos el OnBoardingView
             
             if currentPage > Constants.totalPages {
-                //HomeView()
-                LoginView(authType: .signIn)
+                
+                if self.viewModelSession.userLogged != nil {
+                    HomeView()                      // Si estás Logado, vas a la Home
+                } else {
+                    LoginView(authType: .signUp)    // Si no estás logado, entras aquí
+                }
+                
             } else {
                 OnBoardingView()
             }

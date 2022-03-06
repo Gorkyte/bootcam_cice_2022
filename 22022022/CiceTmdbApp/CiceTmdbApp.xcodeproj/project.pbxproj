@@ -54,6 +54,7 @@
 		0BAF48FC27D4A2C400480BBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BAF48FB27D4A2C400480BBD /* GoogleService-Info.plist */; };
 		0BAF48FF27D4BA7800480BBD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0BAF48FE27D4BA7800480BBD /* FirebaseAuth */; };
 		0BAF490127D4BA7800480BBD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0BAF490027D4BA7800480BBD /* FirebaseFirestore */; };
+		0BAF490427D4C8BA00480BBD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF490327D4C8BA00480BBD /* ProfileView.swift */; };
 		B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */; };
 		B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4327C56FC700644EF4 /* ContentView.swift */; };
 		B2382B4627C56FCA00644EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2382B4527C56FCA00644EF4 /* Assets.xcassets */; };
@@ -140,6 +141,7 @@
 		0BAF48F727D25AC700480BBD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0BAF48F927D2AB5400480BBD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0BAF48FB27D4A2C400480BBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0BAF490327D4C8BA00480BBD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B2382B3E27C56FC700644EF4 /* CiceTmdbApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceTmdbApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiceTmdbAppApp.swift; sourceTree = "<group>"; };
 		B2382B4327C56FC700644EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -294,6 +296,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		0BAF490227D4C88100480BBD /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				0BAF490327D4C8BA00480BBD /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
 		B2382B3527C56FC700644EF4 = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +424,7 @@
 		B29DE8AF27C6A29C0017ACBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0BAF490227D4C88100480BBD /* ProfileView */,
 				0BAF48F027D1E39200480BBD /* Login */,
 				0BAF48ED27D1C8AF00480BBD /* OnBoardingView */,
 				0BAF48EA27D155EA00480BBD /* DetailPopularPersonView */,
@@ -643,6 +654,7 @@
 				B29DE8B427C6A3E30017ACBE /* MoviesViewModel.swift in Sources */,
 				0BAF48D427CF64A500480BBD /* DetailShowServerModel.swift in Sources */,
 				0BAF48C327CCBCB500480BBD /* DetailShowView.swift in Sources */,
+				0BAF490427D4C8BA00480BBD /* ProfileView.swift in Sources */,
 				0BAF48DD27D08E5700480BBD /* PeoplePopularViewModel.swift in Sources */,
 				B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */,
 				0BAF48C927CD32F600480BBD /* DetailMovieServerModel.swift in Sources */,
