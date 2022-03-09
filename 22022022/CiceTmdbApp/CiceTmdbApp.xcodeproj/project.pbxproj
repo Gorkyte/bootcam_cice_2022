@@ -55,6 +55,16 @@
 		0BAF48FF27D4BA7800480BBD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0BAF48FE27D4BA7800480BBD /* FirebaseAuth */; };
 		0BAF490127D4BA7800480BBD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0BAF490027D4BA7800480BBD /* FirebaseFirestore */; };
 		0BAF490427D4C8BA00480BBD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF490327D4C8BA00480BBD /* ProfileView.swift */; };
+		0BAF490627D4E31800480BBD /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF490527D4E31800480BBD /* HudView.swift */; };
+		0BAF490B27D4E4B200480BBD /* LoaderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF490A27D4E4B200480BBD /* LoaderModifier.swift */; };
+		0BAF490D27D5042300480BBD /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF490C27D5042300480BBD /* TextFieldModifier.swift */; };
+		0BAF490F27D5086400480BBD /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF490E27D5086400480BBD /* ButtonModifier.swift */; };
+		0BAF491627D50C9000480BBD /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF491127D50C9000480BBD /* SearchViewModel.swift */; };
+		0BAF491727D50C9000480BBD /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF491227D50C9000480BBD /* SearchProvider.swift */; };
+		0BAF491827D50C9000480BBD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF491327D50C9000480BBD /* SearchView.swift */; };
+		0BAF491927D50C9000480BBD /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF491427D50C9000480BBD /* SearchCoordinator.swift */; };
+		0BAF491A27D50C9000480BBD /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF491527D50C9000480BBD /* SearchInteractor.swift */; };
+		0BAF491C27D50DEA00480BBD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF491B27D50DEA00480BBD /* SearchBarView.swift */; };
 		B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */; };
 		B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B4327C56FC700644EF4 /* ContentView.swift */; };
 		B2382B4627C56FCA00644EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2382B4527C56FCA00644EF4 /* Assets.xcassets */; };
@@ -142,6 +152,16 @@
 		0BAF48F927D2AB5400480BBD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0BAF48FB27D4A2C400480BBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0BAF490327D4C8BA00480BBD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0BAF490527D4E31800480BBD /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		0BAF490A27D4E4B200480BBD /* LoaderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderModifier.swift; sourceTree = "<group>"; };
+		0BAF490C27D5042300480BBD /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		0BAF490E27D5086400480BBD /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		0BAF491127D50C9000480BBD /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		0BAF491227D50C9000480BBD /* SearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProvider.swift; sourceTree = "<group>"; };
+		0BAF491327D50C9000480BBD /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0BAF491427D50C9000480BBD /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		0BAF491527D50C9000480BBD /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		0BAF491B27D50DEA00480BBD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		B2382B3E27C56FC700644EF4 /* CiceTmdbApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceTmdbApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2382B4127C56FC700644EF4 /* CiceTmdbAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiceTmdbAppApp.swift; sourceTree = "<group>"; };
 		B2382B4327C56FC700644EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -255,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				0BAF48CD27CE813600480BBD /* SafariView.swift */,
+				0BAF491B27D50DEA00480BBD /* SearchBarView.swift */,
 			);
 			path = UIKitViews;
 			sourceTree = "<group>";
@@ -304,6 +325,28 @@
 			path = ProfileView;
 			sourceTree = "<group>";
 		};
+		0BAF490727D4E45200480BBD /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				0BAF490A27D4E4B200480BBD /* LoaderModifier.swift */,
+				0BAF490C27D5042300480BBD /* TextFieldModifier.swift */,
+				0BAF490E27D5086400480BBD /* ButtonModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		0BAF491027D50C4000480BBD /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				0BAF491127D50C9000480BBD /* SearchViewModel.swift */,
+				0BAF491227D50C9000480BBD /* SearchProvider.swift */,
+				0BAF491327D50C9000480BBD /* SearchView.swift */,
+				0BAF491427D50C9000480BBD /* SearchCoordinator.swift */,
+				0BAF491527D50C9000480BBD /* SearchInteractor.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
 		B2382B3527C56FC700644EF4 = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +370,7 @@
 		B2382B4027C56FC700644EF4 /* CiceTmdbApp */ = {
 			isa = PBXGroup;
 			children = (
+				0BAF490727D4E45200480BBD /* ViewModifiers */,
 				0BAF48FB27D4A2C400480BBD /* GoogleService-Info.plist */,
 				0BAF48CC27CE812200480BBD /* UIKitViews */,
 				0BAF488B27C928CC00480BBD /* ModelView */,
@@ -424,6 +468,7 @@
 		B29DE8AF27C6A29C0017ACBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0BAF491027D50C4000480BBD /* SearchView */,
 				0BAF490227D4C88100480BBD /* ProfileView */,
 				0BAF48F027D1E39200480BBD /* Login */,
 				0BAF48ED27D1C8AF00480BBD /* OnBoardingView */,
@@ -467,6 +512,7 @@
 				0BAF48CA27CDF7ED00480BBD /* MovieCastCorrouselView.swift */,
 				0BAF48E827D12E2300480BBD /* PeopleCarrousel.swift */,
 				0BAF48F727D25AC700480BBD /* CustomTextField.swift */,
+				0BAF490527D4E31800480BBD /* HudView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -624,13 +670,16 @@
 				0BAF48BB27CCBCA000480BBD /* DetailMovieInteractor.swift in Sources */,
 				0BAF48F827D25AC700480BBD /* CustomTextField.swift in Sources */,
 				0BAF48CB27CDF7ED00480BBD /* MovieCastCorrouselView.swift in Sources */,
+				0BAF491827D50C9000480BBD /* SearchView.swift in Sources */,
 				0BAF488A27C8D28E00480BBD /* NetworkError.swift in Sources */,
+				0BAF491927D50C9000480BBD /* SearchCoordinator.swift in Sources */,
 				0BAF48E527D0914700480BBD /* PeoplePopularServerModel.swift in Sources */,
 				0BAF48C127CCBCB500480BBD /* DetailShowViewModel.swift in Sources */,
 				0BAF48FA27D2AB5400480BBD /* LoginViewModel.swift in Sources */,
 				0BAF48A327CB9D2D00480BBD /* ShowsViewModel.swift in Sources */,
 				0BAF48E127D08E5700480BBD /* PeoplePopularInteractor.swift in Sources */,
 				B29DE8B827C6B1A30017ACBE /* MoviesProvider.swift in Sources */,
+				0BAF491627D50C9000480BBD /* SearchViewModel.swift in Sources */,
 				0BAF48C527CCBCB500480BBD /* DetailShowInteractor.swift in Sources */,
 				0BAF48B027CCB9AD00480BBD /* ShowsTVModelView.swift in Sources */,
 				0BAF48A527CB9D2D00480BBD /* ShowsView.swift in Sources */,
@@ -640,6 +689,7 @@
 				B2382B6D27C5701900644EF4 /* BaseView.swift in Sources */,
 				0BAF488D27C9292000480BBD /* MoviesTVModelView.swift in Sources */,
 				0BAF48BA27CCBCA000480BBD /* DetailMovieCoordinator.swift in Sources */,
+				0BAF491A27D50C9000480BBD /* SearchInteractor.swift in Sources */,
 				0BAF48B827CCBCA000480BBD /* DetailMovieProvider.swift in Sources */,
 				0BAF48EF27D1C8C700480BBD /* OnBoardingView.swift in Sources */,
 				0BAF48DF27D08E5700480BBD /* PeoplePopularView.swift in Sources */,
@@ -650,13 +700,17 @@
 				0BAF48E927D12E2300480BBD /* PeopleCarrousel.swift in Sources */,
 				0BAF489027CA454300480BBD /* HomeView.swift in Sources */,
 				0BAF48A427CB9D2D00480BBD /* ShowsProvider.swift in Sources */,
+				0BAF491C27D50DEA00480BBD /* SearchBarView.swift in Sources */,
 				B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */,
 				B29DE8B427C6A3E30017ACBE /* MoviesViewModel.swift in Sources */,
 				0BAF48D427CF64A500480BBD /* DetailShowServerModel.swift in Sources */,
 				0BAF48C327CCBCB500480BBD /* DetailShowView.swift in Sources */,
 				0BAF490427D4C8BA00480BBD /* ProfileView.swift in Sources */,
+				0BAF490B27D4E4B200480BBD /* LoaderModifier.swift in Sources */,
 				0BAF48DD27D08E5700480BBD /* PeoplePopularViewModel.swift in Sources */,
 				B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */,
+				0BAF490D27D5042300480BBD /* TextFieldModifier.swift in Sources */,
+				0BAF491727D50C9000480BBD /* SearchProvider.swift in Sources */,
 				0BAF48C927CD32F600480BBD /* DetailMovieServerModel.swift in Sources */,
 				0BAF48D627CFBBE000480BBD /* DetailMovieTVModelView.swift in Sources */,
 				0BAF48AB27CC186B00480BBD /* ShowsServerModel.swift in Sources */,
@@ -666,10 +720,12 @@
 				B29DE88727C68FE50017ACBE /* Obfuscator.swift in Sources */,
 				B29DE8BD27C6B7820017ACBE /* NetworkService.swift in Sources */,
 				B29DE88927C690A90017ACBE /* Constants.swift in Sources */,
+				0BAF490F27D5086400480BBD /* ButtonModifier.swift in Sources */,
 				0BAF48A627CB9D2D00480BBD /* ShowsCoordinator.swift in Sources */,
 				0BAF48F227D1E39F00480BBD /* LoginView.swift in Sources */,
 				0BAF48C427CCBCB500480BBD /* DetailShowCoordinator.swift in Sources */,
 				0BAF48A727CB9D2D00480BBD /* ShowsInteractor.swift in Sources */,
+				0BAF490627D4E31800480BBD /* HudView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

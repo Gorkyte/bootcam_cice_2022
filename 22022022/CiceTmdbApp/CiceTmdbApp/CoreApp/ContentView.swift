@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @AppStorage("currentPage") var currentPage = 1
     
+    // este EnvironmentObject es una propiedad de Apple para poder utilizar en diferentes capas, diferentes vistas
     @EnvironmentObject var viewModelSession: LoginViewModel
     
     

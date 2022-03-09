@@ -25,7 +25,7 @@ enum AuthenticatyionType: String {
     var footterText: String {
         switch self {
         case .signIn:
-            return "Oraindik ez zera kide, eman izena"
+            return "Oraindik ez zera kide? eman izena"
         case .signUp:
             return "Listo al zaude Cice TMDB App ikusteko?"
         }

@@ -20,8 +20,9 @@ struct ProfileView: View {
                         self.viewModelSession.logoutSession()
                     } label: {
                         Text("Logout")
+                            //.buttonStyleH1()
                     }
-                    .font(.title3)
+                    .buttonStyleH1()
                 }
             }
         } else {

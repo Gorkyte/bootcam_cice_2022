@@ -32,44 +32,46 @@ struct LoginView: View {
                         CustomTextField(placeholder: "email",
                                         title: "email",
                                         text: self.$email)
-                            .padding(10)
-                            .background(
-                                Color(red: 239/255,
-                                      green: 243/255,
-                                      blue: 244/255,
-                                      opacity: 1)
-                            )
-                            .cornerRadius(10)
-                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 5, y: 5)
+                            .textfieldStyle()
+//                            .padding(10)
+//                            .background(
+//                                Color(red: 239/255,
+//                                      green: 243/255,
+//                                      blue: 244/255,
+//                                      opacity: 1)
+//                            )
+//                            .cornerRadius(10)
+//                            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 5, y: 5)
                         
                         if self.showPssword {
                             CustomTextField(placeholder: "Password",
                                             title: "Password",
                                             text: self.$password)
-                                .padding(10)
-                                .background(
-                                    Color(red: 239/255,
-                                          green: 243/255,
-                                          blue: 244/255,
-                                          opacity: 1)
-                                )
-                                .cornerRadius(10)
-                                .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 5, y: 5)
+                                .textfieldStyle()
+//                                .padding(10)
+//                                .background(
+//                                    Color(red: 239/255,
+//                                          green: 243/255,
+//                                          blue: 244/255,
+//                                          opacity: 1)
+//                                )
+//                                .cornerRadius(10)
+//                                .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 5, y: 5)
                             
                         }else{
                             CustomSecureTextField(placeholder: "Password",
                                                   title: "Password",
                                                   text: self.$password)
-                            
-                                .padding(10)
-                                .background(
-                                    Color(red: 239/255,
-                                          green: 243/255,
-                                          blue: 244/255,
-                                          opacity: 1)
-                                )
-                                .cornerRadius(10)
-                                .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 5, y: 5)
+                                .textfieldStyle()
+//                                .padding(10)
+//                                .background(
+//                                    Color(red: 239/255,
+//                                          green: 243/255,
+//                                          blue: 244/255,
+//                                          opacity: 1)
+//                                )
+//                                .cornerRadius(10)
+//                                .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 5, y: 5)
                          }
                         
                         // Esta parte es si estoy en el modo registro
@@ -77,33 +79,17 @@ struct LoginView: View {
                         
                         if authType == .signUp {
                             if showPssword{
-                                CustomTextField(placeholder: "Password",
-                                                title: "Password",
+                                CustomTextField(placeholder: "ConfirmationPassword",
+                                                title: "ConfirmationPassword",
                                                 text: self.$confirmationPassword)
-                                    .padding(10)
-                                    .background(
-                                        Color(red: 239/255,
-                                              green: 243/255,
-                                              blue: 244/255,
-                                              opacity: 1)
-                                    )
-                                    .cornerRadius(10)
-                                    .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 5, y: 5)
+                                    .textfieldStyle()
                                 
                             }else{
                                 CustomSecureTextField(placeholder: "ConfirmationPassword",
                                                       title: "ConfirmationPassword",
                                                       text: self.$confirmationPassword)
                                 
-                                    .padding(10)
-                                    .background(
-                                        Color(red: 239/255,
-                                              green: 243/255,
-                                              blue: 244/255,
-                                              opacity: 1)
-                                    )
-                                    .cornerRadius(10)
-                                    .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 5, y: 5)
+                                    .textfieldStyle()
                             }
                         }
                         
@@ -118,14 +104,7 @@ struct LoginView: View {
                             self.authEmailTouched()
                         } label: {
                             Text(self.authType.text)
-                                .font (.headline)
-                                .lineLimit(2)
-                               // esta parte, lo teniamos fuera abajo, pero si pulsabas fuera de las letras, no clickaba, metiendo aqui en esta parte coge todo
-                                .frame(width: UIScreen.main.bounds.width * 0.8, height: 50)
-                                .background(
-                                    Color (red: 239/255, green: 243/255, blue: 244/255)
-                                    .clipShape(Capsule())
-                                )
+                                .buttonStyleH1()
                             
                         }
                         .foregroundColor(.gray)
@@ -137,14 +116,7 @@ struct LoginView: View {
                             self.fotterTouched()
                         } label: {
                             Text(self.authType.footterText)
-                                .font (.headline)
-                                .lineLimit(2)
-                                .frame(width: UIScreen.main.bounds.width * 0.8, height: 50)
-                                .background(
-                                Color (red: 239/255, green: 243/255, blue: 244/255)
-                                )
-                                .clipShape(Capsule()
-                                )
+                                .buttonStyleH1()
                             
                         }
                         .foregroundColor(.gray)
