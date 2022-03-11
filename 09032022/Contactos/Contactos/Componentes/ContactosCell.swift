@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContactosCell: View {
     
-    var contactos: Contactos
+    @ObservedObject var contactos: Contactos
     
     
     var body: some View {

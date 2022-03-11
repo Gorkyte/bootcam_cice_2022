@@ -17,6 +17,9 @@
 		0BAF49BF27DA671300480BBD /* AgregarContactoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF49BE27DA671300480BBD /* AgregarContactoView.swift */; };
 		0BAF49C427DA681300480BBD /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF49C327DA681300480BBD /* TextFieldModifier.swift */; };
 		0BAF49C627DB0E6900480BBD /* PersistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF49C527DB0E6900480BBD /* PersistanceViewModel.swift */; };
+		0BAF49C827DB37E000480BBD /* DetalleContactoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF49C727DB37E000480BBD /* DetalleContactoView.swift */; };
+		0BAF49CA27DB385500480BBD /* BotonCircularModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF49C927DB385500480BBD /* BotonCircularModifier.swift */; };
+		0BAF49CE27DBA70A00480BBD /* emoji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BAF49CD27DBA70A00480BBD /* emoji.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		0BAF49BE27DA671300480BBD /* AgregarContactoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarContactoView.swift; sourceTree = "<group>"; };
 		0BAF49C327DA681300480BBD /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		0BAF49C527DB0E6900480BBD /* PersistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceViewModel.swift; sourceTree = "<group>"; };
+		0BAF49C727DB37E000480BBD /* DetalleContactoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoView.swift; sourceTree = "<group>"; };
+		0BAF49C927DB385500480BBD /* BotonCircularModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotonCircularModifier.swift; sourceTree = "<group>"; };
+		0BAF49CD27DBA70A00480BBD /* emoji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emoji.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				0BAF49B727DA605900480BBD /* Modelos */,
 				0BAF49B327DA5D6800480BBD /* CoreApp */,
 				0BAF49A927DA5D3B00480BBD /* Assets.xcassets */,
+				0BAF49CD27DBA70A00480BBD /* emoji.jpg */,
 				0BAF49AB27DA5D3B00480BBD /* Preview Content */,
 				0BAF49B427DA5DA200480BBD /* Contactos.xcdatamodeld */,
 			);
@@ -113,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0BAF49BE27DA671300480BBD /* AgregarContactoView.swift */,
+				0BAF49C727DB37E000480BBD /* DetalleContactoView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				0BAF49C327DA681300480BBD /* TextFieldModifier.swift */,
+				0BAF49C927DB385500480BBD /* BotonCircularModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -185,6 +194,7 @@
 			files = (
 				0BAF49AD27DA5D3B00480BBD /* Preview Assets.xcassets in Resources */,
 				0BAF49AA27DA5D3B00480BBD /* Assets.xcassets in Resources */,
+				0BAF49CE27DBA70A00480BBD /* emoji.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BAF49B927DA606500480BBD /* Contactos.swift in Sources */,
+				0BAF49C827DB37E000480BBD /* DetalleContactoView.swift in Sources */,
+				0BAF49CA27DB385500480BBD /* BotonCircularModifier.swift in Sources */,
 				0BAF49BF27DA671300480BBD /* AgregarContactoView.swift in Sources */,
 				0BAF49C627DB0E6900480BBD /* PersistanceViewModel.swift in Sources */,
 				0BAF49A827DA5D3800480BBD /* ContentView.swift in Sources */,
@@ -333,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Contactos/Preview Content\"";
+				DEVELOPMENT_TEAM = 5PN7P876CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -361,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Contactos/Preview Content\"";
+				DEVELOPMENT_TEAM = 5PN7P876CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
