@@ -23,8 +23,27 @@ struct ProfileView: View {
                             //.buttonStyleH1()
                     }
                     .buttonStyleH1()
+                    
+                    
+                    Section("Profile data"){
+                        Button {
+                            self.viewModelSession.logoutSession()
+                        } label: {
+                            Text("Logout")
+                                //.buttonStyleH1()
+                        }
+                        .buttonStyleH1()
+                    
+                    
+                    
+                    
+                    
+                    
                 }
             }
+            
+            
+            
         } else {
             ContentView()
         }

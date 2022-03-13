@@ -19,7 +19,7 @@
 		0BAF49C627DB0E6900480BBD /* PersistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF49C527DB0E6900480BBD /* PersistanceViewModel.swift */; };
 		0BAF49C827DB37E000480BBD /* DetalleContactoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF49C727DB37E000480BBD /* DetalleContactoView.swift */; };
 		0BAF49CA27DB385500480BBD /* BotonCircularModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF49C927DB385500480BBD /* BotonCircularModifier.swift */; };
-		0BAF49CE27DBA70A00480BBD /* emoji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BAF49CD27DBA70A00480BBD /* emoji.jpg */; };
+		0BAF49CE27DBA70A00480BBD /* emoji.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0BAF49CD27DBA70A00480BBD /* emoji.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		0BAF49C527DB0E6900480BBD /* PersistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceViewModel.swift; sourceTree = "<group>"; };
 		0BAF49C727DB37E000480BBD /* DetalleContactoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoView.swift; sourceTree = "<group>"; };
 		0BAF49C927DB385500480BBD /* BotonCircularModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotonCircularModifier.swift; sourceTree = "<group>"; };
-		0BAF49CD27DBA70A00480BBD /* emoji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emoji.jpg; sourceTree = "<group>"; };
+		0BAF49CD27DBA70A00480BBD /* emoji.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emoji.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				0BAF49B727DA605900480BBD /* Modelos */,
 				0BAF49B327DA5D6800480BBD /* CoreApp */,
 				0BAF49A927DA5D3B00480BBD /* Assets.xcassets */,
-				0BAF49CD27DBA70A00480BBD /* emoji.jpg */,
+				0BAF49CD27DBA70A00480BBD /* emoji.jpeg */,
 				0BAF49AB27DA5D3B00480BBD /* Preview Content */,
 				0BAF49B427DA5DA200480BBD /* Contactos.xcdatamodeld */,
 			);
@@ -194,7 +194,7 @@
 			files = (
 				0BAF49AD27DA5D3B00480BBD /* Preview Assets.xcassets in Resources */,
 				0BAF49AA27DA5D3B00480BBD /* Assets.xcassets in Resources */,
-				0BAF49CE27DBA70A00480BBD /* emoji.jpg in Resources */,
+				0BAF49CE27DBA70A00480BBD /* emoji.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
