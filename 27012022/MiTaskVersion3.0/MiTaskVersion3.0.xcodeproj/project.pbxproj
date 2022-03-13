@@ -38,6 +38,10 @@
 		09200B0F27A98686000B2487 /* ContactosServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09200B0E27A98686000B2487 /* ContactosServerModel.swift */; };
 		09200B1427A99194000B2487 /* ContactosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09200B1227A99194000B2487 /* ContactosCell.swift */; };
 		09200B1527A99194000B2487 /* ContactosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09200B1327A99194000B2487 /* ContactosCell.xib */; };
+		09249F0827AD1098006BA14D /* CategoriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F0627AD1098006BA14D /* CategoriaCell.swift */; };
+		09249F0927AD1098006BA14D /* CategoriaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09249F0727AD1098006BA14D /* CategoriaCell.xib */; };
+		09249F0F27AD958A006BA14D /* ListaTareasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09249F0D27AD958A006BA14D /* ListaTareasCell.swift */; };
+		09249F1027AD958A006BA14D /* ListaTareasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09249F0E27AD958A006BA14D /* ListaTareasCell.xib */; };
 		0935D50927A9AD30006A9DF4 /* DetalleContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0935D50727A9AD30006A9DF4 /* DetalleContactoViewController.swift */; };
 		0935D50A27A9AD30006A9DF4 /* DetalleContactoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0935D50827A9AD30006A9DF4 /* DetalleContactoViewController.xib */; };
 		0935D50D27A9AD3F006A9DF4 /* DetalleContactoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0935D50C27A9AD3F006A9DF4 /* DetalleContactoCoordinator.swift */; };
@@ -79,6 +83,10 @@
 		09200B0E27A98686000B2487 /* ContactosServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosServerModel.swift; sourceTree = "<group>"; };
 		09200B1227A99194000B2487 /* ContactosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosCell.swift; sourceTree = "<group>"; };
 		09200B1327A99194000B2487 /* ContactosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactosCell.xib; sourceTree = "<group>"; };
+		09249F0627AD1098006BA14D /* CategoriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCell.swift; sourceTree = "<group>"; };
+		09249F0727AD1098006BA14D /* CategoriaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaCell.xib; sourceTree = "<group>"; };
+		09249F0D27AD958A006BA14D /* ListaTareasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasCell.swift; sourceTree = "<group>"; };
+		09249F0E27AD958A006BA14D /* ListaTareasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareasCell.xib; sourceTree = "<group>"; };
 		0935D50727A9AD30006A9DF4 /* DetalleContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoViewController.swift; sourceTree = "<group>"; };
 		0935D50827A9AD30006A9DF4 /* DetalleContactoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleContactoViewController.xib; sourceTree = "<group>"; };
 		0935D50C27A9AD3F006A9DF4 /* DetalleContactoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoCoordinator.swift; sourceTree = "<group>"; };
@@ -212,6 +220,7 @@
 		09200AC627A84E03000B2487 /* CategoriasView */ = {
 			isa = PBXGroup;
 			children = (
+				09249F0527AD1079006BA14D /* Cell */,
 				09200AE027A84EFF000B2487 /* CategoriaViewController.swift */,
 				09200AE127A84EFF000B2487 /* CategoriaViewController.xib */,
 				09200AFC27A8516D000B2487 /* CategoriaViewCoordinator.swift */,
@@ -222,6 +231,7 @@
 		09200AC927A84E54000B2487 /* ListaTareasView */ = {
 			isa = PBXGroup;
 			children = (
+				09249F0C27AD955D006BA14D /* Cell */,
 				09200ACA27A84E5C000B2487 /* DetalleTareaView */,
 				09200AE527A84F11000B2487 /* ListaTareasViewController.swift */,
 				09200AE627A84F11000B2487 /* ListaTareasViewController.xib */,
@@ -253,6 +263,24 @@
 			children = (
 				09200B1227A99194000B2487 /* ContactosCell.swift */,
 				09200B1327A99194000B2487 /* ContactosCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09249F0527AD1079006BA14D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09249F0627AD1098006BA14D /* CategoriaCell.swift */,
+				09249F0727AD1098006BA14D /* CategoriaCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09249F0C27AD955D006BA14D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09249F0D27AD958A006BA14D /* ListaTareasCell.swift */,
+				09249F0E27AD958A006BA14D /* ListaTareasCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -336,6 +364,7 @@
 			files = (
 				09200ACE27A84E93000B2487 /* LoginViewController.xib in Resources */,
 				09200ADE27A84EEC000B2487 /* NuevaTareaViewController.xib in Resources */,
+				09249F1027AD958A006BA14D /* ListaTareasCell.xib in Resources */,
 				09200AED27A84F27000B2487 /* DetalleTareaViewController.xib in Resources */,
 				09200AE327A84EFF000B2487 /* CategoriaViewController.xib in Resources */,
 				09200B1527A99194000B2487 /* ContactosCell.xib in Resources */,
@@ -347,6 +376,7 @@
 				0935D50A27A9AD30006A9DF4 /* DetalleContactoViewController.xib in Resources */,
 				09200AA627A453EA000B2487 /* Assets.xcassets in Resources */,
 				09200AD427A84EAD000B2487 /* HomeTabBarViewController.xib in Resources */,
+				09249F0927AD1098006BA14D /* CategoriaCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,8 +406,10 @@
 				09200AE227A84EFF000B2487 /* CategoriaViewController.swift in Sources */,
 				09200AE727A84F11000B2487 /* ListaTareasViewController.swift in Sources */,
 				0935D50D27A9AD3F006A9DF4 /* DetalleContactoCoordinator.swift in Sources */,
+				09249F0F27AD958A006BA14D /* ListaTareasCell.swift in Sources */,
 				09200AEC27A84F27000B2487 /* DetalleTareaViewController.swift in Sources */,
 				09200AF327A85028000B2487 /* ContactosViewCoordinator.swift in Sources */,
+				09249F0827AD1098006BA14D /* CategoriaCell.swift in Sources */,
 				09200AD327A84EAD000B2487 /* HomeTabBarViewController.swift in Sources */,
 				0935D51327A9B213006A9DF4 /* PerfilCell.swift in Sources */,
 			);

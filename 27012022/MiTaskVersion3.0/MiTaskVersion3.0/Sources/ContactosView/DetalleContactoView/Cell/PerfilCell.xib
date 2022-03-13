@@ -63,6 +63,17 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXr-KY-csh">
+                        <rect key="frame" x="268" y="121" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="7I3-PO-swH"/>
+                            <constraint firstAttribute="height" constant="44" id="ZJY-Jx-TUY"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="showCameraPhotos:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZPP-j0-YOx"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="TLS-3U-Jz9" firstAttribute="trailing" secondItem="cEd-b2-3FK" secondAttribute="trailing" id="0wi-Zo-wnN"/>
@@ -79,7 +90,9 @@
                     <constraint firstItem="TLS-3U-Jz9" firstAttribute="leading" secondItem="cEd-b2-3FK" secondAttribute="leading" id="I2m-61-3vM"/>
                     <constraint firstItem="cEd-b2-3FK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Iix-wZ-2YK"/>
                     <constraint firstItem="A2m-jx-aC0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LXK-yY-R8q"/>
+                    <constraint firstItem="aXr-KY-csh" firstAttribute="top" secondItem="1eW-1H-DNB" secondAttribute="top" id="RjX-VE-lJr"/>
                     <constraint firstItem="LzI-9L-3X9" firstAttribute="top" secondItem="A2m-jx-aC0" secondAttribute="bottom" constant="8" id="S8v-0u-bM4"/>
+                    <constraint firstAttribute="trailing" secondItem="aXr-KY-csh" secondAttribute="trailing" constant="8" id="TE1-Rc-Ix5"/>
                     <constraint firstItem="vAA-Pf-0hm" firstAttribute="leading" secondItem="LzI-9L-3X9" secondAttribute="leading" id="TGy-eb-3uA"/>
                     <constraint firstItem="1bu-Zj-pdv" firstAttribute="leading" secondItem="QWB-Ij-T8l" secondAttribute="leading" id="VhB-K5-O1E"/>
                     <constraint firstItem="TLS-3U-Jz9" firstAttribute="top" secondItem="cEd-b2-3FK" secondAttribute="top" id="XHg-b3-nib"/>

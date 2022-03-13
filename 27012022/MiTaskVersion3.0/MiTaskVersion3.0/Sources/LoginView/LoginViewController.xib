@@ -165,7 +165,7 @@
     <resources>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
-            <color red="0.92132031917572021" green="0.49165503910535008" blue="0.2756678778437196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.92100000381469727" green="0.49200001358985901" blue="0.27599999308586121" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
