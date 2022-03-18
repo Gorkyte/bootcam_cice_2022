@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     
     @EnvironmentObject var viewModelSession: LoginViewModel
+    @State private var isPresented = false
     
     var body: some View {
         //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -24,7 +25,27 @@ struct ProfileView: View {
                     }
                     .buttonStyleH1()
                 }
+                
+                Section("Mis favoritos"){
+                Button {
+                    self.isPresented.toggle()
+                } label: {
+                    Text("Favourites")
+                        //.buttonStyleH1()
+                }
+                .buttonStyleH1()
+                .sheet(isPresented: self.$isPresented) {
+                    //
+                } content: {
+                    FavouritesCoordinator.navigation()
+                }
+
             }
+                
+                
+            }
+            
+        
         } else {
             ContentView()
         }

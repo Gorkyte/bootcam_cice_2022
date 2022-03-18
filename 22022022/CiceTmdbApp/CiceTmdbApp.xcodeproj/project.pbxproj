@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9CDC8D27E071650079C48F /* DDBB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CDC8C27E071650079C48F /* DDBB.swift */; };
+		0B9CDC9427E0720E0079C48F /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CDC8F27E0720E0079C48F /* FavouritesViewModel.swift */; };
+		0B9CDC9527E0720E0079C48F /* FavouritesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CDC9027E0720E0079C48F /* FavouritesProvider.swift */; };
+		0B9CDC9627E0720E0079C48F /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CDC9127E0720E0079C48F /* FavouritesView.swift */; };
+		0B9CDC9727E0720E0079C48F /* FavouritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CDC9227E0720E0079C48F /* FavouritesCoordinator.swift */; };
+		0B9CDC9827E0720E0079C48F /* FavouritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CDC9327E0720E0079C48F /* FavouritesInteractor.swift */; };
+		0B9CDC9C27E10BF20079C48F /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CDC9B27E10BF20079C48F /* CustomAlertView.swift */; };
 		0BAF488A27C8D28E00480BBD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF488927C8D28E00480BBD /* NetworkError.swift */; };
 		0BAF488D27C9292000480BBD /* MoviesTVModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF488C27C9292000480BBD /* MoviesTVModelView.swift */; };
 		0BAF489027CA454300480BBD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF488F27CA454300480BBD /* HomeView.swift */; };
@@ -106,6 +113,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B9CDC8C27E071650079C48F /* DDBB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBB.swift; sourceTree = "<group>"; };
+		0B9CDC8F27E0720E0079C48F /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
+		0B9CDC9027E0720E0079C48F /* FavouritesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesProvider.swift; sourceTree = "<group>"; };
+		0B9CDC9127E0720E0079C48F /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		0B9CDC9227E0720E0079C48F /* FavouritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesCoordinator.swift; sourceTree = "<group>"; };
+		0B9CDC9327E0720E0079C48F /* FavouritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesInteractor.swift; sourceTree = "<group>"; };
+		0B9CDC9B27E10BF20079C48F /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		0BAF488927C8D28E00480BBD /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		0BAF488C27C9292000480BBD /* MoviesTVModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTVModelView.swift; sourceTree = "<group>"; };
 		0BAF488F27CA454300480BBD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -215,6 +229,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B9CDC8E27E071E30079C48F /* FavouritesView */ = {
+			isa = PBXGroup;
+			children = (
+				0B9CDC8F27E0720E0079C48F /* FavouritesViewModel.swift */,
+				0B9CDC9027E0720E0079C48F /* FavouritesProvider.swift */,
+				0B9CDC9127E0720E0079C48F /* FavouritesView.swift */,
+				0B9CDC9227E0720E0079C48F /* FavouritesCoordinator.swift */,
+				0B9CDC9327E0720E0079C48F /* FavouritesInteractor.swift */,
+			);
+			path = FavouritesView;
+			sourceTree = "<group>";
+		};
 		0BAF488B27C928CC00480BBD /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +463,7 @@
 				B29DE88627C68FE50017ACBE /* Obfuscator.swift */,
 				B2382B7027C5781C00644EF4 /* Utils.swift */,
 				B29DE88827C690A90017ACBE /* Constants.swift */,
+				0B9CDC8C27E071650079C48F /* DDBB.swift */,
 			);
 			path = "Utils+Helpers";
 			sourceTree = "<group>";
@@ -468,6 +495,7 @@
 		B29DE8AF27C6A29C0017ACBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0B9CDC8E27E071E30079C48F /* FavouritesView */,
 				0BAF491027D50C4000480BBD /* SearchView */,
 				0BAF490227D4C88100480BBD /* ProfileView */,
 				0BAF48F027D1E39200480BBD /* Login */,
@@ -507,6 +535,7 @@
 		B29DE8C027C6CC4C0017ACBE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0B9CDC9B27E10BF20079C48F /* CustomAlertView.swift */,
 				B29DE8C127C6CC650017ACBE /* MoviesPosterCarrousel.swift */,
 				0BAF48AD27CCB73B00480BBD /* ShowsPosterCorrousel.swift */,
 				0BAF48CA27CDF7ED00480BBD /* MovieCastCorrouselView.swift */,
@@ -687,6 +716,7 @@
 				0BAF48E727D1235E00480BBD /* PeopleViewModel.swift in Sources */,
 				B29DE8B227C6A2BB0017ACBE /* MoviesView.swift in Sources */,
 				B2382B6D27C5701900644EF4 /* BaseView.swift in Sources */,
+				0B9CDC8D27E071650079C48F /* DDBB.swift in Sources */,
 				0BAF488D27C9292000480BBD /* MoviesTVModelView.swift in Sources */,
 				0BAF48BA27CCBCA000480BBD /* DetailMovieCoordinator.swift in Sources */,
 				0BAF491A27D50C9000480BBD /* SearchInteractor.swift in Sources */,
@@ -694,6 +724,7 @@
 				0BAF48EF27D1C8C700480BBD /* OnBoardingView.swift in Sources */,
 				0BAF48DF27D08E5700480BBD /* PeoplePopularView.swift in Sources */,
 				B29DE8B627C6AF8D0017ACBE /* MoviesInteractor.swift in Sources */,
+				0B9CDC9527E0720E0079C48F /* FavouritesProvider.swift in Sources */,
 				0BAF48E027D08E5700480BBD /* PeoplePopularCoordinator.swift in Sources */,
 				B29DE8C427C6CEC50017ACBE /* ImageLoader.swift in Sources */,
 				B29DE8C227C6CC650017ACBE /* MoviesPosterCarrousel.swift in Sources */,
@@ -704,13 +735,16 @@
 				B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */,
 				B29DE8B427C6A3E30017ACBE /* MoviesViewModel.swift in Sources */,
 				0BAF48D427CF64A500480BBD /* DetailShowServerModel.swift in Sources */,
+				0B9CDC9C27E10BF20079C48F /* CustomAlertView.swift in Sources */,
 				0BAF48C327CCBCB500480BBD /* DetailShowView.swift in Sources */,
 				0BAF490427D4C8BA00480BBD /* ProfileView.swift in Sources */,
+				0B9CDC9827E0720E0079C48F /* FavouritesInteractor.swift in Sources */,
 				0BAF490B27D4E4B200480BBD /* LoaderModifier.swift in Sources */,
 				0BAF48DD27D08E5700480BBD /* PeoplePopularViewModel.swift in Sources */,
 				B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */,
 				0BAF490D27D5042300480BBD /* TextFieldModifier.swift in Sources */,
 				0BAF491727D50C9000480BBD /* SearchProvider.swift in Sources */,
+				0B9CDC9727E0720E0079C48F /* FavouritesCoordinator.swift in Sources */,
 				0BAF48C927CD32F600480BBD /* DetailMovieServerModel.swift in Sources */,
 				0BAF48D627CFBBE000480BBD /* DetailMovieTVModelView.swift in Sources */,
 				0BAF48AB27CC186B00480BBD /* ShowsServerModel.swift in Sources */,
@@ -719,12 +753,14 @@
 				0BAF48DE27D08E5700480BBD /* PeoplePopularProvider.swift in Sources */,
 				B29DE88727C68FE50017ACBE /* Obfuscator.swift in Sources */,
 				B29DE8BD27C6B7820017ACBE /* NetworkService.swift in Sources */,
+				0B9CDC9427E0720E0079C48F /* FavouritesViewModel.swift in Sources */,
 				B29DE88927C690A90017ACBE /* Constants.swift in Sources */,
 				0BAF490F27D5086400480BBD /* ButtonModifier.swift in Sources */,
 				0BAF48A627CB9D2D00480BBD /* ShowsCoordinator.swift in Sources */,
 				0BAF48F227D1E39F00480BBD /* LoginView.swift in Sources */,
 				0BAF48C427CCBCB500480BBD /* DetailShowCoordinator.swift in Sources */,
 				0BAF48A727CB9D2D00480BBD /* ShowsInteractor.swift in Sources */,
+				0B9CDC9627E0720E0079C48F /* FavouritesView.swift in Sources */,
 				0BAF490627D4E31800480BBD /* HudView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
