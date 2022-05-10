@@ -10,7 +10,7 @@ import SwiftUI
 struct MoviesPosterCarrousel: View {
     
     var title: String
-    var moviesModel: [ResultNowPlaying]
+    var moviesModel: [MoviesTVModelView]
     var isPoster: Bool
     
     
@@ -22,8 +22,8 @@ struct MoviesPosterCarrousel: View {
                     .fontWeight(.bold)
                     .padding(.horizontal)
                 Rectangle()
-                    .fill(Color.cyan.opacity(0.3))
-                    .frame(width: 50, height: 5)
+                    .fill(Color.blue.opacity(0.8))
+                    .frame(width: 50, height: 10)
                 
             }
             .padding(.bottom, 20)
@@ -44,10 +44,10 @@ struct MoviePosterCell: View {
     
     @ObservedObject var imageLoaderVM = ImageLoader() //
     // StateObject solo en el padre, después, poner ObservedObject
-    private var modelData: ResultNowPlaying
+    private var modelData: MoviesTVModelView
     var isPoster: Bool
     
-    init(model: ResultNowPlaying, isPoster: Bool? = true){
+    init(model: MoviesTVModelView, isPoster: Bool? = true){
         self.modelData = model
         self.isPoster = isPoster ?? false
         if isPoster ?? false {
@@ -64,10 +64,10 @@ struct MoviePosterCell: View {
                     Image(uiImage: self.imageLoaderVM.image!)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .cornerRadius(8)
+                        .cornerRadius(50)
                         .shadow(radius:10)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 8)
+                            RoundedRectangle(cornerRadius: 50)
                                 .stroke(Color.green,lineWidth: 5)
                         )
                 }else {
@@ -80,7 +80,7 @@ struct MoviePosterCell: View {
             .frame(width: self.isPoster ? 240 : 270, height: self.isPoster ? 306 : 150)
             
             if !self.isPoster{
-                Text(self.modelData.title ?? "")
+                Text(self.modelData.name ?? "")
                     .fontWeight(.semibold)
                     .padding(.top, 15)
                     .lineLimit(10)
@@ -91,9 +91,9 @@ struct MoviePosterCell: View {
     }
 }
 
-struct MoviesPosterCarrousel_Previews: PreviewProvider {
-    static var previews: some View {
-        MoviesPosterCarrousel(title: "Azken Filmak",
-                              moviesModel: MoviesServerModel.stubbedMoviesNowPlaying, isPoster: false)
-    }
-}
+//struct MoviesPosterCarrousel_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MoviesPosterCarrousel(title: "Azken Filmak",
+//                              moviesModel: MoviesServerModel.stubbedMoviesNowPlaying, isPoster: false)
+//    }
+//}

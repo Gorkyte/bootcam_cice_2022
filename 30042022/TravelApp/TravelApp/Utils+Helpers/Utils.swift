@@ -64,6 +64,10 @@ struct URLEnpoint {
     
     // Endpoint's of movies
     static let endpointMoviesNowPlaying = "movie/now_playing?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endopontMoviesPopular = "movie/popular?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointMoviesTopRate = "movie/top_rated?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointMoviesUpcoming = "movie/upcoming?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointMoviesLatest = "movie/latest?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
     
     
 }
