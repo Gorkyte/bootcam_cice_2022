@@ -13,10 +13,11 @@ final class HomeViewModel: ObservableObject {
     
     let tabItemViewModels = [
         TabItemViewModel(imageName: "tv.circle", title: "Filmak", type: .movies),
-        TabItemViewModel(imageName: "play.circle", title: "Ikuskizunak", type: .movies),
-        TabItemViewModel(imageName: "person.2.circle", title: "Pertsonak", type: .movies),
-        TabItemViewModel(imageName: "magnifyingglass.circle", title: "Bilatu", type: .movies),
-        TabItemViewModel(imageName: "person.circle.fill", title: "Profila", type: .movies)
+        TabItemViewModel(imageName: "play.circle", title: "Ikuskizunak", type: .shows),
+        TabItemViewModel(imageName: "person.2.circle", title: "Pertsonak", type: .people),
+        TabItemViewModel(imageName: "magnifyingglass.circle", title: "Bilatu", type: .search),
+        TabItemViewModel(imageName: "person.circle.fill", title: "Profila", type: .profile)
+//        TabItemViewModel(imageName: "person.circle.fill", title: "Profila", type: .profile2)
     ]
     
 }
@@ -32,5 +33,6 @@ struct TabItemViewModel: Hashable {
         case people
         case search
         case profile
+//        case profile2
     }
 }

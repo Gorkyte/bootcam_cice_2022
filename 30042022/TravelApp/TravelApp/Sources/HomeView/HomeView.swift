@@ -33,13 +33,15 @@ struct HomeView: View {
         case .movies:
             MoviesCoordinator.navigation()
         case .shows:
-            MoviesCoordinator.navigation()
+            ShowsCoordinator.navigation()
         case .people:
             MoviesCoordinator.navigation()
         case .search:
             MoviesCoordinator.navigation()
         case .profile:
             MoviesCoordinator.navigation()
+//        case .profile2:
+//            MoviesCoordinator.navigation()
         }
     }
     
