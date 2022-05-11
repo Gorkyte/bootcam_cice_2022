@@ -14,6 +14,8 @@
 		0B02B532282ADD2500B41A2A /* ShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02B52D282ADD2500B41A2A /* ShowsView.swift */; };
 		0B02B533282ADD2500B41A2A /* ShowsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02B52E282ADD2500B41A2A /* ShowsCoordinator.swift */; };
 		0B02B534282ADD2500B41A2A /* ShowsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02B52F282ADD2500B41A2A /* ShowsInteractor.swift */; };
+		0B02B536282AE90000B41A2A /* ShowsModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B02B535282AE90000B41A2A /* ShowsModel.json */; };
+		0B02B538282AE94D00B41A2A /* ShowsServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02B537282AE94D00B41A2A /* ShowsServerModel.swift */; };
 		0B355983281D8E9700A4EC00 /* TravelAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B355982281D8E9700A4EC00 /* TravelAppApp.swift */; };
 		0B355985281D8E9700A4EC00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B355984281D8E9700A4EC00 /* ContentView.swift */; };
 		0B355987281D8E9B00A4EC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B355986281D8E9B00A4EC00 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		0B02B52D282ADD2500B41A2A /* ShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsView.swift; sourceTree = "<group>"; };
 		0B02B52E282ADD2500B41A2A /* ShowsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsCoordinator.swift; sourceTree = "<group>"; };
 		0B02B52F282ADD2500B41A2A /* ShowsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsInteractor.swift; sourceTree = "<group>"; };
+		0B02B535282AE90000B41A2A /* ShowsModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ShowsModel.json; sourceTree = "<group>"; };
+		0B02B537282AE94D00B41A2A /* ShowsServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsServerModel.swift; sourceTree = "<group>"; };
 		0B35597F281D8E9700A4EC00 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B355982281D8E9700A4EC00 /* TravelAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAppApp.swift; sourceTree = "<group>"; };
 		0B355984281D8E9700A4EC00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				0B3559992820407600A4EC00 /* MoviesModel.json */,
+				0B02B535282AE90000B41A2A /* ShowsModel.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				0B3559C228204CD300A4EC00 /* MoviesServerModel.swift */,
+				0B02B537282AE94D00B41A2A /* ShowsServerModel.swift */,
 			);
 			path = ServerModel;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B02B536282AE90000B41A2A /* ShowsModel.json in Resources */,
 				0B35598A281D8E9B00A4EC00 /* Preview Assets.xcassets in Resources */,
 				0B35599A2820407600A4EC00 /* MoviesModel.json in Resources */,
 				0B355987281D8E9B00A4EC00 /* Assets.xcassets in Resources */,
@@ -320,6 +327,7 @@
 				0B355983281D8E9700A4EC00 /* TravelAppApp.swift in Sources */,
 				0B3559C9282051C300A4EC00 /* MoviesViewModel.swift in Sources */,
 				0B355992281D8F0600A4EC00 /* BaseVIP.swift in Sources */,
+				0B02B538282AE94D00B41A2A /* ShowsServerModel.swift in Sources */,
 				0B35599728203B9A00A4EC00 /* Utils.swift in Sources */,
 				0B3559CF282256F300A4EC00 /* MoviesCoordinator.swift in Sources */,
 				0B35599C2820462800A4EC00 /* Obfuscator.swift in Sources */,
@@ -472,7 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -501,7 +509,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
