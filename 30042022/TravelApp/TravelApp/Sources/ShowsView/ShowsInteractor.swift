@@ -55,11 +55,11 @@ final class ShowsInteractor: BaseInteractor {
         super.baseProvider as? ShowsProviderInputProtocol
     }
     
-    private func transformDataFromShowsToMovieTVModelView(data: [ResultShows]?) -> [MoviesTVModelView]? {
-        var datasourceMoviesTVModelView: [MoviesTVModelView] = []
+    private func transformDataFromShowsToMovieTVModelView(data: [ResultShows]?) -> [ShowsTVModelView]? {
+        var datasourceMoviesTVModelView: [ShowsTVModelView] = []
         if let dataUnw = data {
             for item in 0..<dataUnw.count{
-                let objc = MoviesTVModelView(id: dataUnw[item].id,
+                let objc = ShowsTVModelView(id: dataUnw[item].id,
                                              backdropPath: dataUnw[item].backdropPath,
                                              posterPath: dataUnw[item].posterPath,
                                              name: dataUnw[item].name)

@@ -1,16 +1,16 @@
 //
-//  MoviesPosterCarrousel.swift
+//  ShowsPosterCarrousel.swift
 //  TravelApp
 //
-//  Created by Gorka Ormazabal on 5/5/22.
+//  Created by Gorka Ormazabal on 11/5/22.
 //
 
 import SwiftUI
 
-struct MoviesPosterCarrousel: View {
+struct ShowsPosterCarrousel: View {
     
     var title: String
-    var moviesModel: [MoviesTVModelView]
+    var moviesModel: [ShowsTVModelView]
     var isPoster: Bool
     
     
@@ -31,15 +31,8 @@ struct MoviesPosterCarrousel: View {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 20) {
                     ForEach(self.moviesModel){ movie in
+                        ShowPosterCell(model: movie, isPoster: self.isPoster)
                         
-                        NavigationLink {
-                            //DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: movie.id ?? 0))
-                            DetailMovieView(viewModel: DetailMovieServerModel.stubbedDetailMovie!)
-                        } label: {
-                            MoviePosterCell(model: movie, isPoster: self.isPoster)
-                        }
-                        .buttonStyle(PlainButtonStyle()) // para quitar esa sensacion de boton
-
                     }
                 }
             }
@@ -47,14 +40,14 @@ struct MoviesPosterCarrousel: View {
     }
 }
 
-struct MoviePosterCell: View {
+struct ShowPosterCell: View {
     
     @ObservedObject var imageLoaderVM = ImageLoader() //
     // StateObject solo en el padre, después, poner ObservedObject
-    private var modelData: MoviesTVModelView
+    private var modelData: ShowsTVModelView
     var isPoster: Bool
     
-    init(model: MoviesTVModelView, isPoster: Bool? = true){
+    init(model: ShowsTVModelView, isPoster: Bool? = true){
         self.modelData = model
         self.isPoster = isPoster ?? false
         if isPoster ?? false {
@@ -104,3 +97,4 @@ struct MoviePosterCell: View {
 //                              moviesModel: MoviesServerModel.stubbedMoviesNowPlaying, isPoster: false)
 //    }
 //}
+

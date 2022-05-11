@@ -35,28 +35,28 @@ struct ShowsView: View {
         List{
             Group{
                 if !self.viewModel.datasourceAiringToday.isEmpty{
-                    MoviesPosterCarrousel(title: "Gaur emititzen",
+                    ShowsPosterCarrousel(title: "Gaur emititzen",
                                           moviesModel: self.viewModel.datasourceAiringToday,
                                         isPoster: false)
                 }
             }
             Group{
                 if !self.viewModel.datasourceOnTheAir.isEmpty{
-                    MoviesPosterCarrousel(title: "Airean",
+                    ShowsPosterCarrousel(title: "Airean",
                                           moviesModel: self.viewModel.datasourceOnTheAir,
                                         isPoster: true)
                 }
             }
             Group{
                 if !self.viewModel.datasourcePopular.isEmpty{
-                    MoviesPosterCarrousel(title: "Popularrak",
+                    ShowsPosterCarrousel(title: "Popularrak",
                                           moviesModel: self.viewModel.datasourcePopular,
                                         isPoster: false)
                 }
             }
             Group{
                 if !self.viewModel.datasourceTopRated.isEmpty{
-                    MoviesPosterCarrousel(title: "Onenak",
+                    ShowsPosterCarrousel(title: "Onenak",
                                           moviesModel: self.viewModel.datasourceTopRated,
                                         isPoster: true)
                 }
