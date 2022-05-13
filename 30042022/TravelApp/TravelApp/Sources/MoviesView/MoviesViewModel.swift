@@ -13,7 +13,7 @@ protocol MoviesInteractorOutputProtocol: BaseInteractorOutputProtocol {
     func setInfoPopularViewModel(data: [MoviesTVModelView]?)
     func setInfoTopRateViewModel(data: [MoviesTVModelView]?)
     func setInfoUpcomingViewModel(data: [MoviesTVModelView]?)
-    func setInfoLatestViewModel(data: [MoviesTVModelView]?)
+//    func setInfoLatestViewModel(data: [MoviesTVModelView]?)
 }
 
 final class MoviesViewModel: BaseViewModel, ObservableObject {
@@ -28,7 +28,7 @@ final class MoviesViewModel: BaseViewModel, ObservableObject {
     @Published var dataSourcePopular: [MoviesTVModelView] = []
     @Published var dataSourceTopRate: [MoviesTVModelView] = []
     @Published var dataSourceUpcoming: [MoviesTVModelView] = []
-    @Published var dataSourceLatest: [MoviesTVModelView] = []
+//    @Published var dataSourceLatest: [MoviesTVModelView] = []
     
     
     // MARK: - Metodos publicos para View
@@ -37,7 +37,7 @@ final class MoviesViewModel: BaseViewModel, ObservableObject {
         self.interactor?.fecthDataPopularInteractor()
         self.interactor?.fecthDataTopRateInteractor()
         self.interactor?.fecthDataUpcomingInteractor()
-        self.interactor?.fecthDataLatestInteractor()
+//        self.interactor?.fecthDataLatestInteractor()
         
     }
     
@@ -67,10 +67,10 @@ extension MoviesViewModel: MoviesInteractorOutputProtocol{
         self.dataSourceUpcoming = data ?? []
     }
     
-    func setInfoLatestViewModel(data: [MoviesTVModelView]?) {
-        self.dataSourceLatest.removeAll()
-        self.dataSourceLatest = data ?? []
-    }
+//    func setInfoLatestViewModel(data: [MoviesTVModelView]?) {
+//        self.dataSourceLatest.removeAll()
+//        self.dataSourceLatest = data ?? []
+//    }
     
 
 }

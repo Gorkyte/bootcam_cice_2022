@@ -14,7 +14,7 @@ protocol MoviesInteractorInputProtocol: BaseInteractorInputProtocol{
     func fecthDataPopularInteractor()
     func fecthDataTopRateInteractor()
     func fecthDataUpcomingInteractor()
-    func fecthDataLatestInteractor()
+//    func fecthDataLatestInteractor()
     
 }
 
@@ -24,7 +24,7 @@ protocol MoviesProviderOutputProtocol: BaseProviderOutputProtocol{
     func setInformationPopular(completion: Result<[ResultNowPlaying]?,NetworkError>)
     func setInformationTopRate(completion: Result<[ResultNowPlaying]?,NetworkError>)
     func setInformationUpcoming(completion: Result<[ResultNowPlaying]?,NetworkError>)
-    func setInformationLatest(completion: Result<[ResultNowPlaying]?,NetworkError>)
+//    func setInformationLatest(completion: Result<[ResultNowPlaying]?,NetworkError>)
 }
 
 final class MoviesInteractor: BaseInteractor {
@@ -77,9 +77,9 @@ extension MoviesInteractor: MoviesInteractorInputProtocol {
         self.provider?.fecthDataUpcomingProvider()
     }
     
-    func fecthDataLatestInteractor() {
-        self.provider?.fecthDataLatestProvider()
-    }
+//    func fecthDataLatestInteractor() {
+//        self.provider?.fecthDataLatestProvider()
+//    }
     
 
 }
@@ -124,14 +124,14 @@ extension MoviesInteractor: MoviesProviderOutputProtocol {
         }
     }
     
-    func setInformationLatest(completion: Result<[ResultNowPlaying]?, NetworkError>) {
-        switch completion{
-        case .success(let data):
-            self.viewModel?.setInfoLatestViewModel(data: self.transformDataResultToMoviesTVModelView(data: data))
-        case .failure(let error):
-            debugPrint(error)
-        }
-    }
+//    func setInformationLatest(completion: Result<[ResultNowPlaying]?, NetworkError>) {
+//        switch completion{
+//        case .success(let data):
+//            self.viewModel?.setInfoLatestViewModel(data: self.transformDataResultToMoviesTVModelView(data: data))
+//        case .failure(let error):
+//            debugPrint(error)
+//        }
+//    }
     
 
 }

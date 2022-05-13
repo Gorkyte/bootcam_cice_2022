@@ -13,7 +13,7 @@ protocol MoviesProviderInputProtocol: BaseProviderInputProtocol {
     func fecthDataPopularProvider()
     func fecthDataTopRateProvider()
     func fecthDataUpcomingProvider()
-    func fecthDataLatestProvider()
+//    func fecthDataLatestProvider()
 }
 
 final class MoviesProvider: BaseProvider {
@@ -118,27 +118,27 @@ extension MoviesProvider: MoviesProviderInputProtocol{
              .store(in: &cancellable)
     }
     
-    func fecthDataLatestProvider() {
-        let request = RequestDTO(params: nil,
-                                  method: .get,
-                                  endpoint: URLEnpoint.endpointMoviesLatest,
-                                  urlContext: .webService)
-         self.networkService.requestGeneric(payloadRequest: request, entityClass: MoviesServerModel.self)
-             .sink { [weak self] completion in
-                 guard self != nil else {return}
-                 switch completion{
-                 case .finished:
-                     debugPrint("finished")
-                 case let .failure(error):
-                     //debugPrint(error)
-                     self?.interactor?.setInformationLatest(completion: .failure(error))
-                 }
-             } receiveValue: { [weak self] resultData in
-                 guard self != nil else {return}
-                 self?.interactor?.setInformationLatest(completion: .success(resultData.results))
-             }
-             .store(in: &cancellable)
-    }
+//    func fecthDataLatestProvider() {
+//        let request = RequestDTO(params: nil,
+//                                  method: .get,
+//                                  endpoint: URLEnpoint.endpointMoviesLatest,
+//                                  urlContext: .webService)
+//         self.networkService.requestGeneric(payloadRequest: request, entityClass: MoviesServerModel.self)
+//             .sink { [weak self] completion in
+//                 guard self != nil else {return}
+//                 switch completion{
+//                 case .finished:
+//                     debugPrint("finished")
+//                 case let .failure(error):
+//                     //debugPrint(error)
+//                     self?.interactor?.setInformationLatest(completion: .failure(error))
+//                 }
+//             } receiveValue: { [weak self] resultData in
+//                 guard self != nil else {return}
+//                 self?.interactor?.setInformationLatest(completion: .success(resultData.results))
+//             }
+//             .store(in: &cancellable)
+//    }
     
 
 }

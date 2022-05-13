@@ -45,13 +45,13 @@ struct MoviesView: View {
                                         isPoster: true)
                 }
             }
-            Group{
-                if !self.viewModel.dataSourceLatest.isEmpty{
-                    MoviesPosterCarrousel(title: "Azken filmak",
-                                          moviesModel: self.viewModel.dataSourceLatest,
-                                        isPoster: true)
-                }
-            }
+//            Group{
+//                if !self.viewModel.dataSourceLatest.isEmpty{
+//                    MoviesPosterCarrousel(title: "Azken filmak",
+//                                          moviesModel: self.viewModel.dataSourceLatest,
+//                                        isPoster: true)
+//                }
+//            }
             
 
 

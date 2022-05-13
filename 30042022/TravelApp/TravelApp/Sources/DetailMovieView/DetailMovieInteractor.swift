@@ -28,13 +28,14 @@ import Foundation
 
 // Input del Interactor
 protocol DetailMovieInteractorInputProtocol: BaseInteractorInputProtocol{
-    
+    func fetchdataDetailMovieInteractor()  //===================================Paso 3
+
 }
 
 
 // Output del provider
 protocol DetailMovieProviderOutputProtocol: BaseProviderOutputProtocol{
-   
+    func setInformationDetailMovie(completion: Result<DetailMovieServerModel?, NetworkError>) // ======================Paso 9
 }
 
 final class DetailMovieInteractor: BaseInteractor {
@@ -53,10 +54,23 @@ final class DetailMovieInteractor: BaseInteractor {
 
 // Input del Interactor
 extension DetailMovieInteractor: DetailMovieInteractorInputProtocol {
-    
+    func fetchdataDetailMovieInteractor() {
+        //===================================Paso 4
+        
+        self.provider?.fetchDataDetailMovieProvider()//===================================Paso 5 y vamos al Provider
+    }
 }
+
+
 
 // Output del provider
 extension DetailMovieInteractor: DetailMovieProviderOutputProtocol{
-
+    func setInformationDetailMovie(completion: Result<DetailMovieServerModel?, NetworkError>) { // ======================Paso 9
+        switch completion {
+        case .success(let data):
+            self.viewModel?.setInformationDetail(data: data)
+        case .failure(let error):
+            debugPrint(error)
+        }
+    }
 }

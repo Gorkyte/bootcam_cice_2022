@@ -65,7 +65,7 @@ struct ShowsView: View {
         }
         
         .listStyle(PlainListStyle())
-        .navigationTitle(Text("Ikuskizunak"))
+        .navigationTitle(Text("Telesailak"))
         .onAppear {
             self.viewModel.fetchData()
         }

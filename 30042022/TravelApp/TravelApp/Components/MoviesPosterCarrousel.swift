@@ -33,8 +33,8 @@ struct MoviesPosterCarrousel: View {
                     ForEach(self.moviesModel){ movie in
                         
                         NavigationLink {
-                            //DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: movie.id ?? 0))
-                            DetailMovieView(viewModel: DetailMovieServerModel.stubbedDetailMovie!)
+                            DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: movie.id ?? 0))
+                            //DetailMovieView(viewModel: DetailMovieServerModel.stubbedDetailMovie!)
                         } label: {
                             MoviePosterCell(model: movie, isPoster: self.isPoster)
                         }
