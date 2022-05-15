@@ -14,4 +14,9 @@ struct Constants {
         
     }
     
+    static var totalPages = 3
+    
+    
 }
+
+

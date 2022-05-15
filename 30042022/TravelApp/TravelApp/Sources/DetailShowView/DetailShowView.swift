@@ -46,7 +46,7 @@ struct DetailShowView: View {
         ScrollView{
             VStack{
                 Text ("Hello DetailShowView")
-                //headerView
+                headerView
                 //bodyView
             }
         }
@@ -65,6 +65,51 @@ struct DetailShowView: View {
     
 
 }
+
+
+var headerView: some View {
+    ZStack(alignment: .topLeading){
+        
+        
+        
+        //===========================================================
+//        if self.viewModel.data?.posterUrl != nil {
+//            MovieDetailImage(imageUrl: self.viewModel.data!.posterUrl)
+//                
+//        }
+        //===========================================================
+        HStack{
+            Button {
+                //self.presenterMode.wrappedValue.dismiss()
+            } label: {
+                Image(systemName: "chevron.left")
+                
+            }
+            .padding()
+            .background(Color.white.opacity(0.7))
+            .clipShape(Circle())
+            .padding(EdgeInsets(top: 40, leading: 20, bottom: 0, trailing: 0))
+            
+            Spacer()
+            
+            //===========================================================
+            Button {
+                // Aquí salvaremos las peliculas como favoritas en una BBDD (1. Firebase | 2. UserDefault)
+            } label: {
+                Image(systemName: "bookmark")
+            }
+            .padding()
+            .background(Color.white.opacity(0.7))
+            .clipShape(Circle())
+            .padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: 20))
+
+  
+        }
+        .foregroundColor(Color.green)
+        
+    }
+}
+
 
 
 struct ShowDetailImage: View {

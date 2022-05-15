@@ -42,6 +42,7 @@
 		0B15FBDE28311CF900982761 /* DetailShowModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15FBDD28311CF900982761 /* DetailShowModelView.swift */; };
 		0B15FBE028311E8F00982761 /* PeopleCarrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15FBDF28311E8F00982761 /* PeopleCarrousel.swift */; };
 		0B15FBE328313AB700982761 /* DetailPersonPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15FBE228313AB700982761 /* DetailPersonPopular.swift */; };
+		0B15FBE628314B5600982761 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15FBE528314B5600982761 /* OnboardingView.swift */; };
 		0B355983281D8E9700A4EC00 /* TravelAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B355982281D8E9700A4EC00 /* TravelAppApp.swift */; };
 		0B355985281D8E9700A4EC00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B355984281D8E9700A4EC00 /* ContentView.swift */; };
 		0B355987281D8E9B00A4EC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B355986281D8E9B00A4EC00 /* Assets.xcassets */; };
@@ -104,6 +105,7 @@
 		0B15FBDD28311CF900982761 /* DetailShowModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailShowModelView.swift; sourceTree = "<group>"; };
 		0B15FBDF28311E8F00982761 /* PeopleCarrousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCarrousel.swift; sourceTree = "<group>"; };
 		0B15FBE228313AB700982761 /* DetailPersonPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPersonPopular.swift; sourceTree = "<group>"; };
+		0B15FBE528314B5600982761 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		0B35597F281D8E9700A4EC00 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B355982281D8E9700A4EC00 /* TravelAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAppApp.swift; sourceTree = "<group>"; };
 		0B355984281D8E9700A4EC00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -207,6 +209,14 @@
 			path = DetailPopularPersonView;
 			sourceTree = "<group>";
 		};
+		0B15FBE428314B3E00982761 /* OnBoardingView */ = {
+			isa = PBXGroup;
+			children = (
+				0B15FBE528314B5600982761 /* OnboardingView.swift */,
+			);
+			path = OnBoardingView;
+			sourceTree = "<group>";
+		};
 		0B355976281D8E9700A4EC00 = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +315,7 @@
 		0B3559C42820503100A4EC00 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0B15FBE428314B3E00982761 /* OnBoardingView */,
 				0B15FBE128313A9600982761 /* DetailPopularPersonView */,
 				0B15FBCC283003DD00982761 /* PeoplePopularView */,
 				0B02B542282BD53A00B41A2A /* DetailMovieView */,
@@ -482,6 +493,7 @@
 				0B15FBC9282E9E8800982761 /* DetailShowServerModel.swift in Sources */,
 				0B02B554282BD57E00B41A2A /* DetailShowView.swift in Sources */,
 				0B15FBD22830040200982761 /* PeoplePopularViewModel.swift in Sources */,
+				0B15FBE628314B5600982761 /* OnboardingView.swift in Sources */,
 				0B02B538282AE94D00B41A2A /* ShowsServerModel.swift in Sources */,
 				0B372B7C282C02ED00E31FE7 /* DetailMovieServerModel.swift in Sources */,
 				0B15FBCB282EAF4600982761 /* DetailMovieTVModelView.swift in Sources */,
