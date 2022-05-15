@@ -29,23 +29,78 @@ import SwiftUI
 
 struct DetailShowView: View {
 
-    @StateObject var viewModel = DetailShowViewModel()
+    
+    
+    //@StateObject var viewModel = DetailShowViewModel()
+    var model: DetailShowServerModel?
        
     var body: some View {
-        VStack {
-            Text ("Hello DetailShowView")
+        
+//        VStack {
+//            Text ("Hello DetailShowView")
+//        }
+//        .onAppear {
+//            self.viewModel.fetchData()
+//        }
+        
+        ScrollView{
+            VStack{
+                Text ("Hello DetailShowView")
+                //headerView
+                //bodyView
+            }
         }
-        .onAppear {
-            self.viewModel.fetchData()
-        }
+//        .navigationBarHidden(true) // sin la barra de navegacion
+//        .navigationBarHidden(true) // sin el back
+//        .edgesIgnoringSafeArea(.all)
+//        .sheet(item: self.$selectedTrailer) { mytrailer in
+//            SafariView(url: mytrailer.youtubeURL!)
+//        }
+//        .onAppear{
+//            self.viewModel.fetchData()
+//        }
         
     }
+    
+    
 
+}
+
+
+struct ShowDetailImage: View {
+    
+    let imageUrl: URL
+    @StateObject private var imageLoaderVM = ImageLoader ()
+    
+    
+    var body: some View {
+        ZStack{
+            Rectangle()
+                .fill(Color.gray.opacity(0.3))
+                .cornerRadius(8)
+                .shadow(radius: 10)
+            if self.imageLoaderVM.image != nil {
+                Image(uiImage: self.imageLoaderVM.image!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .cornerRadius(8)
+                    .shadow(radius: 10)
+            }
+            
+        }
+        .onAppear{
+            self.imageLoaderVM.loadImage(whit: imageUrl)
+             
+        }
+    }
 }
 
 
 struct DetailShowPreviews: PreviewProvider {
     static var previews: some View {
-        DetailShowView()
+        //DetailMovieView()
+        if let dataUnw = DetailShowServerModel.stubbedDetailShow{
+            DetailShowView(model: dataUnw)
+        }
     }
 }

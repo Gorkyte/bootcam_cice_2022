@@ -68,68 +68,7 @@ struct DetailMovieServerModel: Codable {
         case videos = "videos"
         case credits = "credits"
     }
-    var posterUrl: URL {
-        return URL(string: "https://image.tmdb.org/t/p/w500/\(posterPath ?? "")")!
-    }
-    
-    var genreText: String {
-        genres?.first?.name ?? "n/a"
-    }
-    
-    var yearText: String {
-        guard let releaseDateUnw = releaseDate, let dateUnw = Utils.dateFormatter.date(from: releaseDateUnw) else {
-            return "n/a"
-        }
-        return Utils.yearFormatter.string(from: dateUnw)
-    }
-    
-    var durationText: String{
-        guard let runtimeUnw = runtime, runtimeUnw > 0 else {
-            return "n/a"
-        }
-        return Utils.durationFormatter.string(from: TimeInterval(runtimeUnw) * 60) ?? "n/a"
-    }
-    
-    var ratingText: String {
-        let rating = Int(voteAverage ?? 0)
-        let ratingText = (0..<rating).reduce("") { (partialResult, _) -> String in
-            return partialResult + "★"
-        }
-        return ratingText
-    }
-    
-    var scoreText: String {
-        guard ratingText.count > 0 else {
-            return "N/A"
-        }
-        return "\(ratingText.count) / 10"
-    }
-    
-    
-    var cast: [Cast]? {
-        credits?.cast
-    }
-    
-    var crew: [Crew]? {
-        credits?.crew
-    }
-    
-    var directors: [Crew]? {
-        crew?.filter { $0.job?.lowercased() == "director" }
-    }
-        
-    var producers: [Crew]? {
-        crew?.filter { $0.job?.lowercased() == "producer" }
-    }
-    
-    var screenWriters: [Crew]? {
-        crew?.filter { $0.job?.lowercased() == "writer"}
-        
-    }
-    
-    var youtubeTrailers: [ResultVideo]? {
-        videos?.results?.filter{ $0.youtubeURL != nil}
-    }
+
     
     
 }
@@ -190,9 +129,7 @@ struct Cast: Codable, Identifiable {
         case order = "order"
     }
     
-    var profilePathUrl: URL {
-        return URL(string: "https://image.tmdb.org/t/p/w500/\(profilePath ?? "")")!
-    }
+
     
 }
 
@@ -310,12 +247,7 @@ struct ResultVideo: Codable, Identifiable{
         case id = "id"
     }
     
-    var youtubeURL: URL? {
-        guard site == "YouTube" else {
-            return nil
-        }
-        return URL (string: "https://www.youtube.com/watch?v=\(key ?? "")")
-    }
+
     
 }
 

@@ -45,11 +45,14 @@ final class DetailShowCoordinator: BaseCoordinator {
                                               interactor: Interactor.self,
                                               provider: Provider.self)
         
-        let view = ContentView(viewModel: vip.viewModel)
+        vip.provider.dataDTO = dto
+//        //let view = ContentView(viewModel: vip.viewModel)
+        let view = ContentView()
         return view
     }
 }
 
 struct DetailShowCoordinatorDTO {
     
+    var dataId: Int
 }

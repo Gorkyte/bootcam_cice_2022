@@ -28,7 +28,7 @@ import Combine
 
 // Input Protocol
 protocol DetailShowProviderInputProtocol: BaseProviderInputProtocol {
-    
+    func fetchdataDetailShowProvider()
 }
 
 final class DetailShowProvider: BaseProvider{
@@ -40,6 +40,7 @@ final class DetailShowProvider: BaseProvider{
     
     let networkService: NetworkServiceInputProtocol = NetworkService()
     var cancellable: Set<AnyCancellable> = []
+    var dataDTO: DetailShowCoordinatorDTO?
     
 }
 
@@ -71,18 +72,49 @@ extension DetailShowProvider: DetailShowProviderInputProtocol{
     }
      
      */
+    
+    func fetchdataDetailShowProvider(){
+     
+        self.networkService.requestGeneric(payloadRequest: DetailShowRequestDTO.requestDataDetail(idTV: "\(dataDTO?.dataId ?? 0)", moreParams:"credits,videos"),
+                                           entityClass: DetailShowServerModel.self)
+        
+//        self.networkService.requestGeneric(payloadRequest: DetailShowRequestDTO, entityClass: DetailShowServerModel.self)
+        
+            .sink { [weak self] completion in
+                guard self != nil else {return}
+                switch completion{
+                case .finished:
+                    debugPrint("finished")
+                case let .failure(error):
+                    self?.interactor?.setInformationDetailShow(completion: .failure(error))
+                }
+            } receiveValue: { [weak self] resultData in
+                guard self != nil else {return}
+                self?.interactor?.setInformationDetailShow(completion: .success(resultData))
+            }
+            .store(in: &cancellable)
+    }
 }
 
 
 // MARK: - Request de apoyo
 struct DetailShowRequestDTO {
     
+    static func requestDataDetail(idTV: String, moreParams: String) -> RequestDTO {
+        
+        let argument: [CVarArg] = [idTV, moreParams]
+        let urlComplete = String(format: URLEnpoint.endpointDetailShow, arguments: argument)
+
+        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
+        return request
+    
 //    static func requestData(numeroItems: String) -> RequestDTO {
 //        let argument: [CVarArg] = [numeroItems]
-//        let urlComplete = String(format: URLEndpoint.music, arguments: argument)
+//        let urlComplete = String(format: URLEndpoint.endpointDetailShow, arguments: argument)
+//
 //        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
 //        return request
-//        
-//    }
+        
+    }
     
 }

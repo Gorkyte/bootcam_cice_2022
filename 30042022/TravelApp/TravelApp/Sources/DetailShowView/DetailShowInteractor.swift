@@ -28,13 +28,13 @@ import Foundation
 
 // Input del Interactor
 protocol DetailShowInteractorInputProtocol: BaseInteractorInputProtocol{
-    
+    func fetchdataDetailShowInteractor()  //===================================Paso 3
 }
 
 
 // Output del provider
 protocol DetailShowProviderOutputProtocol: BaseProviderOutputProtocol{
-   
+   func setInformationDetailShow(completion: Result<DetailShowServerModel?, NetworkError>) // ======================Paso 9
 }
 
 final class DetailShowInteractor: BaseInteractor {
@@ -53,10 +53,20 @@ final class DetailShowInteractor: BaseInteractor {
 
 // Input del Interactor
 extension DetailShowInteractor: DetailShowInteractorInputProtocol {
-    
+    func fetchdataDetailShowInteractor(){
+        self.provider?.fetchdataDetailShowProvider()
+    }
 }
 
 // Output del provider
 extension DetailShowInteractor: DetailShowProviderOutputProtocol{
-
+    func setInformationDetailShow(completion: Result<DetailShowServerModel?, NetworkError>){ // ======================Paso 9
+        switch completion {
+        case .success(let data):
+            //self.viewModel?.setInformationDetail(data: self.transformDataDetailMovieServerModelToDetailMovieTVModelView(data: data))
+            self.viewModel?.setInformationDetailShow(data: data)
+        case .failure(let error):
+            debugPrint(error)
+        }
+    }
 }

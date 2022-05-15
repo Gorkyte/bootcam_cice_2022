@@ -27,27 +27,25 @@ import Foundation
 
 
 //Output del Interactor
-protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?)
+protocol PeoplePopularInteractorOutputProtocol: BaseInteractorOutputProtocol {
+    func setInformationPeoplePopular(data: [PeopleViewModel]?)
 }
 
 
 
-final class DetailMovieViewModel: BaseViewModel, ObservableObject {
+final class PeoplePopularViewModel: BaseViewModel, ObservableObject {
   
     //MARK: - Dependences Inyection (DI)
-    var interactor: DetailMovieInteractorInputProtocol?{
-        super.baseInteractor as? DetailMovieInteractorInputProtocol
+    var interactor: PeoplePopularInteractorInputProtocol?{
+        super.baseInteractor as? PeoplePopularInteractorInputProtocol
     }
     
-    
-    
     //MARK: - Variables @Published
-    @Published var data: DetailMovieTVModelView? // ===============================Paso 1
+    @Published var dataPeople: [PeopleViewModel] = []
     
     //MARK: - Metodos publicos para la View
     func fetchData(){
-        self.interactor?.fetchdataDetailMovieInteractor() // ===============================Paso 2, y vamos al Interactor
+        self.interactor?.fetchDataPeoplePopularInteractor()
     }
     
 }
@@ -55,13 +53,10 @@ final class DetailMovieViewModel: BaseViewModel, ObservableObject {
 
 
 //Output del Interactor
-extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?){
-        guard let dataUnw = data else {
-            return
-        }
-        self.data = dataUnw
-        
-       
+extension PeoplePopularViewModel: PeoplePopularInteractorOutputProtocol {
+    func setInformationPeoplePopular(data: [PeopleViewModel]?){
+        guard let dataUnw = data else { return }
+        self.dataPeople.removeAll()
+        self.dataPeople = dataUnw
     }
 }

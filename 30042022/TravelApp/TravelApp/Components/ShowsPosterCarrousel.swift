@@ -30,16 +30,17 @@ struct ShowsPosterCarrousel: View {
             
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 20) {
-                    ForEach(self.moviesModel){ movie in
+                    ForEach(self.moviesModel){ tv in
                         //ShowPosterCell(model: movie, isPoster: self.isPoster)
                         
                         NavigationLink {
                             //DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: movie.id ?? 0))
-                            DetailShowCoordinator.view()
+                            //DetailShowCoordinator.view()
+                            DetailShowCoordinator.view(dto: DetailShowCoordinatorDTO(dataId: tv.id ?? 0))
                             
                         } label: {
                             //MoviePosterCell(model: movie, isPoster: self.isPoster)
-                            ShowPosterCell(model: movie, isPoster: self.isPoster)
+                            ShowPosterCell(model: tv, isPoster: self.isPoster)
                         }
                         .buttonStyle(PlainButtonStyle()) // para quitar esa sensacion de boton
 

@@ -32,7 +32,8 @@ struct DetailMovieView: View {
     @SwiftUI.Environment(\.presentationMode) var presenterMode
     //private var imageLoader = ImageLoader()
   
-    @State private var selectedTrailer: ResultVideo?
+    //@State private var selectedTrailer: ResultVideo?
+    @State private var selectedTrailer: VideosYouTubeViewModel?
        
     var body: some View {
         ScrollView{
@@ -42,10 +43,23 @@ struct DetailMovieView: View {
             }
         }
         
+        .navigationBarHidden(true) // sin la barra de navegacion
+        .navigationBarHidden(true) // sin el back
+        .edgesIgnoringSafeArea(.all)
+        .sheet(item: self.$selectedTrailer) { mytrailer in
+            SafariView(url: mytrailer.youtubeURL!)
+        }
+        .onAppear{
+            self.viewModel.fetchData()
+        }
+        
     }
     
     var headerView: some View {
         ZStack(alignment: .topLeading){
+            
+            
+            
             //===========================================================
             if self.viewModel.data?.posterUrl != nil {
                 MovieDetailImage(imageUrl: self.viewModel.data!.posterUrl)
@@ -192,15 +206,17 @@ struct DetailMovieView: View {
             //===========================================================
              
         }
-        .navigationBarHidden(true) // sin la barra de navegacion
-        .navigationBarHidden(true) // sin el back
-        .edgesIgnoringSafeArea(.all)
-        .sheet(item: self.$selectedTrailer) { mytrailer in
-            SafariView(url: mytrailer.youtubeURL!)
-        }
-        .onAppear{
-            self.viewModel.fetchData()
-        }
+        .padding()
+        .padding(.bottom, 100)
+        .background(
+            roundedShape()
+                .fill(Color.black)
+                .shadow(color: Color.black.opacity(0.3),
+                       radius: 10,
+                        x: 0,
+                        y: -50)
+        )
+        .padding(.top, -50)
     }
 }
 
@@ -229,6 +245,15 @@ struct MovieDetailImage: View {
             self.imageLoaderVM.loadImage(whit: imageUrl)
              
         }
+    }
+}
+
+struct roundedShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect,
+                                byRoundingCorners: [.topLeft, .topRight],
+                                cornerRadii: CGSize(width: 35, height: 35))
+        return Path(path.cgPath)
     }
 }
 

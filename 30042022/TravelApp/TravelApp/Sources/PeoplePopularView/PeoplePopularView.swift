@@ -23,45 +23,36 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-import Foundation
-
-
-//Output del Interactor
-protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?)
-}
+import SwiftUI
 
 
 
-final class DetailMovieViewModel: BaseViewModel, ObservableObject {
-  
-    //MARK: - Dependences Inyection (DI)
-    var interactor: DetailMovieInteractorInputProtocol?{
-        super.baseInteractor as? DetailMovieInteractorInputProtocol
-    }
-    
-    
-    
-    //MARK: - Variables @Published
-    @Published var data: DetailMovieTVModelView? // ===============================Paso 1
-    
-    //MARK: - Metodos publicos para la View
-    func fetchData(){
-        self.interactor?.fetchdataDetailMovieInteractor() // ===============================Paso 2, y vamos al Interactor
-    }
-    
-}
+struct PeoplePopularView: View {
 
-
-
-//Output del Interactor
-extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?){
-        guard let dataUnw = data else {
-            return
-        }
-        self.data = dataUnw
-        
+    @StateObject var viewModel = PeoplePopularViewModel()
        
+    var body: some View {
+        ScrollView {
+            //Text ("Hello PeoplePopularView")
+            if self.viewModel.dataPeople != nil && !(self.viewModel.dataPeople.isEmpty ?? false){
+                PeopleCarrousel(title: "",
+                                dataModel: self.viewModel.dataPeople)
+            }
+            
+        }
+          
+        .navigationTitle(Text("Pertsona Popularrak"))
+        .onAppear {
+            self.viewModel.fetchData()
+        }
+        
+    }
+
+}
+
+
+struct PeoplePopularPreviews: PreviewProvider {
+    static var previews: some View {
+        PeoplePopularView()
     }
 }

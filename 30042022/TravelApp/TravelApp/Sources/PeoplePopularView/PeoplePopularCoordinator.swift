@@ -24,44 +24,32 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import SwiftUI
 
 
-//Output del Interactor
-protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?)
-}
+final class PeoplePopularCoordinator: BaseCoordinator {
 
-
-
-final class DetailMovieViewModel: BaseViewModel, ObservableObject {
-  
-    //MARK: - Dependences Inyection (DI)
-    var interactor: DetailMovieInteractorInputProtocol?{
-        super.baseInteractor as? DetailMovieInteractorInputProtocol
-    }
+    typealias ContentView = PeoplePopularView
+    typealias ViewModel = PeoplePopularViewModel
+    typealias Interactor = PeoplePopularInteractor
+    typealias Provider = PeoplePopularProvider
     
-    
-    
-    //MARK: - Variables @Published
-    @Published var data: DetailMovieTVModelView? // ===============================Paso 1
-    
-    //MARK: - Metodos publicos para la View
-    func fetchData(){
-        self.interactor?.fetchdataDetailMovieInteractor() // ===============================Paso 2, y vamos al Interactor
-    }
-    
-}
-
-
-
-//Output del Interactor
-extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?){
-        guard let dataUnw = data else {
-            return
+    static func navigation() -> NavigationView<ContentView>{
+        NavigationView{
+            self.view()
         }
-        self.data = dataUnw
-        
-       
     }
+    
+    static func view(dto: PeoplePopularCoordinatorDTO? = nil) -> ContentView{
+        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
+                                              interactor: Interactor.self,
+                                              provider: Provider.self)
+        
+        let view = ContentView(viewModel: vip.viewModel)
+        return view
+    }
+}
+
+struct PeoplePopularCoordinatorDTO {
+    
 }

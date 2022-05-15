@@ -46,9 +46,7 @@ final class DetailMovieCoordinator: BaseCoordinator {
                                               provider: Provider.self)
         
         vip.provider.dataDTO = dto
-        
         let view = ContentView(viewModel: vip.viewModel)
-
         return view
     }
 }
