@@ -48,6 +48,8 @@
 		0B15FBEF2831A1D300982761 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15FBEE2831A1D300982761 /* LoginViewModel.swift */; };
 		0B15FBF428329A2400982761 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0B15FBF328329A2400982761 /* FirebaseAuth */; };
 		0B15FBF628329A2400982761 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0B15FBF528329A2400982761 /* FirebaseFirestore */; };
+		0B15FBF82832B0DC00982761 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B15FBF72832B0DC00982761 /* GoogleService-Info.plist */; };
+		0B15FBFB2832B2E100982761 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15FBFA2832B2E100982761 /* ProfileView.swift */; };
 		0B355983281D8E9700A4EC00 /* TravelAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B355982281D8E9700A4EC00 /* TravelAppApp.swift */; };
 		0B355985281D8E9700A4EC00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B355984281D8E9700A4EC00 /* ContentView.swift */; };
 		0B355987281D8E9B00A4EC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B355986281D8E9B00A4EC00 /* Assets.xcassets */; };
@@ -114,7 +116,8 @@
 		0B15FBE828315B0D00982761 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0B15FBEC2831633100982761 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0B15FBEE2831A1D300982761 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		0B15FBF1283297B000982761 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0B15FBF72832B0DC00982761 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0B15FBFA2832B2E100982761 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0B35597F281D8E9700A4EC00 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B355982281D8E9700A4EC00 /* TravelAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAppApp.swift; sourceTree = "<group>"; };
 		0B355984281D8E9700A4EC00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -237,6 +240,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		0B15FBF92832B29900982761 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				0B15FBFA2832B2E100982761 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
 		0B355976281D8E9700A4EC00 = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +267,7 @@
 		0B355981281D8E9700A4EC00 /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
-				0B15FBF1283297B000982761 /* GoogleService-Info.plist */,
+				0B15FBF72832B0DC00982761 /* GoogleService-Info.plist */,
 				0B372B7F282D6F6F00E31FE7 /* UIKitViews */,
 				0B3559DE2825294400A4EC00 /* ModelView */,
 				0B3559D728242AAA00A4EC00 /* Components */,
@@ -336,6 +347,7 @@
 		0B3559C42820503100A4EC00 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0B15FBF92832B29900982761 /* ProfileView */,
 				0B15FBE728315B0200982761 /* Login */,
 				0B15FBE428314B3E00982761 /* OnBoardingView */,
 				0B15FBE128313A9600982761 /* DetailPopularPersonView */,
@@ -468,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B02B536282AE90000B41A2A /* ShowsModel.json in Resources */,
+				0B15FBF82832B0DC00982761 /* GoogleService-Info.plist in Resources */,
 				0B15FBD82830055700982761 /* PeoplePopularModel.json in Resources */,
 				0B15FBC7282E9E6700982761 /* DetailShow.json in Resources */,
 				0B35598A281D8E9B00A4EC00 /* Preview Assets.xcassets in Resources */,
@@ -500,6 +513,7 @@
 				0B02B530282ADD2500B41A2A /* ShowsViewModel.swift in Sources */,
 				0B15FBD62830040200982761 /* PeoplePopularInteractor.swift in Sources */,
 				0B3559CD2821BF6600A4EC00 /* MoviesProvider.swift in Sources */,
+				0B15FBFB2832B2E100982761 /* ProfileView.swift in Sources */,
 				0B02B556282BD57E00B41A2A /* DetailShowInteractor.swift in Sources */,
 				0B15FBE328313AB700982761 /* DetailPersonPopular.swift in Sources */,
 				0B02B540282BD38900B41A2A /* ShowsTVModelView.swift in Sources */,

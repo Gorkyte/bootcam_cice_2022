@@ -3,14 +3,14 @@
 //  TravelApp
 //
 //  Created by Gorka Ormazabal on 30/4/22.
-//
+//f
 
 import SwiftUI
 
 struct ContentView: View {
     
     @AppStorage("currentPage") var currentPage = 1
-
+    @EnvironmentObject var viewModelSession: LoginViewModel
     
     
     var body: some View {
@@ -19,8 +19,12 @@ struct ContentView: View {
             //HomeView()
             
             if currentPage > Constants.totalPages {
-                //HomeView()
-                LoginView(authType: .signIn)
+                if self.viewModelSession.userLogged != nil{
+                    HomeView()
+                } else {
+                    LoginView(authType: .signUp)
+                }
+                
             } else {
                 OnboardingView()
             }

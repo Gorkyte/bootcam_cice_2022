@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @EnvironmentObject var viewModelSession: LoginViewModel
     @State var authType: AuthenticationType
     
     @State var email: String = ""
@@ -24,8 +25,9 @@ struct LoginView: View {
                 
                 helloApp
                 imageAppLogo
+                
                 // Haremos una comprobación para saber si el usuario está autenticado en Firebase
-                if true {
+                if !self.viewModelSession.userAuthenticated {
                     VStack(spacing: 20){
                         CustomTextField(placeholder: "Posta elektronikoa",
                                         title: "Posta elektronikoa",
@@ -180,7 +182,12 @@ struct LoginView: View {
     }
     
     private func authEmailTouched(){
-        
+        switch authType {
+        case .signIn:
+            self.viewModelSession.signIn(with: .emailAndPassword(email: self.email, password: self.password))
+        case .signUp:
+            self.viewModelSession.signUp(email: self.email, password: self.password, passwordConfirmation: self.confirmationPassword)
+        }
     }
     
     private func footerTouched(){
