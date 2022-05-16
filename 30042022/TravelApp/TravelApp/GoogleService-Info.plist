@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>947148667242-ihb56lp4s8gh13le1t8d1vc4h4mdb2ig.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.947148667242-ihb56lp4s8gh13le1t8d1vc4h4mdb2ig</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCd7YhqqRBuup8iLyd_r938KHpIyyhNT1M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>947148667242</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.PriluxTech.CiceTmdbApp</string>
+	<key>PROJECT_ID</key>
+	<string>livecicetmdb-7aba7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>livecicetmdb-7aba7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:947148667242:ios:481b0a2c05800eff1a0d13</string>
+</dict>
+</plist>
